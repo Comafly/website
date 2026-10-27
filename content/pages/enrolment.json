@@ -1,0 +1,646 @@
+{
+ "id": "page.enrolment",
+ "meta": {
+  "title": "Enrolment",
+  "description": "Everything you need to know about enrolling at SIDE: home-based, school-based and blended pathways."
+ },
+ "sections": [
+  {
+   "id": "enrol.hero",
+   "type": "page-hero",
+   "media": "m.enrol.hero",
+   "title": "Enrolment",
+   "lead": "Everything you need to know about enrolling at SIDE.",
+   "chipGroups": [
+    {
+     "label": "Home-based",
+     "links": [
+      {
+       "label": "Geographical Isolation",
+       "to": "#isolation-information"
+      },
+      {
+       "label": "Travelling Temporarily",
+       "to": "#travelling-information"
+      },
+      {
+       "label": "Referrals",
+       "to": "#referrals-information"
+      }
+     ]
+    },
+    {
+     "label": "School-based",
+     "links": [
+      {
+       "label": "Government Schools",
+       "to": "#gov-school-information"
+      },
+      {
+       "label": "Non-Government Schools",
+       "to": "#non-gov-school-information"
+      }
+     ]
+    },
+    {
+     "label": "Blended",
+     "links": [
+      {
+       "label": "Dance / Ballet",
+       "to": "#dance-information"
+      },
+      {
+       "label": "Arts / Sports",
+       "to": "#art-sport-information"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "enrol.closing",
+   "type": "prose",
+   "anchor": "closing-date-anchor",
+   "tone": "sun",
+   "eyebrow": "Important dates",
+   "title": "The closing date for 2026 applications is Friday, November 21st.",
+   "titleClass": "t-h2",
+   "lead": "Applications submitted after this date will still be processed; however, they may not be finalised before the commencement of the 2026 school year."
+  },
+  {
+   "id": "enrol.overview",
+   "type": "statement",
+   "anchor": "enrol-overview-anchor",
+   "tone": "paper",
+   "title": "Find the right way to enrol.",
+   "text": "SIDE welcomes students from Kindergarten through to Year 12 through three enrolment pathways: learning from home, alongside their school, or around elite training and performance. Each has its own eligibility requirements and evidence, so start with the category that fits.",
+   "caption": "Choose a pathway below to see what you'll need.",
+   "size": "h2",
+   "class": "statement--framed"
+  },
+  {
+   "id": "enrol.ways",
+   "type": "sequence",
+   "variant": "stage",
+   "tone": "ink",
+   "title": "Three ways to enrol",
+   "eyebrow": "Enrolment pathways",
+   "frames": [
+    {
+     "eyebrow": "01",
+     "title": "Home-based",
+     "media": "m.enrol.home",
+     "body": "Students can complete their studies from home through scheduled online classes, independent learning tasks, and ongoing teacher guidance.",
+     "actions": [
+      {
+       "label": "See requirements",
+       "to": "#home-based-anchor"
+      }
+     ]
+    },
+    {
+     "eyebrow": "02",
+     "title": "School-based",
+     "media": "m.enrol.school",
+     "body": "We partner with schools to deliver subjects that may not be available locally. Students remain connected to their enrolling school while accessing lessons taught by SIDE.",
+     "actions": [
+      {
+       "label": "See requirements",
+       "to": "#school-based-anchor"
+      }
+     ]
+    },
+    {
+     "eyebrow": "03",
+     "title": "Blended",
+     "media": "m.enrol.blended",
+     "body": "Secondary students can combine school-based attendance with online lessons. This option supports students engaged in high intensity athletic or artistic pursuits.",
+     "actions": [
+      {
+       "label": "See requirements",
+       "to": "#blended-anchor"
+      }
+     ]
+    }
+   ],
+   "anchor": "enrol-pathways-anchor"
+  },
+  {
+   "id": "enrol.home",
+   "type": "tabs",
+   "anchor": "home-based-anchor",
+   "tone": "paper",
+   "title": "Home-based Enrolments",
+   "tabsLabel": "Home-based enrolment categories",
+   "lead": "Pathways for both Primary and Secondary students who cannot attend a regular school due to geographical isolation, temporary travel, or health-related circumstances, and need to learn from home.",
+   "tabs": [
+    {
+     "label": "Geographical Isolation",
+     "anchor": "isolation-information",
+     "title": "Geographical Isolation",
+     "lead": "Students enrolling in the geographically isolated category must be Western Australian residents who live in a remote area, where it is not feasible to travel to a local mainstream government school.",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Primary school students are encouraged to explore the [Department of Education - Schools of the Air](https://www.education.wa.edu.au/distance-education) as a viable option. Campuses are located at Carnarvon, Kalgoorlie, Derby, Meekatharra and Port Hedland."
+      },
+      {
+       "type": "heading",
+       "text": "Eligibility",
+       "level": 3
+      },
+      {
+       "type": "text",
+       "text": "The student needs to demonstrate that they are geographically isolated in WA as defined by at least one of the categories below:"
+      },
+      {
+       "type": "list",
+       "items": [
+        "The distance between home and the nearest appropriate government school/s is **16km or more** and the distance between home and *available transport service/s to the nearest appropriate government school/s is **4.5km or more**.",
+        "The distance between home and the nearest appropriate government school/s is **8km or more** and distance between home, and *available transport service/s to the nearest appropriate government school/s is **8km or more**.",
+        "The travel time between home and the nearest appropriate government school/s return journey takes **3 hours or more**."
+       ],
+       "variant": "numbered"
+      },
+      {
+       "type": "heading",
+       "text": "Evidence Required",
+       "level": 3
+      },
+      {
+       "type": "list",
+       "items": [
+        "Proof of a Western Australian address.",
+        "The closest government school and/or school bus service may be contacted confirming that the student's current residential address meets the minimum distance requirements outlined in the requirements and that no school bus service is available."
+       ]
+      },
+      {
+       "type": "callout",
+       "tone": "info",
+       "text": "*Available transport service means any regular scheduled public transport, private carrier, or school service that currently provides a pick-up point within the specified distances of the student's home, or would do so if requested by the family."
+      }
+     ]
+    },
+    {
+     "label": "Travelling Temporarily",
+     "anchor": "travelling-information",
+     "title": "Travelling Temporarily",
+     "lead": "Students enrolling in the Temporary Travel category must be Western Australian residents who are temporarily unable to attend a mainstream school because they will soon commence travel.",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Temporary travel may be required due to a parent’s/carer’s work commitments or an extended family holiday. Enrolment at SIDE is only valid for the duration of the student’s temporary travel; once travel ends, the student must recommence enrolment at another education provider."
+      },
+      {
+       "type": "group",
+       "title": "Within Australia",
+       "blocks": [
+        {
+         "type": "facts",
+         "items": [
+          {
+           "term": "Maximum enrolment period",
+           "desc": "1 year"
+          }
+         ]
+        },
+        {
+         "type": "text",
+         "text": "Students are not eligible to apply for SIDE if they are enrolled at an interstate school."
+        },
+        {
+         "type": "heading",
+         "text": "Evidence Required:",
+         "level": 4
+        },
+        {
+         "type": "list",
+         "items": [
+          "Detailed holiday itinerary.",
+          "Evidence of booked flights, accommodation, and confirmed travel arrangements.",
+          "Evidence that may be approved by the SIDE Principal."
+         ]
+        },
+        {
+         "type": "text",
+         "text": "An Alternative Attendance Arrangement (Section 24) is used for primary school students who temporarily attend another school or who wish to undertake an alternative attendance arrangement for short term programs provided by another school or training organisation away from the student’s current school."
+        }
+       ]
+      },
+      {
+       "type": "group",
+       "title": "Overseas",
+       "blocks": [
+        {
+         "type": "facts",
+         "items": [
+          {
+           "term": "Maximum enrolment period",
+           "desc": "2 years"
+          }
+         ]
+        },
+        {
+         "type": "text",
+         "text": "Enrolments are approved for a maximum of one year at a time. Please note that students are not eligible to apply for SIDE if they are enrolled at an alternative education provider."
+        },
+        {
+         "type": "heading",
+         "text": "Evidence Required:",
+         "level": 4
+        },
+        {
+         "type": "list",
+         "items": [
+          "Travel documents (airline tickets/detailed itinerary)"
+         ]
+        },
+        {
+         "type": "text",
+         "text": "**and:**"
+        },
+        {
+         "type": "list",
+         "items": [
+          "Current passport with an expiry date of a year in advance.",
+          "Signed parent/care-giver work contract with place of employment and time period of employment (if applicable)"
+         ]
+        },
+        {
+         "type": "text",
+         "text": "An Alternative Attendance Arrangement (Section 24) is used for primary school students who temporarily attend another school or who wish to undertake an alternative attendance arrangement for short term programs provided by another school or training organisation away from the student’s current school."
+        }
+       ]
+      },
+      {
+       "type": "callout",
+       "tone": "info",
+       "text": "Students who have been, or expect to be, based in a location overseas for more than two years are expected to enrol in a mainstream school in the location where they are based."
+      }
+     ]
+    },
+    {
+     "label": "Referrals",
+     "anchor": "referrals-information",
+     "title": "Referral Program",
+     "lead": "The SIDE Referral Program is a short term education solution for students undergoing particular hardship related to physical or mental health challenges, or parenting responsibilities.",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "The program typically lasts one term to one semester, with all enrolments concluding at the end of the school year. School case managers are responsible for coordinating the student's transition back to school, or to an alternative program.\n\nStudents in Pre-Primary through to Year 10 need to be working with a school-based case manager, and external clinician, towards re-engagement with their current school or an alternative program. Depending on the circumstances, students in Year 11 and 12 may transfer to SIDE, or stay engaged with their current School."
+      },
+      {
+       "type": "cards",
+       "items": [
+        {
+         "title": "Physical Health Conditions",
+         "text": "Long-term or serious illnesses, injuries, or medical conditions that affect a student’s energy, mobility, or ability to attend school regularly. It may also involve frequent hospital visits, treatment, or recovery periods that interrupt learning."
+        },
+        {
+         "title": "Mental Health Challenges",
+         "text": "Conditions such as anxiety, depression, trauma, or other emotional and psychological difficulties that impact a student's wellbeing. These challenges can affect concentration, motivation, attendance, and the ability to keep up with schoolwork."
+        },
+        {
+         "title": "Parenting Responsibilities",
+         "text": "Students who are pregnant, parenting, or have primary care responsibilities for a child. These responsibilities can involve appointments, childcare, and unpredictable demands that make regular school attendance and study more difficult."
+        }
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Eligibility",
+       "level": 3
+      },
+      {
+       "type": "text",
+       "text": "The student's treating clinician or specialist will be consulted to assist in establishing eligibility and to determine whether the SIDE program is suitable for the student. Documentation will be requested following the consultation."
+      },
+      {
+       "type": "list",
+       "items": [
+        "The student is unable to attend school at all (or an alternative program) for an extended period, generally three months or more, **and**",
+        "The student is engaged in ongoing and regular counselling, specialist treatment or other appropriate intervention.",
+        "The student has a fast, reliable internet connection and a computer running Windows 11, or an Apple MacOS 10.15 or later. Devices such as iPads, Windows 10S, Android tablets, or Chromebooks are not fully compatible with our online platforms. Students should also have the necessary software installed, along with a USB headset with microphone, webcam, printer, scanner, and data storage.",
+        "The student must have a SIDE Supervisor who is responsible for overseeing their studies, providing duty of care, and supporting their learning each school day. The Supervisor maintains regular communication with SIDE teachers and may be a parent, carer, or another responsible adult who works closely with the student on a daily basis."
+       ],
+       "variant": "numbered"
+      },
+      {
+       "type": "callout",
+       "tone": "warning",
+       "text": "Applications for the Referral Program for the 2026 school year will open on Monday 1st December."
+      },
+      {
+       "type": "text",
+       "text": "Please note Referral Applications will need to be submitted by school-based staff who are responsible for student wellbeing and support. In most cases, this will be the Deputy/Associate Principal or Student Services Program Coordinator.\n\nParents and caregivers who believe their child may benefit from the Referral Program are encouraged to speak with their child’s school in the first instance. The school will assess whether an application is appropriate and can guide the family through the process.\n\nIf this is not possible, please call the SIDE Receptionist at 9311 1400 and ask to speak to the Referrals Team."
+      },
+      {
+       "type": "heading",
+       "text": "To help us assess a student’s suitability for the Referral Program, the application form will require information in the following areas:",
+       "level": 3
+      },
+      {
+       "type": "accordion",
+       "items": [
+        {
+         "title": "1. School Case Manager",
+         "body": "Provide the contact details of a staff member who will act as the student’s case manager at their current school. This may be a Year Coordinator, School Psychologist, Student Support Officer/Coordinator, Program Coordinator, or similar."
+        },
+        {
+         "title": "2. Student Information",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Please be prepared to provide:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "Full name, date of birth, year level, and current enrolment status",
+            "Cultural identity (e.g., Aboriginal and/or Torres Strait Islander)"
+           ]
+          },
+          {
+           "type": "text",
+           "text": "You will also need to confirm that the student has been consulted and has agreed to engage with SIDE."
+          }
+         ]
+        },
+        {
+         "title": "3. Referral Reason",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "You'll be asked to describe:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "The student's attendance record, and any barriers that have affected it.",
+            "Interventions that have been implemented, and their outcomes, including any re-engagement efforts.",
+            "Any other services involved with the student, or alternative programs trialled or considered.",
+            "Any identified risk factors or safety concerns."
+           ]
+          }
+         ]
+        },
+        {
+         "title": "4. Health and Support Information",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Please be prepared to provide:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "Details of health professionals or agencies supporting the student.",
+            "The type of support provided (e.g., counselling, treatment)",
+            "Information on any plans or diagnoses (e.g., medical letters, mental health care plans, etc)"
+           ]
+          }
+         ]
+        },
+        {
+         "title": "5. Parent/Carer Involvement",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "You'll be asked to confirm:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "Whether parents or carers are aware of and support the referral application.",
+            "Any relevant family context or custodial arrangements.",
+            "Information on any plans or diagnoses (e.g., medical letters, mental health care plans, etc)"
+           ]
+          }
+         ]
+        },
+        {
+         "title": "6. Supporting Documentation",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Once the application has been allocated to a team member, the School Case Manager or the family may be asked to provide:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "Relevant reports from treating professionals.",
+            "Attendance summaries.",
+            "Risk management plans or behaviour support documents, individual learning plans, etc."
+           ]
+          }
+         ]
+        }
+       ]
+      },
+      {
+       "type": "actions",
+       "items": [
+        {
+         "label": "Read the full Referral Program guide",
+         "to": "page.referral"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "variant": "side",
+   "eyebrow": "Pathway 01 · Learn from home"
+  },
+  {
+   "id": "enrol.school",
+   "type": "tabs",
+   "anchor": "school-based-anchor",
+   "tone": "sky",
+   "title": "School-based Enrolments",
+   "tabsLabel": "School-based enrolments by sector",
+   "lead": "SIDE provides students with the opportunity to study subjects not offered at their base school.",
+   "blocks": [
+    {
+     "type": "text",
+     "text": "While students remain enrolled at their base school, they register with SIDE for individual subjects as required. This arrangement is helpful in situations such as when specialist teachers are unavailable, when students are transitioning between schools, or when there are timetabling constraints within a school.\n\nEnrolment is dependent on SIDE's capacity to deliver the course and on the base school determining the level of student access to SIDE that is appropriate.\n\nWebex lessons are conducted twice per week for each subject or course, and the [SIDE Timetable](https://www.side.wa.edu.au/enrolments/home-based-enrolments/timetable.html) should be consulted to select available Webex lesson times.\n\nAll schools must adhere to the conditions set out in the [School Partnerships - Service Provision document](https://erol.side.wa.edu.au/content/file/e389ddb9-127c-494c-b4e0-9d1356907b11/4/ServiceProvision_Schools.pdf) and are required to appoint a [SIDE Supervisor](https://www.side.wa.edu.au/enrolments/7-12-enrolments/school-based-students.html?view=article&id=30:supervisors&catid=5:student-support) to assist students with the management of their learning program."
+    }
+   ],
+   "tabs": [
+    {
+     "label": "Government Schools",
+     "anchor": "gov-school-information",
+     "title": "Government Schools",
+     "lead": "Schools using the Student Information System (SIS)",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "(This includes Senior High, District High, and Remote Community / Primary schools.)\n\nSIDE's Online Enrolment Portal (SOEP) is a dedicated system for partner schools to submit and manage student enrolments with SIDE, ensuring student details are recorded accurately and processed through the correct channels."
+      },
+      {
+       "type": "actions",
+       "items": [
+        {
+         "label": "SOEP Login",
+         "href": "#"
+        }
+       ]
+      },
+      {
+       "type": "text",
+       "text": "Schools must re-enrol students for each school year.\n\nRemember to direct students to the [SIDE booklist requirements.](page.payments#booklist-anchor)\n\nIf you need help navigating SOEP enrolments, please refer to [this instructional booklet.](https://erol.side.wa.edu.au//content/file/98b2bded-df56-4bd7-99c2-5d8941548258/2/Instructions%20for%20Partner%20Schools.pdf)\n\nDon't hesitate to [contact us](page.support#contact-anchor) if you're still having issues with an enrolment."
+      }
+     ]
+    },
+    {
+     "label": "Non-Government Schools",
+     "anchor": "non-gov-school-information",
+     "title": "Non-Government Schools",
+     "lead": "Schools must re-register for each school year, and students must be re-enrolled for each school year.",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "The School Principal or delegate must ensure the following steps are taken:"
+      },
+      {
+       "type": "steps",
+       "items": [
+        {
+         "label": "Step 1",
+         "title": "Register the school",
+         "text": "Register the school using the [Non-Government School Registration Form.](https://fb.side.wa.edu.au/fb/portal/83?hidetop=true)"
+        },
+        {
+         "label": "Step 2",
+         "title": "Inform parents and guardians",
+         "text": "Ensure the parent/guardian of each student enrolled is made aware of the school's enrolment with SIDE and accepts [SIDE's Conditions of Enrolment.](https://fb.side.wa.edu.au/fb/portal/83?hidetop=true)"
+        },
+        {
+         "label": "Step 3",
+         "title": "Enrol each student",
+         "text": "Each student must be enrolled separately using the [Non-Government Student Registration Form](https://fb.side.wa.edu.au/fb/portal/85?hidetop=true)"
+        }
+       ]
+      },
+      {
+       "type": "callout",
+       "tone": "info",
+       "text": "To ensure we support your students effectively, SIDE requires a Student Health Care Summary for any student with a health condition, disability, or medical concern. [A separate form must be submitted for each enrolled SIDE student](https://forms.office.com/r/gB5uZkuRGp) at your school with a health condition, disability, or medical concern. It’s quick to complete and asks for basic details such as the student’s name, year level, school region, school name, and information about specific health conditions, disabilities, or medical needs.",
+       "title": "Student Health Summary"
+      }
+     ]
+    }
+   ],
+   "variant": "side",
+   "eyebrow": "Pathway 02 · Alongside your school"
+  },
+  {
+   "id": "enrol.blended",
+   "type": "tabs",
+   "anchor": "blended-anchor",
+   "tone": "ink",
+   "title": "Blended Enrolments",
+   "tabsLabel": "Blended enrolment categories",
+   "lead": "SIDE also offers blended home-based enrolment opportunities for students engaged in dance, art, or sports at an elite level, who are unable to attend a regular school due to training and performance scheduling.",
+   "tabs": [
+    {
+     "label": "Dance / Ballet",
+     "eyebrow": "Years 7-12",
+     "anchor": "dance-information",
+     "title": "Dance / Ballet (Years 7-12)",
+     "lead": "Students from Year 7 to Year 12 who are enrolling in the Dance/Ballet Schools category must be Western Australian residents who are enrolled in a full-time SIDE partnered ballet/dance school and unable to attend mainstream school.",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Only students in secondary school will be accepted."
+      },
+      {
+       "type": "heading",
+       "text": "Enrolment Conditions",
+       "level": 3
+      },
+      {
+       "type": "list",
+       "items": [
+        "Students must attend SIDE 1 day per week (8.30 am – 1.30 pm).",
+        "Students must attend weekly webex lessons on other days which are supervised by Dance/Ballet studio staff.",
+        "Students will complete the academic program set by SIDE for their year level.",
+        "Students will sit tests and exams on site at SIDE."
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Evidence Required",
+       "level": 3
+      },
+      {
+       "type": "list",
+       "items": [
+        "Proof of Western Australian address."
+       ]
+      },
+      {
+       "type": "text",
+       "text": "**and:**"
+      },
+      {
+       "type": "list",
+       "items": [
+        "An acceptance letter from a SIDE partner ballet/dance school."
+       ]
+      },
+      {
+       "type": "callout",
+       "tone": "info",
+       "text": "The [Child Safe Standards](https://www.ccyp.wa.gov.au/our-work/child-safe-organisations-wa/) apply to most organisations that work or volunteer with children and young people, including schools.\n\nParents and carers are reminded to be vigilant to ensure that all organisations that work with their child are complying with the Child Safe Standards. This includes ensuring that any adults that work with your child hold a current [Working with Children Check or equivalent](https://workingwithchildren.wa.gov.au/online-services/). You can do this by requesting written confirmation from the organisations or individuals involved. You can also check if someone's [Working with Children Check is current](https://www.workingwithchildren.wa.gov.au/card-validation)."
+      }
+     ]
+    },
+    {
+     "label": "Arts / Sports",
+     "eyebrow": "Years 9-12",
+     "anchor": "art-sport-information",
+     "title": "High Performance Arts / Sports (Years 9-12)",
+     "lead": "Students from Year 9 to Year 12 who are enrolling in the High-performance Arts/Sports category must be Western Australia residents entering Years 9-12 and have exceptional sporting or performing arts commitments which prevent them from attending mainstream school.",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Applications under the sports stream require endorsement from a recognised sporting organisation. Recognised organisations are:"
+      },
+      {
+       "type": "list",
+       "items": [
+        "National sporting organisations recognised by [the Australian Sports Commission](https://www.ausport.gov.au/australian_sports_directory).",
+        "Australian based elite sport clubs that contract students in a professional capacity."
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Evidence Required",
+       "level": 3
+      },
+      {
+       "type": "text",
+       "text": "A letter from the recognised sports/performing arts organisation that confirms:"
+      },
+      {
+       "type": "list",
+       "items": [
+        "The student's high performance status, and provides: achievement records such as rankings, awards, and certificates; **or** a contract of employment.",
+        "The student’s exceptional commitments and provides a detailed schedule, including days and times, which demonstrates: sports/performing arts commitments that prevent regular school attendance; and how the student will participate in their education (noting that SIDE as a WA government school must provide 24 hours of student instruction per week and students are expected to manage a full-time study load, which includes attending online classes when possible).",
+        "Contact details of a sporting/performing arts supervisor who is authorised to liaise with SIDE for regular check-ins regarding the student’s progress and their wellbeing."
+       ]
+      },
+      {
+       "type": "callout",
+       "tone": "info",
+       "text": "The [Child Safe Standards](https://www.ccyp.wa.gov.au/our-work/child-safe-organisations-wa/) apply to most organisations that work or volunteer with children and young people, including schools.\n\nParents and carers are reminded to be vigilant to ensure that all organisations that work with their child are complying with the Child Safe Standards. This includes ensuring that any adults that work with your child hold a current [Working with Children Check or equivalent](https://workingwithchildren.wa.gov.au/online-services/). You can do this by requesting written confirmation from the organisations or individuals involved. You can also check if someone's [Working with Children Check is current](https://www.workingwithchildren.wa.gov.au/card-validation)."
+      }
+     ]
+    }
+   ],
+   "variant": "side",
+   "eyebrow": "Pathway 03 · Elite training & performance"
+  }
+ ]
+}

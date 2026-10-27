@@ -1,0 +1,495 @@
+{
+ "id": "page.education",
+ "meta": {
+  "title": "Education",
+  "description": "Learning pathways, curriculum and key documents for SIDE primary and secondary students."
+ },
+ "sections": [
+  {
+   "id": "edu.hero",
+   "type": "page-hero",
+   "media": "m.edu.hero",
+   "title": "Education",
+   "lead": "Learn about the different kinds of education offered at SIDE.",
+   "chips": "nav"
+  },
+  {
+   "id": "edu.overview",
+   "type": "statement",
+   "anchor": "overview-anchor",
+   "tone": "paper",
+   "title": "A unique, holistic approach to learning.",
+   "text": "SIDE offers a number of different learning pathways to both primary and secondary students, offering access to a complete education from Kindergarten all the way through Year 12, whether you're learning at home, on the road, or in a classroom.",
+   "caption": "All you need to do is pick what works best for you.",
+   "size": "h2",
+   "class": "statement--framed"
+  },
+  {
+   "id": "edu.picker",
+   "type": "picker",
+   "anchor": "pathway-anchor",
+   "tone": "brand",
+   "title": "Choosing Your Pathway",
+   "lead": "Not sure where to start? No problem! Let's figure it out together.",
+   "placeholder": "Your recommended pathway will appear here.",
+   "who": {
+    "legend": "I am a...",
+    "options": [
+     {
+      "id": "student",
+      "label": "Student"
+     },
+     {
+      "id": "school",
+      "label": "School"
+     }
+    ]
+   },
+   "steps": {
+    "student": {
+     "legend": "...and I need to learn from home because...",
+     "options": [
+      {
+       "id": "far",
+       "label": "I live far away from school.",
+       "result": {
+        "eyebrow": "Recommended pathway",
+        "title": "Geographical isolation",
+        "text": "You may be eligible for a home-based enrolment if you live in a remote area of Western Australia.",
+        "label": "See the requirements",
+        "to": "page.enrolment#isolation-information"
+       }
+      },
+      {
+       "id": "travel",
+       "label": "I will be travelling.",
+       "result": {
+        "eyebrow": "Recommended pathway",
+        "title": "Travelling temporarily",
+        "text": "Keep learning while you travel in Australia or overseas, for the length of your trip.",
+        "label": "See the requirements",
+        "to": "page.enrolment#travelling-information"
+       }
+      },
+      {
+       "id": "personal",
+       "label": "I am having a difficult time with personal issues.",
+       "result": {
+        "eyebrow": "Recommended pathway",
+        "title": "Referral Program",
+        "text": "A short term education solution for students undergoing hardship related to physical or mental health challenges, or parenting responsibilities.",
+        "label": "Read about the Referral Program",
+        "to": "page.referral"
+       }
+      },
+      {
+       "id": "dancer",
+       "label": "I am training to be a dancer / athlete.",
+       "result": {
+        "eyebrow": "Recommended pathway",
+        "title": "Blended enrolment",
+        "text": "Combine on-site days with online lessons around your training and performance schedule.",
+        "label": "See the requirements",
+        "to": "page.enrolment#blended-anchor"
+       }
+      }
+     ]
+    },
+    "school": {
+     "legend": "...and would like to work with SIDE because...",
+     "options": [
+      {
+       "id": "specialist",
+       "label": "We require a specialist teacher.",
+       "result": {
+        "eyebrow": "Recommended pathway",
+        "title": "School-based enrolment",
+        "text": "Register students for individual SIDE subjects while they stay enrolled at your school.",
+        "label": "See school-based enrolments",
+        "to": "page.enrolment#school-based-anchor"
+       }
+      },
+      {
+       "id": "transfer",
+       "label": "We have transfer students studying a subject we don't offer.",
+       "result": {
+        "eyebrow": "Recommended pathway",
+        "title": "School-based enrolment",
+        "text": "Students who transfer mid-year can continue their previous subjects without disruption.",
+        "label": "See school-based enrolments",
+        "to": "page.enrolment#school-based-anchor"
+       }
+      },
+      {
+       "id": "timetable",
+       "label": "We have timetable scheduling issues.",
+       "result": {
+        "eyebrow": "Recommended pathway",
+        "title": "School-based enrolment",
+        "text": "Fill timetabling gaps with SIDE subjects delivered online.",
+        "label": "See school-based enrolments",
+        "to": "page.enrolment#school-based-anchor"
+       }
+      },
+      {
+       "id": "school-personal",
+       "label": "We have students who are dealing with personal issues.",
+       "result": {
+        "eyebrow": "Recommended pathway",
+        "title": "Referral Program",
+        "text": "Schools can refer students experiencing significant circumstances that limit their ability to attend.",
+        "label": "Read about the Referral Program",
+        "to": "page.referral#referral-schools"
+       }
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "edu.how",
+   "type": "howit",
+   "anchor": "how-it-works",
+   "tone": "ink",
+   "eyebrow": "Learning at SIDE",
+   "title": "How It Works",
+   "tools": [
+    {
+     "mock": "moodle",
+     "name": "Moodle",
+     "kicker": "The main learning space",
+     "body": "Our online learning hub, where students reach lessons, assignments and resources from anywhere in the world.",
+     "points": [
+      "Access lessons and resources from anywhere",
+      "Revisit recorded lessons",
+      "Submit work online",
+      "Check progress at any time"
+     ]
+    },
+    {
+     "mock": "webex",
+     "name": "Webex",
+     "kicker": "Live, interactive classes",
+     "body": "Our secure video conferencing tool for live classes, meetings and catch-ups with teachers.",
+     "points": [
+      "Join live classes and catch-ups",
+      "Ask questions and share your screen",
+      "Collaborate with classmates as at a traditional school"
+     ]
+    },
+    {
+     "mock": "person",
+     "name": "In Person",
+     "kicker": "Face to face",
+     "body": "Teachers love stepping out from behind the screen to visit their rural classes.",
+     "points": [
+      "Teachers visit rural classes in person",
+      "Familiar online smiles become tangible, strengthening connections"
+     ]
+    }
+   ],
+   "waysEyebrow": "Where students join from",
+   "waysTitle": "Two ways to join the class",
+   "ways": [
+    {
+     "eyebrow": "01",
+     "tag": "At home or on the road",
+     "title": "At Home and on the Road",
+     "media": "m.edu.moodle",
+     "body": "Outside of a traditional school setting, students use their webcam to attend livestreamed classes - talking with their teacher and classmates via microphone and text chat, collaborating on group projects through shared documents and participating in class activities just as they would in person."
+    },
+    {
+     "eyebrow": "02",
+     "tag": "On site",
+     "title": "In Class at School",
+     "media": "m.edu.how",
+     "body": "In classrooms, we implement a large display and video-conferencing setup, allowing students the ability to interact with their online teacher and classmates as if they were in the same room. This is supported by an on-site supervisor who is there to ensure the safety and wellbeing of students."
+    }
+   ]
+  },
+  {
+   "id": "edu.paths",
+   "type": "prose",
+   "anchor": "pathways-anchor",
+   "tone": "paper",
+   "title": "Primary & Secondary Pathways",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Home-based",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Students can access a full-curriculum right from their home, wherever that might be."
+      },
+      {
+       "type": "cards",
+       "items": [
+        {
+         "title": "Travelling temporarily",
+         "text": "The student needs to be travelling for a minimum enrolment period of one school semester, or 20 school weeks."
+        },
+        {
+         "title": "Geographically isolated",
+         "text": "The student needs to demonstrate that they are geographically isolated in WA as defined by at least one of the categories below:"
+        },
+        {
+         "title": "Referral",
+         "text": "Some students have special circumstances that afford them some extra allowances as to which programs they can access."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "School-based",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "Schools can supplement their education offerings to fill areas of need."
+      },
+      {
+       "type": "cards",
+       "items": [
+        {
+         "title": "Scheduling",
+         "text": "Sometimes students can't attend classes during standard hours due to personal circumstances. We provide the flexibility to learn outside regular school times to accommodate individual needs."
+        },
+        {
+         "title": "Transfers",
+         "text": "We support students who transfer mid-year by helping them continue their previous subjects without disruption. We also assist classes affected by teacher transitions, ensuring a smooth learning experience during these changes."
+        },
+        {
+         "title": "Specialised subjects",
+         "text": "When schools don't have teachers with expertise in specific subjects, we step in to provide that specialised instruction. This ensures students can access courses they're passionate about, even if they're not available at their school."
+        }
+       ]
+      },
+      {
+       "type": "actions",
+       "items": [
+        {
+         "label": "Learn more",
+         "to": "page.enrolment#school-based-anchor"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "lead": "SIDE’s subjects, courses, and programs are fully accredited by the School Curriculum and Standards Authority, offering students engaging and flexible learning in an online environment.",
+   "wide": true,
+   "class": "section--tight-bottom"
+  },
+  {
+   "id": "edu.blended",
+   "type": "prose",
+   "anchor": "blended-pathway",
+   "tone": "sky",
+   "eyebrow": "Secondary students only",
+   "title": "Blended Pathway",
+   "lead": "The Blended pathway is available to Secondary students (Years 7–12) only, for students engaged in high intensity athletic or artistic pursuits.",
+   "blocks": [
+    {
+     "type": "cards",
+     "items": [
+      {
+       "title": "Elite arts / sports",
+       "text": "For students who demonstrate exceptional sporting or performing arts commitments which prevent them from attending mainstream school."
+      },
+      {
+       "title": "Dance",
+       "text": "For students who demonstrate that they are enrolled in a full time registered ballet/dance school and unable to attend a mainstream school."
+      },
+      {
+       "title": "Recreational pursuits",
+       "text": "For students involved in a club, organisation or association where opportunities are provided for the development of skills and knowledge."
+      }
+     ]
+    },
+    {
+     "type": "actions",
+     "items": [
+      {
+       "label": "Learn more",
+       "to": "page.enrolment#blended-anchor"
+      }
+     ]
+    }
+   ],
+   "wide": true,
+   "class": "section--tight-top"
+  },
+  {
+   "id": "edu.curriculum",
+   "type": "curriculum",
+   "anchor": "curriculum-anchor",
+   "tone": "ink",
+   "title": "Curriculum",
+   "lead": "Broad, balanced, flexible. The curriculum at SIDE offers a range of options for the school's diverse population.",
+   "levels": [
+    {
+     "label": "Primary",
+     "eyebrow": "K-6",
+     "anchor": "curriculum-primary",
+     "areas": [
+      {
+       "title": "The Arts",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "English",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Health & PE",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "HASS",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Languages",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Mathematics",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Science",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Technologies",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      }
+     ]
+    },
+    {
+     "label": "Secondary",
+     "eyebrow": "7-12",
+     "anchor": "curriculum-secondary",
+     "areas": [
+      {
+       "title": "The Arts",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "English",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Health & PE",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "HASS",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Languages",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Mathematics",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Science",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "Technologies",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "SCSA Programs",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      },
+      {
+       "title": "CAVE",
+       "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus id et at repellendus ea voluptas.\n\nLorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque aliquam error ducimus nam laboriosam necessitatibus tempora, cupiditate libero earum veniam nulla eligendi nesciunt tenetur maxime quaerat rem! Doloremque, ut porro?"
+      }
+     ]
+    }
+   ],
+   "levelsLabel": "Curriculum by year group",
+   "areasLabel": "Learning areas"
+  },
+  {
+   "id": "edu.docs",
+   "type": "docs",
+   "anchor": "key-documents-anchor",
+   "tone": "paper",
+   "title": "Key Documents",
+   "lead": "Important documents related to Primary and Secondary education.",
+   "groups": [
+    {
+     "title": "Primary: Assessment Policies",
+     "items": [
+      {
+       "label": "K-6 Semester Report Information",
+       "href": "https://erol.side.wa.edu.au//content/file/66a8270d-f492-47ba-8545-cb25bab508fe/5/K-6Reporting.pdf"
+      }
+     ]
+    },
+    {
+     "title": "Secondary: Curriculum Information",
+     "items": [
+      {
+       "label": "Lower Secondary Curriculum Information Booklet",
+       "href": "https://erol.side.wa.edu.au/content/file/97ac23af-2493-4fd9-a197-acbb7bb16307/5/LS%20Curriculum%20Handbook.pdf"
+      },
+      {
+       "label": "Senior Secondary Curriculum Information Booklet",
+       "href": "https://erol.side.wa.edu.au/content/file/7439ca79-2160-414d-aa15-be9cc1167d60/6/SS_COURSE_COUNSELLING2026.pdf"
+      },
+      {
+       "label": "Senior Secondary Curriculum Overview",
+       "href": "https://erol.side.wa.edu.au/content/file/7439ca79-2160-414d-aa15-be9cc1167d60/6/SS_Courses_Programs_2026.pdf"
+      }
+     ]
+    },
+    {
+     "title": "Secondary: Assessment Policies",
+     "items": [
+      {
+       "label": "Lower Secondary Assessment Policy",
+       "href": "https://erol.side.wa.edu.au/content/file/66a8270d-f492-47ba-8545-cb25bab508fe/5/2025LS_Assessment_Policy.pdf"
+      },
+      {
+       "label": "Senior Secondary Assessment Policy",
+       "href": "https://erol.side.wa.edu.au/content/file/66a8270d-f492-47ba-8545-cb25bab508fe/5/2025SS_Assessment_Policy.pdf"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "edu.regional",
+   "type": "paintreveal",
+   "anchor": "regional-anchor",
+   "tone": "ink",
+   "eyebrow": "Regional and Remote",
+   "title": "Our Culturally Responsive Education Program",
+   "lead": "The Regional and Remote Teaching Team (RRTT) delivers blended, culturally responsive programs to Aboriginal students in the Kimberley and Goldfields. Eight subject specialists co-develop context-specific programs reflecting community aspirations and needs.",
+   "body": "In 2024, the Regional and Remote Teaching Team strengthened student wellbeing, engagement, and achievement through targeted, responsive teaching. They used curriculum-linked data to address learning gaps, worked closely with schools, families, and communities to ensure culturally relevant programs, and supported students with personalised plans, face-to-face visits, and flexible delivery.\n\nCollaboration was embedded through regular team planning, while partnerships with training providers and local industries helped create clear pathways to further education and employment."
+  },
+  {
+   "id": "edu.eald",
+   "type": "feature",
+   "anchor": "eald-anchor",
+   "tone": "paper",
+   "reverse": true,
+   "media": "m.edu.eald",
+   "eyebrow": "Years 3-10",
+   "title": "English as an Additional Language or Dialect (EALD)",
+   "titleClass": "t-h2",
+   "lead": "Building strong foundations for kids in Years 3-10 in English for confident communication and learning success.",
+   "body": "The EALD Program supports students who mainly speak a language other than English. It provides targeted instruction in reading, writing, speaking, and listening to help learners build the language skills needed for everyday communication and academic study across all subjects.\n\nClasses are structured to create a supportive learning environment where students can progress at their own pace. Through practical language use, cultural understanding, and ongoing assessment, the program prepares students to transition confidently into mainstream classes and participate fully in school life."
+  }
+ ]
+}

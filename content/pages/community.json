@@ -1,0 +1,380 @@
+{
+ "id": "page.community",
+ "meta": {
+  "title": "Community",
+  "description": "News, events, the calendar, the inSIDE newsletter, alumni stories and School Council."
+ },
+ "sections": [
+  {
+   "id": "comm.hero",
+   "type": "page-hero",
+   "media": "m.comm.hero",
+   "title": "Community",
+   "lead": "All about our people.",
+   "chips": "nav"
+  },
+  {
+   "id": "comm.news",
+   "type": "stories",
+   "anchor": "news-anchor",
+   "tone": "paper",
+   "eyebrow": "News",
+   "title": "Student stories, state-wide events, and school updates.",
+   "lead": "Learn all the latest about what is happening at SIDE.",
+   "ui": {
+    "label": "Student stories",
+    "prev": "Previous stories",
+    "next": "Next stories",
+    "read": "Read story",
+    "position": "Story {n} of {total}"
+   },
+   "items": [
+    {
+     "id": "s1",
+     "media": "m.home.hero",
+     "eyebrow": "Hometown HERO",
+     "title": "Alex Saffy takes the bronze in the 2024 Paralympic Games",
+     "byline": "by Author · Date",
+     "excerpt": "SIDE graduate Alex Saffy, the ‘Bunbury Bullet’, secured bronze in the Men’s 100m butterfly S10 in Paris.",
+     "article": [
+      "Dubbed by fans and friends as the ‘Bunbury Bullet’, SIDE graduate Alex Saffy secured the bronze medal in the Men’s 100m butterfly S10 at the 2024 Paralympic Games in Paris, delivering a performance that also established a new Oceania record.",
+      "Competing against an international field, his race reflected years of structured training, technical refinement, and competitive consistency at the highest level of para-swimming.",
+      "As part of SIDE’s Elite Performance Program, Alex was able to prioritise his demanding training schedule while continuing his academic studies in parallel. The program’s flexible delivery allowed him to balance national and international competition commitments with coursework, ultimately enabling him to complete and achieve his WACE certification alongside his sporting career."
+     ]
+    },
+    {
+     "id": "s2",
+     "media": "m.home.dance",
+     "eyebrow": "Centre STAGE",
+     "title": "Dancers following their dreams",
+     "byline": "by Author · Date",
+     "excerpt": "The Community Arts Program supports aspiring dancers to train and perform while completing secondary school.",
+     "article": [
+      "The SCSA-endorsed Community Arts Program at SIDE supports aspiring dancers in developing their artistic practice while continuing to engage in a structured and recognised secondary education pathway. Students are able to commit to regular training, rehearsals, and performance opportunities without compromising their academic responsibilities.",
+      "Through a balance of creative exploration and disciplined technique, the program prepares students for the practical demands of the performing arts industry. Participants build foundational skills in collaboration, self-management, and performance readiness, equipping them to progress toward further training or professional pathways in dance and related creative fields."
+     ]
+    },
+    {
+     "id": "s3",
+     "media": "m.comm.alumni1",
+     "eyebrow": "Alumni",
+     "title": "Story headline",
+     "byline": "by Author · Date",
+     "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptati…",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "id": "s4",
+     "media": "m.comm.news",
+     "eyebrow": "News",
+     "title": "Story headline",
+     "byline": "by Author · Date",
+     "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptati…",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "id": "s5",
+     "media": "m.comm.alumni2",
+     "eyebrow": "Alumni",
+     "title": "Story headline",
+     "byline": "by Author · Date",
+     "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptati…",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "id": "s6",
+     "media": "m.comm.events",
+     "eyebrow": "Events",
+     "title": "Story headline",
+     "byline": "by Author · Date",
+     "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptati…",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "label": "View all articles",
+     "to": "page.community#news-anchor"
+    }
+   ]
+  },
+  {
+   "id": "comm.calendar",
+   "type": "calendar",
+   "anchor": "events-anchor",
+   "tone": "ink",
+   "eyebrow": "Events & Calendar",
+   "title": "Events & Calendar",
+   "lead": "Public holidays, school holidays and community awareness dates for Western Australia.",
+   "src": "content/calendar.ics",
+   "ui": {
+    "listLabel": "Events, grouped by month",
+    "loading": "Loading the calendar…",
+    "error": "The calendar could not be loaded.",
+    "empty": "There are no upcoming events.",
+    "viewLabel": "Calendar view",
+    "month": "Month",
+    "year": "Year",
+    "prevMonth": "Previous month",
+    "nextMonth": "Next month",
+    "prevYear": "Previous year",
+    "nextYear": "Next year",
+    "noEvents": "No events",
+    "oneEvent": "1 event",
+    "nEvents": "{n} events",
+    "more": "+{n} more",
+    "to": "to",
+    "category": "Category",
+    "source": "More information",
+    "showingMonth": "Showing {label}",
+    "showingYear": "Showing the year {label}",
+    "legendLabel": "Colour key",
+    "download": "Download calendar (.ics)",
+    "groups": {
+     "holiday": "Public holiday",
+     "school": "School holidays",
+     "first": "First Nations",
+     "aware": "Awareness & inclusion",
+     "note": "Note"
+    }
+   }
+  },
+  {
+   "id": "comm.newsletter",
+   "type": "newsletter",
+   "anchor": "newsletter-anchor",
+   "tone": "brand",
+   "title": "inSIDE Newsletter",
+   "labels": {
+    "latest": "Latest issue",
+    "previous": "Previous issues",
+    "inThisIssue": "In this issue",
+    "page": "Page {n}",
+    "next": "Next page",
+    "prev": "Previous page",
+    "status": "Spread {n} of {total}",
+    "bookLabel": "Preview of the latest issue"
+   },
+   "items": [
+    {
+     "eyebrow": "Semester 2 · 2025",
+     "title": "Community newsletter",
+     "media": "m.comm.newsletter.latest",
+     "body": "Student stories, awards and community news from across SIDE.",
+     "pages": [
+      {
+       "page": 5,
+       "kicker": "Cover story",
+       "title": "Sea S. is in a class of her own",
+       "text": "Meet Leinster Community School’s first graduate in 48 years."
+      },
+      {
+       "page": 32,
+       "kicker": "Awards",
+       "title": "SIDE Students win big at Chinese Language Awards"
+      },
+      {
+       "page": 44,
+       "kicker": "Student profile",
+       "title": "Meet Finn, the Conservation Student of 2025"
+      },
+      {
+       "page": 58,
+       "kicker": "Visual Art",
+       "title": "Neve scores almost perfect Visual Art mark and wins the Principal Art Award"
+      }
+     ],
+     "actions": [
+      {
+       "label": "Read in Browser",
+       "to": "#newsletter-anchor",
+       "variant": "solid"
+      },
+      {
+       "label": "Download",
+       "to": "#newsletter-anchor",
+       "variant": "outline",
+       "download": false
+      }
+     ]
+    },
+    {
+     "eyebrow": "2025",
+     "title": "Semester 1",
+     "media": "m.comm.news",
+     "actions": [
+      {
+       "label": "Read in Browser",
+       "to": "#newsletter-anchor",
+       "variant": "outline"
+      },
+      {
+       "label": "Download",
+       "to": "#newsletter-anchor",
+       "variant": "outline",
+       "download": false
+      }
+     ]
+    },
+    {
+     "eyebrow": "2024",
+     "title": "Semester 2",
+     "media": "m.comm.news",
+     "actions": [
+      {
+       "label": "Read in Browser",
+       "to": "#newsletter-anchor",
+       "variant": "outline"
+      },
+      {
+       "label": "Download",
+       "to": "#newsletter-anchor",
+       "variant": "outline",
+       "download": false
+      }
+     ]
+    },
+    {
+     "eyebrow": "2024",
+     "title": "Semester 1 - Term 2",
+     "media": "m.comm.news",
+     "actions": [
+      {
+       "label": "Read in Browser",
+       "to": "#newsletter-anchor",
+       "variant": "outline"
+      },
+      {
+       "label": "Download",
+       "to": "#newsletter-anchor",
+       "variant": "outline",
+       "download": false
+      }
+     ]
+    },
+    {
+     "eyebrow": "2024",
+     "title": "Semester 1 - Term 1",
+     "media": "m.comm.news",
+     "actions": [
+      {
+       "label": "Read in Browser",
+       "to": "#newsletter-anchor",
+       "variant": "outline"
+      },
+      {
+       "label": "Download",
+       "to": "#newsletter-anchor",
+       "variant": "outline",
+       "download": false
+      }
+     ]
+    }
+   ],
+   "eyebrow": "Community news"
+  },
+  {
+   "id": "comm.alumni",
+   "type": "hscroll",
+   "anchor": "alumni-anchor",
+   "tone": "ink",
+   "cardStyle": "person",
+   "title": "Alumni Stories",
+   "lead": "Learn about students who went above and beyond.",
+   "listLabel": "Alumni",
+   "items": [
+    {
+     "title": "Alex Morgan",
+     "media": "m.comm.alumni1",
+     "body": "Insert information, links, and forms.",
+     "eyebrow": "Alumni",
+     "byline": "by Author · Date",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "title": "Jordan Lee",
+     "media": "m.comm.alumni2",
+     "body": "Insert information, links, and forms.",
+     "eyebrow": "Alumni",
+     "byline": "by Author · Date",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "title": "Taylor Quinn",
+     "media": "m.comm.alumni3",
+     "body": "Insert information, links, and forms.",
+     "eyebrow": "Alumni",
+     "byline": "by Author · Date",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "title": "Riley Parker",
+     "media": "m.comm.alumni4",
+     "body": "Insert information, links, and forms.",
+     "eyebrow": "Alumni",
+     "byline": "by Author · Date",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "title": "Casey Jordan",
+     "media": "m.comm.alumni5",
+     "body": "Insert information, links, and forms.",
+     "eyebrow": "Alumni",
+     "byline": "by Author · Date",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    }
+   ]
+  },
+  {
+   "id": "comm.council",
+   "type": "prose",
+   "anchor": "school-council-anchor",
+   "tone": "paper",
+   "title": "School Council",
+   "lead": "Parents and community members working towards better outcomes.",
+   "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deleniti modi aperiam facere, provident iusto! Nobis voluptatem, consequatur consequuntur, assumenda eum vero saepe laboriosam iure necessitatibus cumque reiciendis deserunt architecto.\n\nLorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore culpa, doloremque accusamus dolor modi nostrum ut corrupti praesentium tempora enim, dolorum delectus ad repellat laudantium minus nulla optio quas illum.",
+   "actions": [
+    {
+     "label": "Apply now",
+     "to": "page.support#contact-anchor"
+    }
+   ]
+  }
+ ]
+}

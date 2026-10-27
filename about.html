@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en-AU" data-motion="full">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · SIDE</title>
+  <meta name="description" content="Everything about SIDE: vision and values, history, campus, documents and careers.">
+  <meta name="theme-color" content="#06192b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&amp;family=DM+Mono:wght@400;500&amp;family=Figtree:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="modulepreload" href="js/main.js">
+  <script>
+    // Apply the saved motion preference before first paint (prevents a flash of animation).
+    try { var m = localStorage.getItem('side.motion'); if (m === 'reduced' || (!m && matchMedia('(prefers-reduced-motion: reduce)').matches)) document.documentElement.dataset.motion = 'reduced'; } catch (e) {}
+  </script>
+  <script type="module" src="js/main.js"></script>
+  <noscript><style>.curtain{display:none}body.is-loading main{visibility:visible}</style></noscript>
+</head>
+<body data-page="page.about" class="is-loading">
+  <div class="curtain" aria-hidden="true"><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i></div>
+  <header id="site-header" class="site-header"></header>
+  <main id="main"><noscript><p style="padding:8rem 2rem">This site needs JavaScript to display its content. Please enable it, or contact the school on (08) 9311 4000.</p></noscript></main>
+  <footer id="site-footer" class="site-footer tone-ink"></footer>
+</body>
+</html>

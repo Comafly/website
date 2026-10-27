@@ -1,0 +1,106 @@
+@use "sass:map";
+@use "tokens" as *;
+@use "functions" as *;
+
+// ── Responsive ──────────────────────────────────────────────────────────────
+@mixin up($bp) {
+  @media (min-width: #{map.get($breakpoints, $bp)}) {
+    @content;
+  }
+}
+
+@mixin down($bp) {
+  @media (max-width: #{map.get($breakpoints, $bp) - 0.02em}) {
+    @content;
+  }
+}
+
+@mixin hover-capable {
+  @media (hover: hover) and (pointer: fine) {
+    @content;
+  }
+}
+
+// ── Motion ──────────────────────────────────────────────────────────────────
+// Use for any transition so durations and easing stay on-token.
+@mixin move($props, $duration: "base", $easing: "out", $delay: 0s) {
+  transition-property: $props;
+  transition-duration: dur($duration);
+  transition-timing-function: ease($easing);
+  transition-delay: $delay;
+}
+
+// Wrap animated initial states so they only apply when the visitor allows motion.
+@mixin when-motion {
+  :root[data-motion="full"] {
+    @content;
+  }
+}
+
+@mixin when-reduced {
+  :root[data-motion="reduced"] {
+    @content;
+  }
+}
+
+// ── Type ────────────────────────────────────────────────────────────────────
+@mixin type($name) {
+  $style: map.get($type-styles, $name);
+  font-family: font-family-of(map.get($style, "family"));
+  font-size: type-size($name);
+  font-weight: map.get($style, "weight");
+  line-height: map.get($style, "lh");
+  letter-spacing: map.get($style, "ls");
+  font-stretch: map.get($style, "stretch");
+}
+
+// ── Layout ──────────────────────────────────────────────────────────────────
+@mixin container($max: $container-max) {
+  width: 100%;
+  max-width: $max;
+  margin-inline: auto;
+  padding-inline: fluid($gutter-min, $gutter-max);
+}
+
+@mixin visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+@mixin focus-ring($offset: 3px) {
+  outline: 3px solid var(--focus, #{palette("sun")});
+  outline-offset: $offset;
+  box-shadow: 0 0 0 6px color-mix(in srgb, var(--bg, #{palette("ink")}) 80%, transparent);
+}
+
+@mixin cover {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@mixin img-cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// Apply a tone's custom properties (--bg, --fg, --accent, --alt) to the current element.
+@mixin tone($name) {
+  $t: map.get($tones, $name);
+  --bg: #{palette(map.get($t, "bg"))};
+  --fg: #{palette(map.get($t, "fg"))};
+  --accent: #{palette(map.get($t, "accent"))};
+  --alt: #{palette(map.get($t, "alt"))};
+  background-color: var(--bg);
+  color: var(--fg);
+}

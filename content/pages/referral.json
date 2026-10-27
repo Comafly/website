@@ -1,0 +1,715 @@
+{
+ "id": "page.referral",
+ "meta": {
+  "title": "Referral Program",
+  "description": "Referral Program dates, eligibility information and application requirements."
+ },
+ "sections": [
+  {
+   "id": "ref.hero",
+   "type": "page-hero",
+   "media": "m.ref.hero",
+   "eyebrow": "Enrolment",
+   "title": "Referral Program",
+   "lead": "Referral Program dates, eligibility information and application requirements.",
+   "chips": [
+    {
+     "label": "Key dates",
+     "to": "#referral-dates"
+    },
+    {
+     "label": "General",
+     "to": "#referral-general"
+    },
+    {
+     "label": "Parents and caregivers",
+     "to": "#referral-parents"
+    },
+    {
+     "label": "Schools",
+     "to": "#referral-schools"
+    },
+    {
+     "label": "Treating professionals",
+     "to": "#referral-professionals"
+    },
+    {
+     "label": "Special circumstances",
+     "to": "#referral-special"
+    },
+    {
+     "label": "Apply",
+     "to": "#referral-apply"
+    }
+   ]
+  },
+  {
+   "id": "ref.intro",
+   "type": "statement",
+   "tone": "paper",
+   "title": "Short-term online education",
+   "text": "The SIDE Referral Program provides short-term online education for students who are unable to attend face-to-face schooling due to severe or chronic health conditions, severe and ongoing mental health challenges, or pregnancy and parenting responsibilities.",
+   "caption": "The School of Isolated and Distance Education (SIDE) is a mainstream public school delivering education through an online model. Students are provided the opportunity to continue their education in a flexible learning environment. The SIDE staff who support the Referrals Program include Student Coordinators, School Psychologists, the Learning Support Coordinator and classroom teachers. The program provides short-term access, typically one semester, to education while students are undergoing treatment and/or engaging with external services to build their capacity to return to face-to-face schooling, or another suitable learning setting. Students accepted in the program meet strict eligibility criteria which is reviewed at the end of each academic year.",
+   "size": "h1"
+  },
+  {
+   "id": "ref.dates",
+   "type": "prose",
+   "anchor": "referral-dates",
+   "tone": "sun",
+   "title": "Key dates",
+   "blocks": [
+    {
+     "type": "group",
+     "title": "Closing dates",
+     "level": 3,
+     "blocks": [
+      {
+       "type": "dates",
+       "items": [
+        {
+         "kind": "closing",
+         "label": "Primary school referrals",
+         "detail": "Semester 2 · Week 2, Term 4",
+         "date": "2026-10-23",
+         "display": "Friday 23 October 2026"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "group",
+     "title": "Opening dates",
+     "level": 3,
+     "blocks": [
+      {
+       "type": "dates",
+       "items": [
+        {
+         "kind": "opening",
+         "label": "Primary school referrals",
+         "detail": "2027 school year",
+         "date": "2027-01-25",
+         "display": "Monday 25 January 2027"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "type": "callout",
+     "tone": "info",
+     "text": "Please note Referral Applications will need to be submitted by school-based staff who are responsible for student wellbeing and support. In most cases, this will be the Deputy/Associate Principal or Student Services Program Coordinator."
+    }
+   ]
+  },
+  {
+   "id": "ref.audiences",
+   "type": "tabs",
+   "tone": "paper",
+   "eyebrow": "Information for Parents, Schools, and Treating Professionals",
+   "title": "Find what applies to you",
+   "tabsLabel": "Referral Program information by audience",
+   "tabs": [
+    {
+     "label": "General",
+     "eyebrow": "Everyone",
+     "anchor": "referral-general",
+     "title": "General",
+     "lead": "Information for Parents, Schools, and Treating Professionals",
+     "blocks": [
+      {
+       "type": "accordion",
+       "items": [
+        {
+         "title": "What circumstances are considered appropriate for enrolment in the Referral Program?",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "The Referral Program supports students experiencing significant circumstances that prevent or substantially limit their ability to attend their current face-to-face school. These circumstances may include:"
+          },
+          {
+           "type": "cards",
+           "items": [
+            {
+             "title": "Severe or chronic health conditions",
+             "text": "Students experiencing a severe medical or chronic health condition that substantially impacts their ability to attend their current school. The condition requires ongoing medical management or treatment and support from specialist health professions (e.g.: Surgeon, Oncologist)."
+            },
+            {
+             "title": "Severe and ongoing mental health challenges",
+             "text": "Students experiencing severe and ongoing mental health challenges that substantially impact their capacity to attend their current school. Students are required to have established, and ongoing support or treatment from a specialist mental health professional (e.g.: Psychologist, Psychiatrist)."
+            },
+            {
+             "title": "Pregnancy or parenting responsibilities",
+             "text": "Students whose pregnancy or parenting responsibilities affect their ability to attend their current school. The Referral Program may provide a flexible educational pathway while supporting the student to remain engaged in their education."
+            }
+           ]
+          },
+          {
+           "type": "text",
+           "text": "Meeting one of these circumstances does not automatically result in enrolment. Each application is considered individually, taking into account the student’s circumstances, educational needs, available supports and whether the SIDE Referral Program is an appropriate educational option."
+          }
+         ]
+        },
+        {
+         "title": "How do I know if a student might be eligible?",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "A student may be suitable for the Referral Program where their circumstances prevent them from attending their current school or an alternative education program. When determining eligibility, the following will be considered:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "The range of strategies which have been implemented by the school to address the barriers;",
+            "The student is engaged in ongoing and regular treatment or intervention appropriate to their circumstances, e.g. counselling or specialist treatment;",
+            "The student’s treating professional or specialist supports consideration of a SIDE enrolment;",
+            "The student and family have been consulted and agree to engage with SIDE;",
+            "The student has an approved adult available to act as their Home Supervisor;",
+            "The student has access to the technology required to participate in online learning."
+           ]
+          }
+         ]
+        },
+        {
+         "title": "Enrolment",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "The Referral Program operates through a partnership between SIDE, the student’s current school, the student and their family.\n\nEligible students in Kindergarten to Year 12 remain enrolled at their current school while accessing SIDE’s Referral Program.\n\nFees and charges may apply depending on the student’s enrolment and school circumstances. Please refer to [Contributions and Charges](https://www.side.wa.edu.au/enrolments/costs/contributions-and-charges.html) on the SIDE website for further information."
+          }
+         ]
+        },
+        {
+         "title": "Applications for the Referral Program",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Applications to the Referral Program should be submitted by school-based staff responsible for student wellbeing and support. In most cases, this will be a Deputy or Associate Principal, or Student Services Program Coordinator, who can coordinate the application and required supporting information."
+          },
+          {
+           "type": "callout",
+           "tone": "info",
+           "text": "Parents and caregivers who believe their child may benefit from the Referral Program should speak with their child’s current school in the first instance. If parents and caregivers are unable to discuss an application with the student’s current school, please contact SIDE on [9311 1400](tel:+61893111400) and ask to speak with the Referrals Team.",
+           "title": "Note"
+          }
+         ]
+        },
+        {
+         "title": "Transition",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "The Referral Program is a short-term (typically one semester) educational placement, with all enrolments concluding at the end of each academic year or earlier if appropriate.\n\nThroughout the enrolment with SIDE the student’s current school coordinates the student’s transition, working closely with the student, family, treating professional or specialist, and SIDE. Transition planning should be informed by the student’s progress, current circumstances and the advice of their treating professional."
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Parents and caregivers",
+     "eyebrow": "Additional information",
+     "anchor": "referral-parents",
+     "title": "Additional Information for Parents and Caregivers",
+     "lead": "Parents and caregivers have an active role in supporting their child’s participation in the Referral Program and planning for their future educational pathways.",
+     "blocks": [
+      {
+       "type": "accordion",
+       "items": [
+        {
+         "title": "The SIDE Referral Team",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "The SIDE Referral Team works collaboratively with students, teachers, families, current school, and other professionals to assist students throughout their enrolment with SIDE.\n\nThe SIDE staff who support the Referrals Program include School Leaders, Student Coordinators, School Psychologists, the Learning Support Coordinator and classroom teachers. Support is based on the individual needs and circumstances of the student and may involve different members of the team at different stages of their enrolment.\n\nSchool Psychology Services at SIDE support student engagement, wellbeing, learning and transitions through consultation and collaboration with SIDE staff, families, current schools, treating professionals and external agencies. Support is tailored to individual needs and guided by ongoing partnership. School psychologists are not primary providers of clinical mental health services for children and young people."
+          }
+         ]
+        },
+        {
+         "title": "Home Supervisor",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Every student learning from home through the Referral Program must have an approved adult present as their Home Supervisor throughout the school day. This may be a parent, carer or another responsible adult who works closely with the student each school day.\n\nThe Home Supervisor supports the student’s education and provides duty of care while the student is learning from home. This includes active supervision, supporting the student to attend online classes and complete learning activities, monitoring and reporting attendance, and maintaining communication with SIDE staff.\n\nThe Home Supervisor will be required to supervise tests, assessments or other activities as directed by SIDE teachers."
+          },
+          {
+           "type": "callout",
+           "tone": "info",
+           "text": "Primary (Years K to 6) students attend online classes for a maximum of 80 minutes per day, and the remainder of the curriculum needs to be delivered by a Home Tutor, who is typically the parent or carer. The Home Tutor must stay in contact with their child's teacher on a regular basis and is required to be present during online lessons should support be needed. Complete guides for how to do this are provided by SIDE, and the classroom teacher for support.",
+           "title": "Primary students"
+          }
+         ]
+        },
+        {
+         "title": "Maintaining Enrolment with the Current School",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Students accessing the Referral Program remain enrolled at their current school, with SIDE providing education through a partnership arrangement with that school. (Students become an ‘external’ roll student of SIDE)\n\nThroughout the enrolment with SIDE, the student’s current school maintains case management and coordinates the student’s transition, working closely with the student, family, treating professional or specialist, and SIDE.\n\nIf a student changes schools while enrolled in the Referral Program, their SIDE placement does not automatically transfer to the new school. A new partnership arrangement must be established between SIDE and the new current school for the student to continue accessing the Referral Program.\n\nParents and caregivers should contact their current school and the Referrals Team as early as possible if they are considering changing their child’s school."
+          }
+         ]
+        },
+        {
+         "title": "Online Learning and Technology",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Learning with SIDE requires students to actively participate in their learning throughout the school week. Students are expected to attend scheduled online classes and engage with their teachers, learning materials, activities and assessments through SIDE’s online learning platforms."
+          },
+          {
+           "type": "heading",
+           "text": "Students should be prepared to:",
+           "level": 4
+          },
+          {
+           "type": "list",
+           "items": [
+            "Attend and actively participate in scheduled online classes;",
+            "Communicate regularly with their teachers;",
+            "Use their camera and microphone when required to participate in classes and learning activities;",
+            "Complete online and independent learning activities between classes;",
+            "Submit coursework and assessments by the required dates;",
+            "Regularly access SIDE’s online platforms for learning materials, feedback, messages and other important information."
+           ]
+          },
+          {
+           "type": "text",
+           "text": "While students undertake their learning from home, they need to understand that online learning is not self-paced or independent homeschooling. Students have scheduled classes, learning activities and assessment requirements and are expected to engage regularly with their teachers and courses.\n\nThe Home Supervisor supports the student to establish a regular learning routine, attend scheduled classes and remain engaged with their learning throughout the school day."
+          },
+          {
+           "type": "heading",
+           "text": "Parents and caregivers are responsible for ensuring the student has access to:",
+           "level": 4
+          },
+          {
+           "type": "list",
+           "items": [
+            "A computer that is compatible with SIDE’s online learning platforms;",
+            "A fast and reliable internet connection;",
+            "The required software and equipment for online classes and learning activities."
+           ]
+          },
+          {
+           "type": "text",
+           "text": "Families should review the [Read Fast Track to SIDE](https://erol.side.wa.edu.au/content/file/27dce424-373a-40a0-af21-f716af31c54f/2/FastTrackSIDE.pdf) document before enrolment to ensure they have the appropriate equipment available."
+          },
+          {
+           "type": "callout",
+           "tone": "warning",
+           "text": "A smartphone, tablet or Chromebook is insufficient to meet the needs of the study."
+          }
+         ]
+        },
+        {
+         "title": "Transition and Returning to School",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "The Referral Program is a short-term educational placement (typically one semester).\n\nThroughout the SIDE placement, parents and caregivers are expected to actively participate in transition planning, working with their child, the current school case manager, treating professional and SIDE to address barriers and prepare for a return to face-to-face schooling. This may include supporting treatment and agreed strategies, gradual transition activities, attending planning meetings and helping their child prepare for changes to their learning environment.\n\nWhere returning to the student’s current school is not appropriate, parents and caregivers should work with the school case manager and treating professional to explore an appropriate alternative education pathway."
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Schools",
+     "eyebrow": "Additional information",
+     "anchor": "referral-schools",
+     "title": "Additional Information for Schools",
+     "lead": "The Referral Program operates as a partnership between SIDE and the student’s current school. While SIDE provides the student’s educational program during their placement, the referring school retains case management responsibilities.",
+     "blocks": [
+      {
+       "type": "accordion",
+       "items": [
+        {
+         "title": "The School Case Manager",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Each student accessing the Referral Program must have a nominated Case Manager from their current school, who remains actively involved throughout the student’s SIDE placement.\n\nThe Case Manager is the primary point of contact between the current school, family and SIDE and is expected to maintain regular and ongoing engagement with the student and family throughout the SIDE placement. This includes coordinating and participating in meetings and reviews, working collaboratively with SIDE and treating professionals, and maintaining an active focus on the student’s progress and transition planning from the commencement of their enrolment.\n\nWhere returning to the current school is not appropriate, the Case Manager, in collaboration with the student and their family, coordinates an appropriate alternative education pathway."
+          }
+         ]
+        },
+        {
+         "title": "Complex and Special Circumstances Applications",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Where a student presents with complex or special circumstances that may require consideration outside the usual Referral Program process or eligibility requirements, the matter should initially be referred to the Regional Education Office that your school is attached to."
+          }
+         ]
+        },
+        {
+         "title": "Mental Health Applications",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Prior to an initial consultation with SIDE, the School Psychologist or Lead School Psychologist must obtain parent or caregiver consent and Release of Information (ROI) to share information with SIDE Staff, including School Psychologists. The Regional Education Office can then coordinate an initial discussion with SIDE to consider the student’s circumstances, current supports and available education options, to determine whether progressing an application to SIDE may be appropriate."
+          }
+         ]
+        },
+        {
+         "title": "Student Wellbeing and Connection",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Students accessing the Referral Program remain members of their current school community. Maintaining meaningful connections with their school, staff and peers is important for supporting wellbeing, reducing social isolation and strengthening a sense of belonging.\n\nSchools should maintain regular contact and, where appropriate, provide opportunities for students to participate in social, wellbeing and other school activities. These connections support ongoing engagement with their school community and can assist with future transition to face-to-face schooling."
+          }
+         ]
+        },
+        {
+         "title": "Home Supervision and Treating Professional Requirements",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Before applying, schools should discuss the Referral Program with the student and their parent or caregiver to confirm that the necessary requirements can be met. This includes confirming:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "An appropriate Home Supervisor is available throughout the whole school day to provide duty of care, actively supervise the student and support their participation in learning.",
+            "The student is engaged in regular and ongoing treatment or intervention with their treating professional who understands the student’s circumstances and the barriers affecting their participation in face-to-face schooling.",
+            "The treating professional supports consideration of a SIDE enrolment and is willing to provide information and contribute to ongoing support and transition planning.",
+            "For Primary School students, the availability and suitability of the Home Tutor."
+           ]
+          }
+         ]
+        },
+        {
+         "title": "Treating Professional Information Form",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "For applications relating to medical or mental health circumstances, the referring school is responsible for working with the student and family to ensure a Treating Professional Information Form is completed by the appropriate treating professional.\n\nThe form provides SIDE with information about the student’s condition, its functional impact on the student, current treatment and support needs, and how these affect the student’s ability to participate in face-to-face schooling. This information forms an important part of SIDE’s assessment of the application.\n\nSchools should ensure the Treating Professional Information Form has been completed and is returned to the current school as it will be required for the application process."
+          },
+          {
+           "type": "downloads",
+           "items": [
+            {
+             "label": "Treating Professional Information Form",
+             "href": "https://erol.side.wa.edu.au/content/file/e2d3d23a-4b5d-4bfb-acfd-db0ccc9cdf8e/1/261013_TREATING_CLINICIAN_FORM.pdf"
+            }
+           ]
+          }
+         ]
+        },
+        {
+         "title": "Submitting the Application: Gather Information",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Applications to the Referral Program should be submitted by school-based staff responsible for student wellbeing and support. In most cases, this will be a Deputy or Associate Principal, or Student Services Program Coordinator. Before commencing an application to the Referral Program, schools should gather the required information and supporting documentation."
+          },
+          {
+           "type": "group",
+           "title": "Student and Enrolment Information",
+           "level": 4,
+           "blocks": [
+            {
+             "type": "list",
+             "items": [
+              "Full name, preferred name and pronouns, date of birth;",
+              "WA Student Number;",
+              "Aboriginal and/or Torres Strait Islander identification;",
+              "English as an Additional Language or Dialect (EAL/D)."
+             ]
+            }
+           ]
+          },
+          {
+           "type": "group",
+           "title": "School Psychologist Services",
+           "level": 4,
+           "blocks": [
+            {
+             "type": "text",
+             "text": "Where a student’s application category is Severe Mental Health, your School Psychologist will need to gain informed consent from the student's parents/carers to enable consultation with SIDE Staff and School Psychologists. The application cannot progress until this has been completed."
+            }
+           ]
+          },
+          {
+           "type": "group",
+           "title": "School and Case Manager Information",
+           "level": 4,
+           "blocks": [
+            {
+             "type": "text",
+             "text": "A school case manager must be identified before the application is submitted."
+            },
+            {
+             "type": "list",
+             "items": [
+              "Name, position and contact details of the person submitting the application; and",
+              "Name, position and contact details of the nominated school case manager"
+             ]
+            }
+           ]
+          },
+          {
+           "type": "group",
+           "title": "Student Circumstances and Educational History",
+           "level": 4,
+           "blocks": [
+            {
+             "type": "text",
+             "text": "Be prepared to provide a clear picture of the student’s circumstances and educational history, including:"
+            },
+            {
+             "type": "list",
+             "items": [
+              "Current barriers preventing attendance and the impact these are having on the student, interventions and supports already attempted, including their outcomes, and other services or supports involved with the student;",
+              "Diagnosed conditions;",
+              "Academic achievement, educational history, previous schooling arrangements, periods away from school and subjects or courses attempted;",
+              "How the student best connects and engages with staff and peers;",
+              "Known triggers or early signs of disengagement or distress, and strategies that have been effective;",
+              "Known risks or safety concerns and strategies that have supported the student’s safety;"
+             ]
+            }
+           ]
+          },
+          {
+           "type": "group",
+           "title": "Senior Secondary Course Selection",
+           "level": 4,
+           "blocks": [
+            {
+             "type": "text",
+             "text": "Before commencing an application, schools should review the [2027 Senior Pathways Information booklet](page.education#key-documents-anchor) with the student and their family. Students will need five SIDE courses selected from ATAR, General, Foundation and/or Preliminary courses, meeting the WACE English requirement and List A and List B breadth of study requirements. Course selections should be appropriate for the student’s previous studies, current educational pathway and intended WACE pathway."
+            }
+           ]
+          },
+          {
+           "type": "group",
+           "title": "Family, Care and Home Arrangements",
+           "level": 4,
+           "blocks": [
+            {
+             "type": "text",
+             "text": "Schools should have a clear understanding of relevant family and home arrangements, including:"
+            },
+            {
+             "type": "list",
+             "items": [
+              "Parent or caregiver name, relationship to the student and contact details",
+              "Custody, court order or Department of Communities care arrangements, including relevant documentation"
+             ]
+            }
+           ]
+          },
+          {
+           "type": "group",
+           "title": "Treating Professional Information",
+           "level": 4,
+           "blocks": [
+            {
+             "type": "text",
+             "text": "Schools will be required to submit the completed [Treating Professional Information Form](https://erol.side.wa.edu.au/content/file/e2d3d23a-4b5d-4bfb-acfd-db0ccc9cdf8e/1/261013_TREATING_CLINICIAN_FORM.pdf). If applying under the Pregnancy or Parenting category, medical documentation confirming the pregnancy must be provided including the expected due date of birth."
+            }
+           ]
+          },
+          {
+           "type": "group",
+           "title": "Supporting Documentation",
+           "level": 4,
+           "blocks": [
+            {
+             "type": "text",
+             "text": "Any documentation relevant to the student’s education, wellbeing and support needs, including:"
+            },
+            {
+             "type": "list",
+             "items": [
+              "Individual Education Plans, Escalation Plans, Safety Plans or Risk Management Plans;",
+              "Diagnosis or medical information;",
+              "Child Protection Plans or other relevant care documentation;",
+              "Year 11 and 12 Course Assessment Outlines and course task or mark reports."
+             ]
+            },
+            {
+             "type": "text",
+             "text": "Schools should provide current and relevant existing documentation wherever possible. There is no need to create new plans or documents solely for the purpose of submitting a SIDE Referral Program application unless specifically requested."
+            }
+           ]
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Treating professionals",
+     "eyebrow": "Additional information",
+     "anchor": "referral-professionals",
+     "title": "Additional Information for Treating Professionals",
+     "lead": "Treating professionals and specialists are important partners in the Referral Program. Their ongoing involvement helps SIDE understand the student’s needs, supports the student’s participation in education, and plan for a successful transition back to face-to-face schooling or another appropriate education pathway.",
+     "blocks": [
+      {
+       "type": "accordion",
+       "items": [
+        {
+         "title": "Treating Professional Information Form",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "For applications relating to severe or chronic health conditions or severe and ongoing mental health challenges, the student’s primary treating professional will be asked to complete a Treating Professional Information Form."
+          },
+          {
+           "type": "downloads",
+           "items": [
+            {
+             "label": "Treating Professional Information Form",
+             "href": "https://erol.side.wa.edu.au/content/file/e2d3d23a-4b5d-4bfb-acfd-db0ccc9cdf8e/1/261013_TREATING_CLINICIAN_FORM.pdf"
+            }
+           ]
+          },
+          {
+           "type": "text",
+           "text": "The form assists SIDE to understand:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "The condition or circumstances affecting the student;",
+            "The functional impact on the student’s ability to attend and participate in face-to-face schooling;",
+            "Current treatment, intervention and support;",
+            "The expected duration and impact of the student’s circumstances;",
+            "Whether the treating professional supports consideration of a SIDE enrolment; and",
+            "Any recommendations relevant to the student’s participation in education."
+           ]
+          },
+          {
+           "type": "text",
+           "text": "The form should be completed by the student’s primary treating professional or specialist who is providing current and ongoing regular treatment or intervention. This would generally be the clinician or specialist actively treating the condition."
+          },
+          {
+           "type": "callout",
+           "tone": "warning",
+           "text": "A General Practitioner does not meet the eligibility requirements for enrolment into the Referrals Program."
+          },
+          {
+           "type": "text",
+           "text": "School psychologists are not primary providers of clinical mental health services for children and young people. They may consult and collaborate with treating professionals to support school-based planning, risk management, student wellbeing and transition."
+          }
+         ]
+        },
+        {
+         "title": "Ongoing Consultation and Collaboration",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "As the Referral Program is a short-term placement with the intention of students returning to face-to-face schooling or an alternative education pathway, ongoing communication between SIDE, the student’s current school, and treating professionals may be required throughout the student’s enrolment."
+          },
+          {
+           "type": "text",
+           "text": "With parent consent, treating professionals and specialists may be contacted to:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "Provide updated information about the student’s circumstances, treatment or progress;",
+            "Participate in case discussions or planning where appropriate;",
+            "Provide advice about adjustments, supports or strategies that may assist the student; and",
+            "Contribute to planning for the student’s transition back to face-to-face schooling or an alternative education pathway"
+           ]
+          },
+          {
+           "type": "text",
+           "text": "The SIDE staff who support the Referrals Program include School Leaders, Student Coordinators, School Psychologists, the Learning Support Coordinator and classroom teachers."
+          }
+         ]
+        },
+        {
+         "title": "Supporting Transition",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "The Referral Program is a short-term educational placement. Throughout the SIDE placement, treating professionals support the student in preparing for transition back to face-to-face schooling or an alternative education pathway. Where appropriate, this support may include:"
+          },
+          {
+           "type": "list",
+           "items": [
+            "Working with the student to address the barriers preventing attendance in face-to-face schooling;",
+            "Building the student’s readiness and capacity to transition;",
+            "Supporting gradual exposure, re-engagement or other transition strategies; and",
+            "Working collaboratively with the student, family, school case manager and SIDE as transition plans are developed"
+           ]
+          },
+          {
+           "type": "text",
+           "text": "Where returning to the student’s current school is not appropriate, the treating professional’s advice may also assist the student, family and school in identifying the supports required for an alternative education pathway."
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Special circumstances",
+     "eyebrow": "Applications",
+     "anchor": "referral-special",
+     "title": "Special Circumstances Applications",
+     "lead": "Applications for students who do not meet the standard categories but need online education due to complex circumstances.",
+     "blocks": [
+      {
+       "type": "accordion",
+       "items": [
+        {
+         "title": "What are Special Circumstances applications?",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Special Circumstances applications may be considered for students who do not meet the standard Referral Program categories or eligibility requirements but require access to online education due to complex circumstances affecting their ability to access face-to-face education.\n\nThese applications most commonly relate to students who have been permanently excluded from their school and require an education option while an appropriate longer-term pathway is identified."
+          }
+         ]
+        },
+        {
+         "title": "How are they coordinated?",
+         "blocks": [
+          {
+           "type": "text",
+           "text": "Special Circumstances applications are generally coordinated through the relevant Regional Education Office, in collaboration with the student, family, and current school to consider available education options and whether a SIDE placement may be appropriate.\n\nEach application is considered individually, with a focus on providing access to education while an appropriate longer-term education pathway is established."
+          },
+          {
+           "type": "callout",
+           "tone": "info",
+           "text": "Special Circumstance enrolments are to be directed to [SIDE.referrals@education.wa.edu.au](mailto:SIDE.referrals@education.wa.edu.au)",
+           "title": "Where to send them"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ref.apply",
+   "type": "cta",
+   "anchor": "referral-apply",
+   "tone": "sun",
+   "stamp": "Apply now",
+   "eyebrow": "Ready to apply?",
+   "title": "Start an application",
+   "lead": "Applications are submitted by school-based staff responsible for student wellbeing and support.",
+   "actions": [
+    {
+     "label": "Government Schools Apply Here",
+     "href": "https://forms.cloud.microsoft/r/n7fJ9LcbBt"
+    },
+    {
+     "label": "Non-Government Schools Apply Here",
+     "href": "https://forms.cloud.microsoft/r/x2f3fqnxrT",
+     "variant": "outline"
+    }
+   ]
+  }
+ ]
+}

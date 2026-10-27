@@ -1,0 +1,906 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//OpenAI//WA 2027 Community Awareness Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:WA 2027 — Public Holidays, School Holidays & Awareness Dates
+X-WR-CALDESC:Western Australia 2027 public holidays, school holidays, and
+  selected community, inclusion, cultural, First Nations, disability, neu
+ rodiversity, mental health, carers, youth, and pride dates.
+BEGIN:VEVENT
+UID:aa12aaef-2ad6-4473-9fb6-c01b43dc7ac0@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270101
+DTEND;VALUE=DATE:20270102
+SUMMARY:New Year's Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:eb9f4732-e4a8-43d2-be39-afc48b078d79@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270102
+DTEND;VALUE=DATE:20270103
+SUMMARY:WA public holiday schedule — check for legislative changes
+CATEGORIES:Calendar note
+DESCRIPTION:The WA Government was reviewing the public-holiday schedule i
+ n 2026. The dates in this calendar match the official 2027 public-holida
+ y list published as at October 2026. If legislation changes before 2027\
+ , some dates may move.
+URL:https://www.wa.gov.au/organisation/department-of-the-premier-and-cabi
+ net/public-holiday-review
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e2126bc4-eb65-48b4-9c60-d45ce7bd259b@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270104
+DTEND;VALUE=DATE:20270105
+SUMMARY:World Braille Day
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:United Nations annual observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:64fbc8e5-1ba0-49dc-907e-56da63290188@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+SUMMARY:Free the Flag anniversary
+CATEGORIES:First Nations
+DESCRIPTION:Listed in the WA Public Sector Commission Diversity and Inclu
+ sion Calendar.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:86e316c2-471d-4bb4-8890-d2b34ac898e3@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270126
+DTEND;VALUE=DATE:20270127
+SUMMARY:Australia Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8fe88aaa-999c-4d9d-93bb-997efa76d823@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270211
+DTEND;VALUE=DATE:20270212
+SUMMARY:International Day of Women and Girls in Science
+CATEGORIES:Inclusion
+DESCRIPTION:United Nations annual observance\; included by WA Public Sect
+ or Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c1ed4e83-42e9-4d75-8514-858eb1d04777@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+SUMMARY:Anniversary of the National Apology to Australia's Indigenous Peo
+ ples
+CATEGORIES:First Nations
+DESCRIPTION:Annual anniversary\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:a83a6ebf-e3a4-43ec-80cf-cdcc20edb334@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270221
+DTEND;VALUE=DATE:20270222
+SUMMARY:International Mother Language Day
+CATEGORIES:Multicultural
+DESCRIPTION:United Nations annual observance\; included by WA Public Sect
+ or Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:00841300-e8e7-418f-94ac-5bc0f48c55be@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Labour Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f0d46ff4-51d1-41f5-a07b-23b04d74d785@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270301
+DTEND;VALUE=DATE:20270302
+SUMMARY:Zero Discrimination Day
+CATEGORIES:Inclusion
+DESCRIPTION:Annual observance\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9990046e-7f36-4772-aae6-f15d4ace85e9@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+SUMMARY:International Women's Day
+CATEGORIES:Inclusion
+DESCRIPTION:Annual observance\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:98bf09bc-feb3-48ae-8227-56955836896f@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270322
+SUMMARY:Harmony Week WA
+CATEGORIES:Multicultural
+DESCRIPTION:15–21 March. WA diversity and inclusion calendar annual per
+ iod celebrating cultural diversity.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4c876a8c-03f0-44ae-8435-4a4fab988557@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270315
+DTEND;VALUE=DATE:20270320
+SUMMARY:Neurodiversity Celebration Week
+CATEGORIES:Neurodiversity & Disability
+DESCRIPTION:Confirmed by the Neurodiversity Celebration Week organiser fo
+ r 15–19 March 2027.
+URL:https://www.neurodiversityweek.com/events-2027
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c87bd150-bf57-4ab5-a971-89274945e20a@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270318
+DTEND;VALUE=DATE:20270319
+SUMMARY:National Close the Gap Day
+CATEGORIES:First Nations
+DESCRIPTION:Rule-based date: National Close the Gap Day is observed on th
+ e third Thursday in March. Check organiser announcements closer to the d
+ ate.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c95bceba-2404-4023-992f-733b413c11ff@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270321
+DTEND;VALUE=DATE:20270322
+SUMMARY:World Down Syndrome Day
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:United Nations annual observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:39c51e42-ad14-4066-9df3-7d800c51317a@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270326
+DTEND;VALUE=DATE:20270327
+SUMMARY:Good Friday — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:11d86434-69da-4316-9246-1c8fb14700cd@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+SUMMARY:Easter Sunday — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:45282bbd-c0d6-4734-af21-4b16c92d3706@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270329
+DTEND;VALUE=DATE:20270330
+SUMMARY:Easter Monday — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8224df8a-5693-4806-8dcc-3bb037383a8f@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270331
+DTEND;VALUE=DATE:20270401
+SUMMARY:Transgender Day of Visibility
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual observance\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:360a14e6-b9ce-431f-9292-7af354a0dd7f@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270402
+DTEND;VALUE=DATE:20270403
+SUMMARY:World Autism Awareness Day / World Autism Day
+CATEGORIES:Neurodiversity & Disability
+DESCRIPTION:United Nations annual observance on 2 April.
+URL:https://www.un.org/en/observances/world-autism-awareness-day
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f668e1ea-3553-4604-a17e-012287aeeabc@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270410
+DTEND;VALUE=DATE:20270426
+SUMMARY:WA public school holidays — Autumn break
+CATEGORIES:WA School Holidays
+DESCRIPTION:WA public school holiday period based on Department of Educat
+ ion published 2027 term dates. Individual schools may have additional de
+ velopment days.
+URL:https://www.education.wa.edu.au/future-term-dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:18b6691b-ac5f-4e09-8b55-a164d5395eb1@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270425
+DTEND;VALUE=DATE:20270426
+SUMMARY:ANZAC Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:182fad63-68ff-454d-8e7a-b1128af5628c@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+SUMMARY:ANZAC Day additional public holiday — WA
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d85ba312-7486-4539-af25-43eab53bbe69@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270518
+SUMMARY:IDAHOBIT — International Day Against Homophobia\, Biphobia\, In
+ terphobia and Transphobia
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual observance\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:47d39c4d-2466-45c6-a928-ebfce91b8a0f@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+SUMMARY:Global Accessibility Awareness Day
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:Rule-based annual observance on the third Thursday of May\; i
+ ncluded in WA's diversity calendar.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3336a018-1ddc-4784-8959-234a955e2e8b@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270521
+DTEND;VALUE=DATE:20270522
+SUMMARY:World Day for Cultural Diversity for Dialogue and Development
+CATEGORIES:Multicultural
+DESCRIPTION:United Nations annual observance\; included by WA Public Sect
+ or Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:145c1d83-478e-443d-93b2-b03fc74cc39a@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270527
+SUMMARY:National Sorry Day
+CATEGORIES:First Nations
+DESCRIPTION:Annual Australian day of significance\; included by WA Public
+  Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:21fb3123-77f8-4167-a6b7-400cbc17de40@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270528
+SUMMARY:Anniversary of the 1967 Referendum
+CATEGORIES:First Nations
+DESCRIPTION:Annual anniversary\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:062333bc-09b1-42c3-8060-fa0b107b8600@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270604
+SUMMARY:National Reconciliation Week
+CATEGORIES:First Nations
+DESCRIPTION:Confirmed annual dates are 27 May to 3 June.
+URL:https://www.reconciliation.org.au/our-work/national-reconciliation-week
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f9fd8adc-936a-4fb6-af93-df3edbe2a695@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270529
+DTEND;VALUE=DATE:20270530
+SUMMARY:Anniversary of the Torres Strait Islander Flag
+CATEGORIES:First Nations
+DESCRIPTION:Annual anniversary\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:272b7df2-05ff-4242-92c8-46bc9fe6bb5f@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270601
+DTEND;VALUE=DATE:20270701
+SUMMARY:Pride Month
+CATEGORIES:LGBTQIA+
+DESCRIPTION:June observance\; included in WA's diversity and inclusion ca
+ lendar.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5c7ef9c5-130d-4f57-b8d6-ee3750206b85@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270603
+DTEND;VALUE=DATE:20270604
+SUMMARY:Mabo Day
+CATEGORIES:First Nations
+DESCRIPTION:Annual day of significance\; included by WA Public Sector Com
+ mission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6cbc3726-96cd-4902-b4be-8a544f700ecf@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+SUMMARY:Western Australia Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c445e53e-f634-443f-9f62-a8eae4567856@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270627
+SUMMARY:Refugee Week
+CATEGORIES:Multicultural
+DESCRIPTION:Confirmed by Refugee Week Australia for Sunday 20 June to Sat
+ urday 26 June 2027.
+URL:https://www.refugeeweek.org.au/about-refugee-week/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:46384360-0cea-4984-aa74-a1e1b6535ea4@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+SUMMARY:World Refugee Day
+CATEGORIES:Multicultural
+DESCRIPTION:United Nations annual observance.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f6fde73f-62aa-46de-81f5-76db3a887a74@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270701
+DTEND;VALUE=DATE:20270702
+SUMMARY:Coming of the Light
+CATEGORIES:First Nations
+DESCRIPTION:Annual Torres Strait Islander day of significance\; included 
+ by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3e1ca112-03b0-4e6f-b2c0-93131e7ed577@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270703
+DTEND;VALUE=DATE:20270719
+SUMMARY:WA public school holidays — Winter break
+CATEGORIES:WA School Holidays
+DESCRIPTION:WA public school holiday period based on Department of Educat
+ ion published 2027 term dates. Individual schools may have additional de
+ velopment days.
+URL:https://www.education.wa.edu.au/future-term-dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5a878b5a-e13b-4e12-85d0-055cb6f039a8@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270704
+DTEND;VALUE=DATE:20270712
+SUMMARY:NAIDOC Week — provisional 2027 dates
+CATEGORIES:First Nations
+DESCRIPTION:Provisional/rule-based: NAIDOC Week is held in the first week
+  of July\, Sunday to Sunday. The National NAIDOC Committee had not yet p
+ ublished the official 2027 dates when this calendar was created\; verify
+  closer to July.
+URL:https://www.naidoc.org.au/about/naidoc-week
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e01045b0-ab55-4e2f-8c63-83af9606ef08@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270709
+DTEND;VALUE=DATE:20270710
+SUMMARY:Anniversary of the first raising of the Aboriginal Flag
+CATEGORIES:First Nations
+DESCRIPTION:Annual anniversary\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:4b88ffdc-d22c-4ec8-a4c9-cfc01b0d4c23@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270714
+DTEND;VALUE=DATE:20270715
+SUMMARY:Anniversary of recognition of the Aboriginal Flag as an official 
+ Flag of Australia
+CATEGORIES:First Nations
+DESCRIPTION:Annual anniversary\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:451198d1-f82d-4805-9e8a-8755fc6b7c22@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270714
+DTEND;VALUE=DATE:20270715
+SUMMARY:International Non-Binary People's Day
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual observance\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:deadeacc-ac43-4ed9-9d0c-ff52d59d47de@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270715
+DTEND;VALUE=DATE:20270716
+SUMMARY:World Youth Skills Day
+CATEGORIES:Youth
+DESCRIPTION:United Nations annual observance\; included by WA Public Sect
+ or Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:10f801a7-b92e-44f2-bd4a-f34a6c80964a@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270804
+DTEND;VALUE=DATE:20270805
+SUMMARY:National Aboriginal and Torres Strait Islander Children's Day
+CATEGORIES:First Nations
+DESCRIPTION:Annual Australian day of significance\; included by WA Public
+  Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:711db54d-9734-49c0-9799-2fd19a4697e4@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270809
+DTEND;VALUE=DATE:20270810
+SUMMARY:International Day of the World's Indigenous Peoples
+CATEGORIES:First Nations
+DESCRIPTION:United Nations annual observance\; included by WA Public Sect
+ or Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:68a3c2b3-6826-4e24-a08f-328e0ed815d9@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270812
+DTEND;VALUE=DATE:20270813
+SUMMARY:International Youth Day
+CATEGORIES:Youth
+DESCRIPTION:United Nations annual observance\; included by WA Public Sect
+ or Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:5993836d-01a6-4ac1-8832-ad650d72c68b@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270827
+DTEND;VALUE=DATE:20270828
+SUMMARY:Wear It Purple Day
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Rule-based annual date: last Friday in August. 2027 falls on 
+ Friday 27 August.
+URL:https://www.wearitpurple.org/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e47d63a2-0bda-49df-98ff-4fea5301727c@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+SUMMARY:Indigenous Literacy Day
+CATEGORIES:First Nations
+DESCRIPTION:Rule-based annual date: first Wednesday of September\, per th
+ e Indigenous Literacy Foundation.
+URL:https://www.indigenousliteracyfoundation.org.au/ild
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:83b552c5-7470-40ef-8f46-f9c17ae7369f@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270909
+DTEND;VALUE=DATE:20270910
+SUMMARY:R U OK?Day
+CATEGORIES:Mental Health
+DESCRIPTION:Confirmed by R U OK?: Thursday 9 September 2027 (second Thurs
+ day in September).
+URL:https://www.ruok.org.au/r-u-ok-day
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b517c438-e06a-48b7-a7d9-0ceea08a87fc@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270913
+DTEND;VALUE=DATE:20270914
+SUMMARY:Anniversary of UN Declaration on the Rights of Indigenous Peoples
+CATEGORIES:First Nations
+DESCRIPTION:Annual anniversary\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d00c64db-8a4c-47ec-9b4b-1ab4cfacbae2@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270923
+DTEND;VALUE=DATE:20270924
+SUMMARY:International Day of Sign Languages
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:United Nations annual observance\; included by WA Public Sect
+ or Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9cf17075-8050-4229-81b5-48ab07a0db9e@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270925
+DTEND;VALUE=DATE:20271011
+SUMMARY:WA public school holidays — Spring break
+CATEGORIES:WA School Holidays
+DESCRIPTION:WA public school holiday period based on Department of Educat
+ ion published 2027 term dates. Individual schools may have additional de
+ velopment days.
+URL:https://www.education.wa.edu.au/future-term-dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7f022719-3bd7-48c1-ba28-ba04346cc65d@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20270927
+DTEND;VALUE=DATE:20270928
+SUMMARY:King's Birthday — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:3c0b29d0-45f7-4c87-9414-4da3160913aa@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271002
+SUMMARY:Children's Week WA — 2027 dates TBC
+CATEGORIES:Children & Youth
+DESCRIPTION:Planning reminder only. Children's Week WA is held in October
+ /early November\, but official 2027 dates had not yet been published whe
+ n this calendar was created. Check the official site and update this eve
+ nt when announced.
+URL:https://www.childrensweekwa.org.au/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:1801731b-6fa7-4f83-a3f7-35bd786b210a@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271001
+DTEND;VALUE=DATE:20271002
+SUMMARY:WA Mental Health Week — 2027 dates TBC
+CATEGORIES:Mental Health
+DESCRIPTION:Planning reminder only. WA Mental Health Week occurs in Octob
+ er\, but the official 2027 dates had not yet been published when this ca
+ lendar was created. Check the official site and update this event when a
+ nnounced.
+URL:https://mentalhealthweek.org.au/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:37c0bac7-c71a-46f5-9ee5-08ae474990d7@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271017
+SUMMARY:National Carers Week — provisional
+CATEGORIES:Carers
+DESCRIPTION:Provisional/rule-based 2027 placement based on the establishe
+ d October pattern. The organiser had not yet published the official 2027
+  dates when this calendar was created\; verify closer to October.
+URL:https://carersweek.com.au/about/
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c1737d71-191b-40d1-9159-44ef7fac40d3@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271010
+DTEND;VALUE=DATE:20271011
+SUMMARY:World Mental Health Day
+CATEGORIES:Mental Health
+DESCRIPTION:World Health Organization annual observance\; included by WA 
+ Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:07b275d7-90d2-4eb7-a6ac-976478fddf86@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271101
+DTEND;VALUE=DATE:20271201
+SUMMARY:PrideFEST WA — November (event dates TBC)
+CATEGORIES:LGBTQIA+
+DESCRIPTION:WA's diversity and inclusion calendar identifies November as 
+ PrideFEST period. Individual 2027 events and exact dates were not yet pu
+ blished when this calendar was created.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:e587d6ed-51c7-42a7-8616-13e4b3086c44@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271113
+DTEND;VALUE=DATE:20271120
+SUMMARY:Transgender Awareness Week
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual observance 13–19 November\; included by WA Public Se
+ ctor Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b8d746d2-8f8b-4bf8-b14a-dc79ae651725@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271116
+DTEND;VALUE=DATE:20271117
+SUMMARY:International Day for Tolerance
+CATEGORIES:Inclusion
+DESCRIPTION:UNESCO annual observance\; included by WA Public Sector Commi
+ ssion.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:7c5d9f15-2b67-4ed1-95c5-b8263d289afb@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271120
+DTEND;VALUE=DATE:20271121
+SUMMARY:Transgender Day of Remembrance
+CATEGORIES:LGBTQIA+
+DESCRIPTION:Annual observance\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:9938a0df-eac6-48a6-9f1a-9e1f3a1e43de@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271125
+DTEND;VALUE=DATE:20271211
+SUMMARY:16 Days in WA
+CATEGORIES:Safety & Inclusion
+DESCRIPTION:Annual WA campaign period from 25 November to 10 December\; i
+ ncluded by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:c268a663-64ce-4b75-9d41-8a7ba005e9b6@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271203
+DTEND;VALUE=DATE:20271204
+SUMMARY:International Day of People with Disability
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:Annual United Nations observance\; included by WA Public Sect
+ or Commission.
+URL:https://www.un.org/en/observances/day-of-persons-with-disabilities
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dcb44ef5-d663-41af-8973-f6c12ed00aac@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271210
+DTEND;VALUE=DATE:20271211
+SUMMARY:Human Rights Day
+CATEGORIES:Human Rights
+DESCRIPTION:United Nations annual observance\; included by WA Public Sect
+ or Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:d25634b6-315b-4a5f-bf27-6d80063582f2@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271213
+DTEND;VALUE=DATE:20271214
+SUMMARY:Anniversary of the Convention on the Rights of Persons with Disab
+ ilities
+CATEGORIES:Disability & Accessibility
+DESCRIPTION:Annual anniversary\; included by WA Public Sector Commission.
+URL:https://www.wa.gov.au/organisation/public-sector-commission/diversity
+ -and-inclusion-calendar
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:6a4c67b7-619d-488a-8955-3b2a5f0cc11d@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271217
+DTEND;VALUE=DATE:20280201
+SUMMARY:WA public school holidays — Summer break begins
+CATEGORIES:WA School Holidays
+DESCRIPTION:WA public school holiday period based on Department of Educat
+ ion published 2027 term dates. Individual schools may have additional de
+ velopment days.
+URL:https://www.education.wa.edu.au/future-term-dates
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:419bccd0-1895-479f-90b4-efa800f0b782@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+SUMMARY:Christmas Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:8fcedf64-3c04-4adc-93f7-58ff3424710a@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+SUMMARY:Boxing Day — WA public holiday
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2e03e3b0-72ff-4b0e-a503-bf51e85829b9@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271227
+DTEND;VALUE=DATE:20271228
+SUMMARY:Christmas additional public holiday — WA
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:b8803aef-8da1-43c0-a03c-91f979e1718c@openai-wa-calendar
+DTSTAMP:20261003T035325Z
+DTSTART;VALUE=DATE:20271228
+DTEND;VALUE=DATE:20271229
+SUMMARY:Boxing Day additional public holiday — WA
+CATEGORIES:WA Public Holiday
+DESCRIPTION:Confirmed WA public holiday date published by the Western Aus
+ tralian Government. Note: WA has been reviewing its public-holiday sched
+ ule\, so check the source if legislation changes.
+URL:https://www.wa.gov.au/service/employment/workplace-arrangements/publi
+ c-holidays-western-australia
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

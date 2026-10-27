@@ -1,0 +1,521 @@
+@use "../abstracts" as *;
+
+// ═══ Events & Calendar: event list (left) + month / year calendar (right) ═══
+.cal {
+  --cal-line: color-mix(in srgb, var(--fg) 18%, transparent);
+  --cal-soft: color-mix(in srgb, var(--fg) 7%, transparent);
+  --cal-muted: color-mix(in srgb, var(--fg) 78%, transparent);
+  --g-holiday: #{palette("clay")};
+  --g-school: #{palette("aqua")};
+  --g-first: #{palette("sun")};
+  --g-aware: #b9a7e6;
+  --g-note: #9fb0bd;
+  --cal-nav: calc(var(--nav-h-compact) + var(--space-sm));
+  --cal-h: calc(100svh - var(--cal-nav) - var(--space-md));
+  min-height: 100svh;
+  padding-top: var(--cal-nav);
+  padding-bottom: var(--space-md);
+
+  // --g is the fill colour; --gt is a lighter tone of it for small text (AA contrast on the dark surface)
+  [data-g="holiday"] { --g: var(--g-holiday); --gt: #ff93a6; }
+  [data-g="school"] { --g: var(--g-school); --gt: #8fc0d8; }
+  [data-g="first"] { --g: var(--g-first); --gt: #dfbc7c; }
+  [data-g="aware"] { --g: var(--g-aware); --gt: #c4b5ec; }
+  [data-g="note"] { --g: var(--g-note); --gt: #b3c1cc; }
+
+  &__wrap {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: var(--space-sm);
+    min-height: var(--cal-h);
+
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: minmax(19rem, 27rem) minmax(0, 1fr);
+    gap: var(--space-lg);
+    min-height: 0;
+
+    @include down(lg) {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  // ── search + event list ──
+  &__side { display: grid; grid-template-rows: auto minmax(0, 1fr); gap: var(--space-xs); min-height: 0; min-width: 0; }
+
+  &__search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .icon { position: absolute; left: 1rem; width: 1.1rem; height: 1.1rem; pointer-events: none; color: var(--cal-muted); }
+  }
+
+  &__q {
+    width: 100%;
+    min-height: 2.9rem;
+    padding: 0 1rem 0 2.8rem;
+    border: 1.5px solid var(--cal-line);
+    border-radius: 999px;
+    background: var(--cal-soft);
+    color: inherit;
+    font: inherit;
+    font-size: 1rem;
+    @include move((border-color, background-color), "base", "out");
+    &::placeholder { color: var(--cal-muted); opacity: 1; }
+    &:hover { border-color: color-mix(in srgb, var(--fg) 40%, transparent); }
+    &:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-color: var(--accent); }
+  }
+
+  &__list {
+    min-height: 0;
+    max-height: calc(var(--cal-h) - 10.5rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+    scrollbar-color: color-mix(in srgb, var(--fg) 40%, transparent) transparent;
+    padding-right: var(--space-sm);
+    border-radius: 0.5rem;
+
+    @include down(lg) {
+      max-height: 34rem;
+    }
+  }
+
+  &__nomatch[hidden], &__month[hidden], &__event[hidden] { display: none; }
+
+  &__msg { padding: var(--space-md) 0; color: var(--cal-muted); a { color: var(--accent); } }
+
+  &__month { margin-bottom: var(--space-md); }
+
+  &__month-title {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 0.55rem 0;
+    margin: 0 0 0.25rem;
+    background: var(--bg);
+    border-bottom: 2px solid var(--accent);
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: 1.35rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+  }
+
+  &__events { display: grid; list-style: none; margin: 0; padding: 0; }
+
+  &__event {
+    display: grid;
+    grid-template-columns: 5.6rem minmax(0, 1fr);
+    gap: 0.2rem 0.9rem;
+    padding: 0.85rem 0.6rem 0.85rem 0.75rem;
+    border-bottom: 1px solid var(--cal-line);
+    border-left: 3px solid var(--g, var(--cal-line));
+    cursor: pointer;
+    @include move(background-color, "base", "out");
+
+    &:hover { background: var(--cal-soft); }
+    &.is-hit { animation: cal-hit 1.8s ease-out; }
+
+    @include down(sm) { grid-template-columns: minmax(0, 1fr); }
+  }
+
+  &__when {
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    letter-spacing: 0.03em;
+    line-height: 1.35;
+    color: var(--gt, var(--accent));
+    time { display: block; }
+  }
+
+  &__name { font-size: 1.05rem; line-height: 1.3; font-weight: 700; margin: 0; text-wrap: balance; }
+  &__cat { margin: 0.15rem 0 0; font-size: 0.78rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--cal-muted); }
+
+  &__open {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    text-wrap: balance;
+    &:hover { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 0.2em; }
+  }
+
+  &__eyebrow { margin: 0; }
+
+  // ── calendar panel ──
+  &__panel {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    gap: var(--space-sm);
+    min-width: 0;
+    min-height: 0;
+  }
+
+  &__bar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-sm) var(--space-md);
+  }
+
+  &__nav-wrap { display: flex; align-items: center; gap: 0.5rem; }
+
+  &__nav {
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 1.5px solid var(--cal-line);
+    border-radius: 50%;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+    @include move((background-color, border-color, color, opacity), "base", "out");
+
+    &:hover:not(:disabled) { background: var(--accent); border-color: var(--accent); color: var(--bg); }
+    &:disabled { opacity: 0.35; cursor: default; }
+    .icon { width: 1.15rem; height: 1.15rem; }
+  }
+
+  &__title {
+    margin: 0 0 0 0.5rem;
+    min-width: 9ch;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-stretch: 80%;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  // Month | Year segmented control with a sliding thumb
+  &__toggle {
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.25rem;
+    border: 1.5px solid var(--cal-line);
+    border-radius: 999px;
+    isolation: isolate;
+  }
+
+  &__thumb {
+    position: absolute;
+    inset: 0.25rem auto 0.25rem 0.25rem;
+    width: calc(50% - 0.25rem);
+    border-radius: 999px;
+    background: var(--accent);
+    z-index: -1;
+    transition: transform 0.5s cubic-bezier(0.22, 0.7, 0.2, 1);
+  }
+  &__toggle[data-view="year"] &__thumb { transform: translateX(100%); }
+
+  &__seg {
+    min-width: 5.5rem;
+    min-height: 2.4rem;
+    padding: 0 1.1rem;
+    border: 0;
+    border-radius: 999px;
+    background: none;
+    color: inherit;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &[aria-pressed="true"] { color: var(--bg); }
+  }
+
+  &__views {
+    position: relative;
+    display: grid;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  &__pane {
+    grid-area: 1 / 1;
+    min-width: 0;
+    min-height: 0;
+    will-change: transform, opacity;
+    &[hidden] { display: none; }
+  }
+
+  // ── month grid ──
+  // The grid uses explicit ARIA roles, so it can be laid out with CSS grid: a fixed header row,
+  // then six equal rows that share all the height the panel has.
+  &__grid {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    width: 100%;
+    height: 100%;
+    min-height: 24rem;
+
+    thead { display: block; }
+    tbody { display: grid; grid-template-rows: repeat(6, minmax(0, 1fr)); min-height: 0; }
+    thead tr,
+    tbody tr { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); min-height: 0; }
+
+    th {
+      padding: 0.5rem 0.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      text-align: left;
+      color: var(--cal-muted);
+    }
+  }
+
+  &__cell {
+    position: relative;
+    min-height: 3.6rem;
+    padding: 0;
+    border-top: 1px solid var(--cal-line);
+    border-left: 1px solid var(--cal-line);
+    vertical-align: top;
+    &:last-child { border-right: 1px solid var(--cal-line); }
+    tr:last-child > & { border-bottom: 1px solid var(--cal-line); }
+
+    &.is-out .cal__num { position: absolute; top: 0.4rem; left: 0.5rem; opacity: 0.35; }
+    &.in-range::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 3px;
+      background: var(--g);
+      pointer-events: none;
+    }
+    &[aria-selected="true"] { background: color-mix(in srgb, var(--accent) 14%, transparent); box-shadow: inset 0 0 0 2px var(--accent); }
+    &.is-today .cal__num { background: var(--accent); color: var(--bg); }
+  }
+
+  &__day {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+    width: 100%;
+    padding: 0.35rem 0.4rem;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+    @include move(background-color, "base", "out");
+    &:hover { background: var(--cal-soft); }
+    &:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; background: var(--cal-soft); }
+  }
+
+  &__num {
+    display: inline-grid;
+    place-items: center;
+    min-width: 1.6rem;
+    height: 1.6rem;
+    padding: 0 0.3rem;
+    border-radius: 999px;
+    font-size: 0.88rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+  }
+
+  &__chips { display: grid; gap: 2px; width: 100%; min-width: 0; }
+
+  &__chip {
+    display: block;
+    @include move(opacity, "base", "out");
+    &.is-dim { opacity: 0.3; }
+    padding: 0.08rem 0.35rem;
+    border-radius: 0.25rem;
+    border-left: 3px solid var(--g);
+    background: color-mix(in srgb, var(--g) 22%, var(--bg));
+    font-size: 0.72rem;
+    line-height: 1.35;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__plus { font-size: 0.7rem; color: var(--cal-muted); padding-left: 0.2rem; }
+
+  &__dots {
+    display: none;
+    gap: 3px;
+    margin-top: auto;
+    i { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--g); }
+  }
+
+  // ── year overview ──
+  &__year {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(13rem, 100%), 1fr));
+    grid-auto-rows: minmax(0, 1fr);
+    gap: var(--space-sm);
+    height: 100%;
+    min-height: 0;
+  }
+
+  &__mini {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.4rem;
+    padding: 0.7rem 0.8rem;
+    border: 1px solid var(--cal-line);
+    border-radius: 0.9rem;
+    background: none;
+    color: inherit;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+    @include move((background-color, border-color, transform), "base", "out");
+    &:hover:not(:disabled) { background: var(--cal-soft); border-color: var(--accent); transform: translateY(-2px); }
+    &:disabled { opacity: 0.4; cursor: default; }
+    &:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  }
+
+  &__mini-title { font-family: var(--font-display); font-weight: 800; font-stretch: 80%; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 0.02em; }
+  &__mini-count { font-size: 0.75rem; color: var(--cal-muted); }
+
+  &__mini-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    align-content: start;
+  }
+
+  &__md {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1.15;
+    border-radius: 0.2rem;
+    font-style: normal;
+    font-size: 0.7rem;
+    font-variant-numeric: tabular-nums;
+    &.is-out { visibility: hidden; }
+    &.has-events { background: color-mix(in srgb, var(--g) 55%, var(--bg)); color: #fff; font-weight: 700; text-shadow: 0 0 2px rgba(0, 0, 0, 0.55); }
+    &.is-today { outline: 2px solid var(--accent); }
+  }
+
+  // ── footer: key + download ──
+  &__foot { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-xs) var(--space-md); }
+
+  &__legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem 1.1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.82rem;
+    color: var(--cal-muted);
+    li { display: inline-flex; align-items: center; gap: 0.45rem; }
+    i { width: 0.8rem; height: 0.8rem; border-radius: 0.2rem; background: var(--g); }
+  }
+
+  &__download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    .icon { width: 1rem; height: 1rem; }
+  }
+
+  // narrow: day cells keep only the number and coloured dots
+  @include down(md) {
+    &__grid { min-height: 24rem; }
+    &__cell { min-height: 3.4rem; }
+    &__chips { display: none; }
+    &__dots { display: flex; }
+    &__title { min-width: 0; }
+    &__year { min-height: 0; grid-auto-rows: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; }
+    &__mini { padding: 0.5rem; }
+    &__mini-title { font-size: 1rem; }
+  }
+
+  // sections that fit one screen on tall desktops; everything else flows and grows
+  @include down(lg) {
+    min-height: 0;
+    &__wrap { min-height: 0; }
+  }
+}
+
+@keyframes cal-hit {
+  0%, 35% { background: color-mix(in srgb, var(--accent) 28%, transparent); }
+  100% { background: transparent; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cal__thumb { transition: none; }
+  .cal__event.is-hit { animation: none; background: color-mix(in srgb, var(--accent) 18%, transparent); }
+  .cal__mini:hover:not(:disabled) { transform: none; }
+}
+
+// ── event details modal ──
+.dialog--event {
+  --g: var(--accent);
+  --gd: #8a5a00;
+  width: min(34rem, calc(100vw - 2rem));
+  // a light card so it stands clear of the dark backdrop
+  --fg: #0a1826;
+  --bg: #fff;
+  color: #0a1826;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35), 0 2.5rem 7rem -1rem rgba(0, 0, 0, 0.85);
+  &[data-g="holiday"] { --g: #ff93a6; --gd: #b3213f; }
+  &[data-g="school"] { --g: #8fc0d8; --gd: #1d5c80; }
+  &[data-g="first"] { --g: #dfbc7c; --gd: #7a5200; }
+  &[data-g="aware"] { --g: #c4b5ec; --gd: #5b3fa8; }
+  &[data-g="note"] { --g: #b3c1cc; --gd: #3f5566; }
+}
+
+.cal-ev {
+  gap: var(--space-sm);
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border-top: 12px solid var(--g);
+  border-radius: inherit;
+
+  &__cat { margin: 0; padding-right: 3.5rem; font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600; color: var(--gd); }
+  &__title { margin: 0; padding-right: 3rem; font-size: clamp(1.6rem, 3.4vw, 2.2rem); line-height: 1.1; text-wrap: balance; }
+  &__when { display: flex; align-items: flex-start; gap: 0.6rem; margin: 0; font-weight: 600; .icon { width: 1.15rem; height: 1.15rem; margin-top: 0.15em; flex: none; color: var(--gd); } }
+  &__desc { margin: 0; line-height: 1.65; color: color-mix(in srgb, var(--fg) 85%, transparent); }
+  &[hidden], &__desc[hidden], &__cat[hidden], &__link[hidden], &__also[hidden] { display: none; }
+
+  &__link {
+    justify-self: start;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    margin-top: var(--space-xs);
+    padding: 0.8rem 1.4rem;
+    border-radius: 999px;
+    background: #bf314b;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover { background: #0a1826; }
+    .icon { width: 1rem; height: 1rem; }
+  }
+
+  &__also { margin-top: var(--space-xs); padding-top: var(--space-sm); border-top: 1px solid color-mix(in srgb, var(--fg) 20%, transparent); ul { display: grid; gap: 0.3rem; margin: 0; padding: 0; list-style: none; } }
+  &__also-title { margin: 0 0 0.4rem; font-size: 0.85rem; letter-spacing: 0.06em; text-transform: uppercase; color: color-mix(in srgb, var(--fg) 78%, transparent); }
+  &__also li { border-left: 3px solid var(--g); }
+  &__also button { padding: 0.35rem 0.7rem; border: 0; background: none; color: inherit; font: inherit; font-weight: 600; text-align: left; cursor: pointer; &:hover { text-decoration: underline; } }
+}

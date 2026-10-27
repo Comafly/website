@@ -1,0 +1,178 @@
+@use "../abstracts" as *;
+
+// ── Stage scene: curtains + moving spotlight over a dramatic photograph ──
+.spot {
+  position: relative;
+  padding: 0;
+  height: 300svh;
+  background: #05090f;
+  overflow: clip;
+
+  &__sticky {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    overflow: hidden;
+    overflow: clip;
+    // hard containment: oversized, blended child layers must never paint outside the stage box
+    contain: paint;
+    clip-path: inset(0);
+    background: #05090f;
+  }
+
+  // three single-colour copies of the photo, added together on black (screen) → true colour when registered
+  &__stage {
+    position: absolute;
+    inset: 0;
+    isolation: isolate;
+    background: #070b16;
+    overflow: hidden;
+    clip-path: inset(0);
+  }
+
+  // soft light behind the photo; the dark parts of the picture show it through (screen blending)
+  &__glow {
+    position: absolute;
+    inset: -35%;
+    background:
+      radial-gradient(40% 42% at 62% 38%, rgba(132, 152, 214, 0.55), rgba(96, 84, 160, 0.28) 55%, transparent 100%),
+      radial-gradient(34% 38% at 30% 70%, rgba(210, 173, 105, 0.34), transparent 100%);
+    will-change: transform;
+  }
+
+  &__ch {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    clip-path: inset(0);
+    mix-blend-mode: screen;
+    will-change: transform;
+
+    &-in {
+      position: absolute;
+      inset: -9%;
+      isolation: isolate;
+      will-change: transform;
+
+      .ph {
+        position: absolute;
+        inset: 0;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: contrast(1.06) saturate(1.12);
+      }
+
+      // multiply by a pure primary keeps only that channel
+      &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        mix-blend-mode: multiply;
+        background: var(--primary);
+      }
+    }
+
+    // a bright leading edge in the channel's own colour rides the sliding mask
+    &::after {
+      content: "";
+      position: absolute;
+      opacity: var(--edge, 0);
+      background: var(--primary);
+      box-shadow: 0 0 2rem 0.3rem var(--primary);
+    }
+
+    &--r { --primary: #ff0000; }
+    &--g { --primary: #00ff00; }
+    &--b { --primary: #0000ff; }
+
+    &--r::after { top: 0; bottom: 0; right: 0; width: 3px; }
+    &--g::after { left: 0; right: 0; top: 0; height: 3px; }
+    &--b::after { top: 0; bottom: 0; left: 0; width: 3px; }
+  }
+
+  &__vignette {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+      radial-gradient(130% 100% at 55% 40%, transparent 50%, rgba(5, 9, 15, 0.6) 100%),
+      linear-gradient(to top, rgba(5, 9, 15, 0.92), rgba(5, 9, 15, 0) 55%);
+    pointer-events: none;
+  }
+
+  &__copy {
+    --r: 0;
+    position: absolute;
+    inset: 0;
+    margin-inline: auto;
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding-bottom: clamp(2rem, 7vh, 5rem);
+    padding-top: var(--nav-h-large);
+    pointer-events: none;
+
+    > * {
+      pointer-events: auto;
+    }
+  }
+
+  &__title {
+    font-size: clamp(2.8rem, min(7vw, 11vh), 7rem);
+    max-width: 14ch;
+    text-wrap: balance;
+  }
+
+  // each word rises out of its own clipping mask, staggered by --i
+  &__word {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    padding-bottom: 0.12em;
+    margin-bottom: -0.12em;
+
+    > span {
+      display: inline-block;
+      transform: translate3d(0, calc((1 - clamp(0, var(--r) * 2.4 - var(--i) * 0.28, 1)) * 115%), 0);
+    }
+  }
+
+  &__text,
+  .actions {
+    opacity: clamp(0, calc((var(--r) - 0.55) * 2.2), 1);
+    transform: translate3d(0, calc((1 - clamp(0, (var(--r) - 0.55) * 2.2, 1)) * 24px), 0);
+  }
+
+  &__text {
+    display: grid;
+    gap: 0.9em;
+    max-width: 56ch;
+    font-size: clamp(0.9rem, 1.6vh, 1.05rem);
+    color: color-mix(in srgb, white 88%, transparent);
+    text-shadow: 0 1px 14px rgba(0, 0, 0, 0.7);
+  }
+
+  &.is-static {
+    height: auto;
+
+    .spot__sticky {
+      position: relative;
+      height: auto;
+      min-height: 100svh;
+      display: grid;
+    }
+
+    .spot__copy {
+      --r: 1;
+      position: relative;
+      padding-block: var(--space-2xl);
+    }
+  }
+}

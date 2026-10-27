@@ -1,0 +1,259 @@
+{
+ "id": "page.support",
+ "meta": {
+  "title": "Support",
+  "description": "Help, documents, FAQs, troubleshooting and ways to contact SIDE."
+ },
+ "sections": [
+  {
+   "id": "sup.hero",
+   "type": "page-hero",
+   "media": "m.sup.hero",
+   "title": "Support",
+   "lead": "Heeeeeeeeelp!",
+   "chips": "nav"
+  },
+  {
+   "id": "sup.info",
+   "type": "prose",
+   "anchor": "info-anchor",
+   "tone": "paper",
+   "eyebrow": "Support Information",
+   "title": "Everything.",
+   "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit nesciunt laudantium aperiam autem assumenda corporis tempora ea non ex commodi quidem dolore optio officia quibusdam hic eius?\n\nLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit nesciunt laudantium aperiam autem assumenda corporis tempora ea non ex commodi quidem dolore optio officia quibusdam hic eius?"
+  },
+  {
+   "id": "sup.docs",
+   "type": "docs",
+   "anchor": "key-documents-anchor",
+   "tone": "ink",
+   "title": "Key Documents",
+   "lead": "Consent forms and more.",
+   "groups": [
+    {
+     "title": "Forms (lorem ipsum)",
+     "items": [
+      {
+       "label": "Lorem ipsum consent form",
+       "href": "#"
+      },
+      {
+       "label": "Dolor sit amet form",
+       "href": "#"
+      }
+     ]
+    },
+    {
+     "title": "Guides (lorem ipsum)",
+     "items": [
+      {
+       "label": "Consectetur adipisicing guide",
+       "href": "#"
+      },
+      {
+       "label": "Quibusdam hic eius guide",
+       "href": "#"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sup.faqs",
+   "type": "accordion",
+   "anchor": "faqs-anchor",
+   "tone": "paper",
+   "title": "FAQs",
+   "lead": "Frequently asked questions and their answers.",
+   "items": [
+    {
+     "title": "How do I log in to Moodle?",
+     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit nesciunt laudantium aperiam autem assumenda corporis tempora ea non ex commodi quidem dolore optio officia quibusdam hic eius?"
+    },
+    {
+     "title": "What equipment do I need for online classes?",
+     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit nesciunt laudantium aperiam autem assumenda corporis tempora ea non ex commodi quidem dolore optio officia quibusdam hic eius?"
+    },
+    {
+     "title": "Who do I contact if my child is absent?",
+     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit nesciunt laudantium aperiam autem assumenda corporis tempora ea non ex commodi quidem dolore optio officia quibusdam hic eius?"
+    },
+    {
+     "title": "How do I update my contact details?",
+     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit nesciunt laudantium aperiam autem assumenda corporis tempora ea non ex commodi quidem dolore optio officia quibusdam hic eius?"
+    },
+    {
+     "title": "Where can I find the term dates?",
+     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit nesciunt laudantium aperiam autem assumenda corporis tempora ea non ex commodi quidem dolore optio officia quibusdam hic eius?"
+    }
+   ]
+  },
+  {
+   "id": "sup.trouble",
+   "type": "accordion",
+   "anchor": "troubleshooting-anchor",
+   "tone": "sky",
+   "title": "Troubleshooting",
+   "lead": "A walkthrough guide for common issues faced by staff and students.",
+   "items": [
+    {
+     "title": "I can’t hear anything in Webex",
+     "blocks": [
+      {
+       "type": "steps",
+       "items": [
+        {
+         "title": "Lorem ipsum dolor sit amet",
+         "text": "Consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit."
+        },
+        {
+         "title": "Nesciunt laudantium aperiam",
+         "text": "Autem assumenda corporis tempora ea non ex commodi quidem dolore optio."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "I can’t sign in to Moodle",
+     "blocks": [
+      {
+       "type": "steps",
+       "items": [
+        {
+         "title": "Lorem ipsum dolor sit amet",
+         "text": "Consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit."
+        },
+        {
+         "title": "Nesciunt laudantium aperiam",
+         "text": "Autem assumenda corporis tempora ea non ex commodi quidem dolore optio."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "My camera isn’t working",
+     "blocks": [
+      {
+       "type": "steps",
+       "items": [
+        {
+         "title": "Lorem ipsum dolor sit amet",
+         "text": "Consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit."
+        },
+        {
+         "title": "Nesciunt laudantium aperiam",
+         "text": "Autem assumenda corporis tempora ea non ex commodi quidem dolore optio."
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "title": "My internet keeps dropping out",
+     "blocks": [
+      {
+       "type": "steps",
+       "items": [
+        {
+         "title": "Lorem ipsum dolor sit amet",
+         "text": "Consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit."
+        },
+        {
+         "title": "Nesciunt laudantium aperiam",
+         "text": "Autem assumenda corporis tempora ea non ex commodi quidem dolore optio."
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sup.contact",
+   "type": "contact",
+   "anchor": "contact-anchor",
+   "tone": "paper",
+   "title": "Contact Us",
+   "lead": "Start a conversation.",
+   "requiredNote": "Fields marked * are required.",
+   "submit": "Send message",
+   "success": "Thanks, your message is ready to send. (This prototype form is not connected to a mail server yet.)",
+   "errorSummary": "Please fix the highlighted fields.",
+   "fields": [
+    {
+     "id": "name",
+     "label": "Your name",
+     "type": "text",
+     "required": true,
+     "width": "half",
+     "autocomplete": "name"
+    },
+    {
+     "id": "email",
+     "label": "Email address",
+     "type": "email",
+     "required": true,
+     "width": "half",
+     "autocomplete": "email"
+    },
+    {
+     "id": "topic",
+     "label": "What is it about?",
+     "type": "select",
+     "required": true,
+     "placeholder": "Choose a topic",
+     "options": [
+      "Enrolment",
+      "Payments",
+      "Technical help",
+      "Referral Program",
+      "Something else"
+     ]
+    },
+    {
+     "id": "message",
+     "label": "Message",
+     "type": "textarea",
+     "required": true,
+     "rows": 6
+    }
+   ],
+   "details": {
+    "label": "Other ways to reach us",
+    "items": [
+     {
+      "label": "Visit",
+      "lines": [
+       {
+        "text": "164–194 Oxford Street,"
+       },
+       {
+        "text": "Leederville WA 6007"
+       }
+      ]
+     },
+     {
+      "label": "Phone",
+      "lines": [
+       {
+        "text": "(08) 9311 4000",
+        "href": "tel:+61893114000"
+       }
+      ]
+     },
+     {
+      "label": "Email",
+      "lines": [
+       {
+        "text": "info@side.wa.edu.au",
+        "href": "mailto:info@side.wa.edu.au"
+       }
+      ]
+     }
+    ]
+   }
+  }
+ ]
+}

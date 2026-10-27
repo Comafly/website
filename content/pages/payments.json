@@ -1,0 +1,445 @@
+{
+ "id": "page.payments",
+ "meta": {
+  "title": "Payments",
+  "description": "Contributions, charges, booklist, uniform and financial aid information."
+ },
+ "sections": [
+  {
+   "id": "pay.hero",
+   "type": "page-hero",
+   "media": "m.pay.hero",
+   "title": "Payments",
+   "lead": "Contributions and charges.",
+   "chips": "nav"
+  },
+  {
+   "id": "pay.make",
+   "type": "prose",
+   "anchor": "make-payment-anchor",
+   "tone": "sun",
+   "title": "Need to make a payment?",
+   "lead": "Click the link below to go to our payment processing page.",
+   "actions": [
+    {
+     "label": "Make a Payment",
+     "href": "#"
+    }
+   ],
+   "blocks": [
+    {
+     "type": "facts",
+     "items": [
+      {
+       "term": "Payment Options",
+       "desc": "Cheque / Money Orders are payable to: School of Isolated and Distance Education.\n\nDetails for Credit Card, EFTPOS, and other Electronic Transfer payments can be found on the Charges Form."
+      },
+      {
+       "term": "Freight & Mail",
+       "desc": "Overseas families will be responsible for any freight or mail charges incurred when sending items to SIDE. They are also liable for the cost of repair or replacement for any borrowed equipment, books, or kits that are damaged, lost, or not returned."
+      },
+      {
+       "term": "Refunds",
+       "desc": "Contact the Business Support Officer on [9311 1423](tel:+61893111423). For more information please read our [Refund Guidelines](#)."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pay.home",
+   "type": "rowlist",
+   "anchor": "home-based-contributions-anchor",
+   "tone": "ink",
+   "title": "Home-based Charges (Year K-12)",
+   "lead": "In line with Department of Education policy, SIDE has contributions, charges and fees.",
+   "listLabel": "Home-based charges by year level",
+   "items": [
+    {
+     "eyebrow": "Voluntary Contributions",
+     "title": "Year K-6",
+     "actions": [
+      {
+       "label": "Download",
+       "href": "#"
+      }
+     ]
+    },
+    {
+     "eyebrow": "Voluntary Contributions",
+     "title": "Year 7-10",
+     "actions": [
+      {
+       "label": "Download",
+       "href": "https://erol.side.wa.edu.au/content/file/4de11f48-e8a0-43e9-aaf3-a4f9dfcf8f26/7/Years%207-10%202026%20Voluntary%20Contributions.pdf"
+      }
+     ]
+    },
+    {
+     "eyebrow": "Subject Charges",
+     "title": "Year 11",
+     "actions": [
+      {
+       "label": "Download",
+       "href": "https://erol.side.wa.edu.au/content/file/4de11f48-e8a0-43e9-aaf3-a4f9dfcf8f26/7/Year%2011%202026%20Subject%20Charges%20Home%20Based.pdf"
+      }
+     ]
+    },
+    {
+     "eyebrow": "Subject Charges",
+     "title": "Year 12",
+     "actions": [
+      {
+       "label": "Download",
+       "href": "https://erol.side.wa.edu.au/content/file/4de11f48-e8a0-43e9-aaf3-a4f9dfcf8f26/7/Year%2012%202026%20Subject%20Charges%20Home%20Based.pdf"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "pay.school-primary",
+   "type": "prose",
+   "anchor": "school-based-charges-anchor",
+   "tone": "paper",
+   "title": "Primary School\nCharges &\nContributions",
+   "eyebrow": "Primary (Year K-6)",
+   "blocks": [
+    {
+     "type": "rates",
+     "items": [
+      {
+       "label": "Languages",
+       "price": "$5",
+       "unit": "per Student, per Language",
+       "note": "This will be charged to the school."
+      },
+      {
+       "label": "Regional Mathematics and Science",
+       "price": "$10",
+       "unit": "per Student, per Subject",
+       "note": "This will be charged to the school."
+      }
+     ]
+    },
+    {
+     "type": "heading",
+     "text": "TOPS",
+     "level": 3
+    },
+    {
+     "type": "text",
+     "text": "Primary Schools enrolling secondary students negotiate payment arrangements directly with the SIDE Manager Business Operations. The default position is that SIDE invoices the school.\n\nThese contributions are payable annually at the beginning of the school year, or at the time of enrolment. Please refer to the Extra Cost Options form to determine payment amounts."
+    },
+    {
+     "type": "actions",
+     "items": [
+      {
+       "label": "Extra Cost Options Form",
+       "href": "#"
+      }
+     ]
+    }
+   ],
+   "class": "section--tight-bottom"
+  },
+  {
+   "id": "pay.school-secondary",
+   "type": "tabs",
+   "anchor": "secondary-charges-anchor",
+   "tone": "paper",
+   "eyebrow": "Secondary (Year 7-12)",
+   "title": "Secondary School Charges",
+   "tabsLabel": "Secondary charges by school type",
+   "tabs": [
+    {
+     "label": "High School, Senior High School & Colleges",
+     "eyebrow": "Government Schools",
+     "anchor": "gov-school-information",
+     "title": "Government Schools",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "The public school sector costs are:"
+      },
+      {
+       "type": "downloads",
+       "items": [
+        {
+         "label": "Year 7-10 Voluntary Contributions",
+         "href": "https://erol.side.wa.edu.au/content/file/4de11f48-e8a0-43e9-aaf3-a4f9dfcf8f26/7/Years%207-10%202026%20Voluntary%20Contributions.pdf"
+        },
+        {
+         "label": "Year 11 Subject Charges",
+         "href": "https://erol.side.wa.edu.au/content/file/4de11f48-e8a0-43e9-aaf3-a4f9dfcf8f26/7/Year%2011%202026%20Subject%20Charges%20Home%20Based.pdf"
+        },
+        {
+         "label": "Year 12 Subject Charges",
+         "href": "https://erol.side.wa.edu.au/content/file/4de11f48-e8a0-43e9-aaf3-a4f9dfcf8f26/7/Year%2012%202026%20Subject%20Charges%20Home%20Based.pdf"
+        }
+       ]
+      },
+      {
+       "type": "heading",
+       "text": "Senior high schools, high schools and agricultural colleges",
+       "level": 4
+      },
+      {
+       "type": "text",
+       "text": "Senior high schools, high schools and agricultural colleges with Year 11 and 12 students enrolled in subjects through SIDE are required by DoE to contribute funds to access those courses. Based on the assumption that the full load for a Year 11 and 12 student is, on average five (5) year long courses, each course being studied through SIDE has been determined as 0.2 FTE of a student load.\n\nSchool enrolments will be cross referenced with SIDE data following the Semester 1 Census. The school contribution is based on 0.014 teacher FTE per student subject at the endorsed notional salary rate for a teacher. Adjustments for these amounts will be made to one line budgets."
+      },
+      {
+       "type": "callout",
+       "tone": "warning",
+       "text": "In 2026 this contribution will be $1981.33 per student/per course. Please note that this amount CANNOT be passed onto parents/caregivers."
+      }
+     ]
+    },
+    {
+     "label": "Curriculum and Reengagement Schools",
+     "eyebrow": "Government Schools",
+     "anchor": "reengagement-school-information",
+     "title": "Curriculum and Reengagement Schools",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "All non-government school student registrations through SIDE, including Curriculum and Reengagement Education Schools, are to be charged at the full recovery rate."
+      },
+      {
+       "type": "rates",
+       "title": "Year 7-10: Lower Secondary",
+       "items": [
+        {
+         "label": "Mathematics, English, Science and Humanities, Social Sciences",
+         "price": "$527",
+         "unit": "per Term, per Learning Area"
+        },
+        {
+         "label": "All other Learning Areas",
+         "price": "$527",
+         "unit": "per Semester, per Subject"
+        }
+       ]
+      },
+      {
+       "type": "rates",
+       "title": "Year 11-12 or Equivalent: Senior Secondary",
+       "items": [
+        {
+         "label": "Whole secondary course",
+         "price": "$2,213",
+         "unit": "per year"
+        },
+        {
+         "label": "Construction Industry White Card",
+         "price": "$120"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "District High Schools / Remote Community",
+     "eyebrow": "Government Schools",
+     "anchor": "district-remote-school-information",
+     "title": "District High Schools / Remote Community",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "District High Schools and Remote Community Schools will be invoiced for the learning area and course costs for each student enrolment."
+      },
+      {
+       "type": "text",
+       "text": "Primary Schools enrolling secondary students negotiate payment arrangements directly with the SIDE Manager Business Operations."
+      },
+      {
+       "type": "callout",
+       "tone": "info",
+       "text": "The default position is that SIDE invoices the school."
+      },
+      {
+       "type": "text",
+       "text": "Participation arrangements under section 24 of the Education Act 1999 enable students to be provided educational programs from SIDE as a service provider to the school. Schools are charged depending on their category."
+      }
+     ]
+    },
+    {
+     "label": "Non-Government Schools",
+     "eyebrow": "Non-government",
+     "anchor": "non-gov-school-information",
+     "title": "Non-Government Schools",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "All non-government school student registrations through SIDE are to be charged at the full recovery rate."
+      },
+      {
+       "type": "rates",
+       "title": "Year 7-10: Lower Secondary",
+       "items": [
+        {
+         "label": "Mathematics, English, Science and Humanities, Social Sciences",
+         "price": "$806",
+         "unit": "per Term, per Learning Area"
+        },
+        {
+         "label": "All other Learning Areas",
+         "price": "$806",
+         "unit": "per Semester, per Subject"
+        }
+       ]
+      },
+      {
+       "type": "rates",
+       "title": "Year 11-12 or Equivalent: Senior Secondary",
+       "items": [
+        {
+         "label": "Whole secondary course",
+         "price": "$3,384",
+         "unit": "per year"
+        },
+        {
+         "label": "Construction Industry White Card",
+         "price": "$120"
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "class": "section--tight-top",
+   "variant": "side"
+  },
+  {
+   "id": "pay.booklist",
+   "type": "feature",
+   "anchor": "booklist-anchor",
+   "tone": "paper",
+   "media": "m.pay.booklist",
+   "eyebrow": "Resources",
+   "title": "Booklist",
+   "lead": "The booklist is a curated compilation of all resources students need for the term.",
+   "body": "Subject-specific workbooks to guide lessons, specialised materials such as calculators or other course-required tools, and essential stationery — paperclips, staplers, paper punches, rulers, pens, pencils, writing paper and folders — for organising and completing assignments.\n\nResources for all year groups can be sourced from any supplier, or you can utilise our own.",
+   "actions": [
+    {
+     "label": "Personal Items and Resource Ordering",
+     "href": "#"
+    }
+   ]
+  },
+  {
+   "id": "pay.uniform",
+   "type": "feature",
+   "anchor": "uniform-anchor",
+   "tone": "brand",
+   "reverse": true,
+   "shape": "arch",
+   "media": "m.pay.uniform",
+   "eyebrow": "Optional",
+   "title": "Uniform",
+   "lead": "SIDE has introduced two optional school uniform items. A school polo shirt and a jacket.",
+   "body": "The uniforms must be ordered and paid for online and will be managed by our uniform partner ID Athletic. To order your uniform item please visit our SIDE uniform partner's online shop:",
+   "actions": [
+    {
+     "label": "ID Athletic Shop",
+     "href": "#"
+    }
+   ],
+   "blocks": [
+    {
+     "type": "callout",
+     "tone": "info",
+     "text": "Orders will take approximately four weeks to arrive and will be distributed from SIDE.\n\nFor all enquiries regarding delivery or pickup of your order from SIDE, contact: [(08) 9311 1400](tel:+61893111400)\n\nFor all other enquiries about your order, please email: [Glenn@idathletic.com](mailto:Glenn@idathletic.com)"
+    }
+   ]
+  },
+  {
+   "id": "pay.aid",
+   "type": "tabs",
+   "anchor": "financial-aid-anchor",
+   "tone": "paper",
+   "title": "Financial Aid",
+   "lead": "Students learning through distance education may be eligible for financial assistance.",
+   "tabsLabel": "Financial aid schemes",
+   "tabs": [
+    {
+     "label": "Assistance for Isolated Children Scheme",
+     "anchor": "aics-information",
+     "title": "Assistance for Isolated Children Scheme",
+     "lead": "A group of payments for parents and carers of children who can't go to a local government school because of geographical isolation, disability or special needs.",
+     "blocks": [
+      {
+       "type": "heading",
+       "text": "Study requirements",
+       "level": 3
+      },
+      {
+       "type": "text",
+       "text": "Your child needs to be studying full time. They must be doing primary, secondary or other approved study.\n\nYou may get Assistance for Isolated Children if your child does approved full time tertiary study because they don’t have access to a state secondary school."
+      },
+      {
+       "type": "heading",
+       "text": "Your child must also meet at least one of the following isolation conditions:",
+       "level": 3
+      },
+      {
+       "type": "list",
+       "items": [
+        "Be geographically isolated.",
+        "Have a special education need.",
+        "Have no reasonable access to a school.",
+        "Meet a continuity condition."
+       ]
+      },
+      {
+       "type": "actions",
+       "items": [
+        {
+         "label": "Assistance for Isolated Children Scheme",
+         "href": "https://www.servicesaustralia.gov.au/assistance-for-isolated-children-scheme"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "label": "Secondary Assistance Scheme",
+     "anchor": "secondary-assistance-information",
+     "title": "Secondary Assistance Scheme",
+     "lead": "The Western Australian Department of Education provides an allowance to assist eligible families with secondary schooling costs.",
+     "blocks": [
+      {
+       "type": "text",
+       "text": "To be eligible for the allowance the parent/guardian must hold a Services Australia (Centrelink) or Veterans’ Affairs card that represents a statement of income for the family."
+      },
+      {
+       "type": "heading",
+       "text": "The allowance consists of two components:",
+       "level": 3
+      },
+      {
+       "type": "list",
+       "items": [
+        "**$300** Clothing Allowance paid directly to the parent/guardian or the school.",
+        "**$235** Educational Program Allowance paid directly to the school."
+       ]
+      },
+      {
+       "type": "text",
+       "text": "Application is made by the parent or guardian for student/s enrolled in Years 7–12 studying a full time secondary course."
+      },
+      {
+       "type": "actions",
+       "items": [
+        {
+         "label": "2025 Secondary Assistance Scheme Information",
+         "href": "#"
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

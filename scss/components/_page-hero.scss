@@ -1,0 +1,141 @@
+@use "../abstracts" as *;
+
+.scroll-cue {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  @include move(color, "fast");
+
+  &__icon {
+    width: 2.8rem;
+    height: 2.8rem;
+    padding: 0.7rem;
+    border: 1.5px solid currentColor;
+    border-radius: 50%;
+    animation: cue-bob 2.4s ease("in-out") infinite;
+    @include move((background-color, color), "fast");
+  }
+
+  &:hover {
+    color: palette("sun");
+
+    .scroll-cue__icon {
+      background: palette("sun");
+      color: palette("ink");
+    }
+  }
+}
+
+@keyframes cue-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.phero {
+  position: relative;
+  min-height: max(100svh, 42rem);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  overflow: clip;
+  padding: calc(var(--nav-h-large) + var(--space-lg)) 0 var(--space-xl);
+
+  &__media {
+    position: absolute;
+    inset: -28% 0 0 0;
+    will-change: transform;
+  }
+
+  &__shade {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+      linear-gradient(to top, rgba(10, 24, 38, 0.92) 0%, rgba(10, 24, 38, 0.45) 50%, rgba(10, 24, 38, 0.25) 100%),
+      linear-gradient(to right, rgba(10, 24, 38, 0.5), rgba(10, 24, 38, 0) 55%);
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    gap: var(--space-md);
+    justify-items: start;
+  }
+
+  &__title {
+    max-width: 12ch;
+    font-size: clamp(3.5rem, min(12vw, 22vh), 13rem);
+    overflow-wrap: anywhere;
+  }
+
+  &__lead {
+    max-width: 34ch;
+  }
+
+  &__chips {
+    margin-top: var(--space-md);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md) var(--space-lg);
+    max-width: calc(100% - 7rem);
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    @include down(sm) {
+      max-width: none;
+    }
+  }
+
+  .chip-group {
+    display: grid;
+    gap: 0.6rem;
+
+    &__label {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: palette("sun");
+    }
+  }
+
+  .chip {
+    background: color-mix(in srgb, palette("ink") 42%, transparent);
+    backdrop-filter: blur(8px);
+
+    // hover / focus: the text takes the border's colour (the hero chips keep their dark glass fill)
+    @include hover-capable {
+      &:hover,
+      &:focus-visible { color: palette("sun"); background: color-mix(in srgb, palette("ink") 42%, transparent); }
+    }
+  }
+
+  .scroll-cue {
+    position: absolute;
+    right: var(--gutter);
+    bottom: var(--space-xl);
+    z-index: 4;
+
+    @include down(sm) {
+      display: none;
+    }
+  }
+}

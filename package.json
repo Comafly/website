@@ -1,0 +1,17 @@
+{
+  "name": "side-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Scroll-driven redesign of the SIDE website. Static HTML shells + JSON content + SCSS tokens + ES modules.",
+  "scripts": {
+    "build:css": "sass --style=compressed --source-map scss/main.scss css/main.css",
+    "watch:css": "sass --watch --source-map scss/main.scss css/main.css",
+    "pages": "node scripts/make-pages.mjs",
+    "validate": "node scripts/validate-content.mjs",
+    "serve": "python3 -m http.server 8080",
+    "build": "npm run build:css && npm run pages && npm run validate"
+  },
+  "devDependencies": {
+    "sass": "^1.80.0"
+  }
+}

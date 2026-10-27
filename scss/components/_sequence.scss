@@ -1,0 +1,838 @@
+@use "../abstracts" as *;
+
+// ═══ Pinned scroll sequences (hero, words, split) ═══
+.seq {
+  position: relative;
+  padding: 0;
+  height: calc(100svh + (var(--frames, 3) - 1) * var(--seq-step));
+
+  &__sticky {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    overflow: hidden;
+    overflow: clip;
+  }
+
+  // Minimal progress marks at the right edge while the sequence is pinned; each one jumps to its frame
+  &__ticks {
+    position: absolute;
+    right: clamp(0.9rem, 1.8vw, 1.7rem);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.2rem;
+
+    li {
+      display: block;
+    }
+
+    button {
+      display: grid;
+      place-items: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0;
+      border: 0;
+      background: none;
+      cursor: pointer;
+      pointer-events: auto;
+
+      &::before {
+        content: "";
+        width: 5px;
+        height: 5px;
+        border-radius: 3px;
+        background: palette("paper");
+        opacity: 0.45;
+        box-shadow: 0 0 6px rgba(10, 24, 38, 0.45);
+        @include move((opacity, height, background-color), "base", "out");
+      }
+
+      &:hover::before {
+        opacity: 1;
+      }
+
+      &:focus-visible {
+        outline: 2px solid palette("sun");
+        outline-offset: -2px;
+        border-radius: 6px;
+      }
+
+      i,
+      span {
+        @include visually-hidden;
+      }
+    }
+
+    li.is-active button::before {
+      height: 1.3rem;
+      opacity: 1;
+      background: palette("sun");
+    }
+  }
+
+  &__hud {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    max-width: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-md);
+    padding-bottom: var(--space-md);
+    pointer-events: none;
+
+    > * {
+      pointer-events: auto;
+    }
+  }
+
+  &__count {
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+  }
+}
+
+// ── hero variant ──
+.seq--hero {
+  .seq__media,
+  .seq__frame {
+    position: absolute;
+    inset: 0;
+  }
+
+  .seq__frame {
+    margin: 0;
+    overflow: hidden;
+    will-change: opacity;
+
+    img {
+      will-change: transform;
+    }
+  }
+
+  .seq__shade {
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to top, rgba(10, 24, 38, 0.9) 0%, rgba(10, 24, 38, 0.35) 45%, rgba(10, 24, 38, 0.15) 100%),
+      linear-gradient(to right, rgba(10, 24, 38, 0.55), rgba(10, 24, 38, 0) 60%);
+    z-index: 3;
+  }
+
+  .seq__copy {
+    position: absolute;
+    inset: 0;
+    margin-inline: auto;
+    z-index: 4;
+    display: grid;
+    align-items: end;
+    align-content: end;
+    padding-bottom: clamp(7rem, 16vh, 11rem);
+    padding-top: var(--nav-h-large);
+  }
+
+  .seq__slide {
+    grid-area: 1 / 1;
+    display: grid;
+    gap: var(--space-md);
+    justify-items: start;
+    will-change: transform, opacity;
+  }
+
+  .seq__slide:not(:first-child) {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .seq__title {
+    max-width: 11ch;
+    font-size: clamp(3.5rem, min(10.5vw, 19vh), 11.5rem);
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+  }
+
+  .seq__body {
+    max-width: 50ch;
+  }
+}
+
+// ── words variant: a giant word retypes itself while the background shifts tone ──
+.seq--words {
+  --seq-step: 150vh;
+
+  .seq__bgs,
+  .seq__bg {
+    position: absolute;
+    inset: 0;
+  }
+
+  .seq__bg:first-child {
+    opacity: 1;
+  }
+
+  .seq__glow {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 55%;
+    width: 70vw;
+    height: 70vw;
+    margin: -35vw 0 0 -35vw;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, color-mix(in srgb, palette("sun") 20%, transparent), transparent);
+    pointer-events: none;
+    will-change: transform;
+  }
+
+  .seq__prog {
+    position: absolute;
+    z-index: 4;
+    inset: auto 0 0 0;
+    height: 2px;
+    background: palette("sun");
+    transform-origin: left;
+    transform: scaleX(0);
+    opacity: 0.8;
+  }
+
+
+  .seq__bg {
+    opacity: 0;
+    will-change: opacity;
+  }
+
+  .seq__stage {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    padding-top: calc(var(--nav-h-large) + var(--space-md));
+    padding-bottom: calc(var(--space-xl) + 2rem);
+    gap: var(--space-md) var(--space-xl);
+    color: palette("paper");
+    --accent: #{palette("sun")};
+
+    @include down(md) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto 1fr auto;
+    }
+  }
+
+  .seq__lead {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-md) var(--space-xl);
+
+    .section-head {
+      margin: 0;
+    }
+
+    .section-title {
+      font-size: type-size("h3");
+    }
+  }
+
+  .seq__vision {
+    max-width: 44ch;
+    flex: 1 1 22rem;
+  }
+
+  .seq__vision-label {
+    margin-bottom: 0.6rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-stretch: 75%;
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .seq__words {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    align-self: center;
+    pointer-events: none;
+  }
+
+  .seq__word-wrap {
+    grid-area: 1 / 1;
+    display: grid;
+    gap: var(--space-xs);
+    align-content: center;
+    will-change: transform, opacity;
+  }
+
+  .seq__word-wrap:not(:first-child) {
+    opacity: 0;
+  }
+
+  .seq__word {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-stretch: 75%;
+    font-size: clamp(3.5rem, min(14.5vw, 27vh), 20rem);
+    line-height: 0.82;
+  }
+
+  .seq__texts {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    align-self: end;
+    justify-self: end;
+    display: grid;
+    width: min(100%, 31rem);
+    z-index: 3;
+
+    @include down(md) {
+      justify-self: start;
+    }
+  }
+
+  .seq__text {
+    grid-area: 1 / 1;
+    position: relative;
+    padding-left: var(--space-md);
+    font-size: 1.12rem;
+    line-height: 1.55;
+    will-change: transform, opacity;
+    text-shadow: 0 1px 18px rgba(10, 24, 38, 0.35);
+
+    p + p {
+      margin-top: 0.8em;
+    }
+  }
+
+  // an accent rule that draws itself down the side as the text arrives
+  .seq__rule {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(var(--accent), color-mix(in srgb, var(--accent) 10%, transparent));
+    transform-origin: top;
+    transform: scaleY(calc(var(--in, 1) * (1 - var(--out, 0))));
+  }
+
+  .seq__text-in {
+    opacity: calc(var(--in, 1) * (1 - var(--out, 0)));
+    transform: translate3d(calc((1 - var(--in, 1)) * 2.5rem - var(--out, 0) * 2rem), calc((1 - var(--in, 1)) * 1.2rem), 0);
+  }
+
+  // each word: slim counter above, letters rise from a mask one after another, an underline sweeps beneath
+  .seq__count {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    color: var(--accent);
+
+    i {
+      width: calc(2rem + 4rem * var(--in, 1));
+      height: 1px;
+      background: currentColor;
+      opacity: 0.7;
+    }
+
+    span {
+      opacity: 0.6;
+      color: palette("paper");
+    }
+  }
+
+  .seq__word {
+    position: relative;
+    display: block;
+    width: fit-content;
+    padding-bottom: 0.14em;
+    white-space: nowrap;
+
+    &::after {
+      content: "";
+      position: absolute;
+      inset: auto auto 0 0.04em;
+      width: 1.6em;
+      height: 0.05em;
+      background: var(--accent);
+      transform-origin: left;
+      transform-origin: left;
+      transform: scaleX(calc(var(--in, 1) * (1 - var(--out, 0))));
+    }
+  }
+
+  .seq__ch {
+    --a: clamp(0, calc((var(--in, 1) - var(--ci, 0) / var(--n, 1) * 0.5) * 2), 1);
+    --b: clamp(0, calc((var(--out, 0) - var(--ci, 0) / var(--n, 1) * 0.5) * 2), 1);
+    display: inline-block;
+    opacity: calc(var(--a) * (1 - var(--b)));
+    transform: translate3d(0, calc((1 - var(--a)) * 55% - var(--b) * 40%), 0);
+  }
+
+  .seq__text:not(:first-child) {
+    opacity: 0;
+  }
+
+  .seq__hud {
+    color: palette("paper");
+  }
+}
+
+// ── split variant: image panels wipe over each other beside the matching copy ──
+.seq--split {
+  .seq__stage {
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr;
+    gap: var(--space-md) var(--space-xl);
+    padding-top: calc(var(--nav-h-large) + var(--space-md));
+    padding-bottom: var(--space-2xl);
+
+    @include down(md) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto minmax(0, 0.9fr) minmax(0, 1fr);
+    }
+  }
+
+  .seq__lead {
+    grid-column: 1 / -1;
+
+    .section-head {
+      margin: 0;
+    }
+
+    .section-title {
+      font-size: type-size("h3");
+    }
+  }
+
+  .seq__panels {
+    position: relative;
+    border-radius: radius("lg");
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  .seq__panel {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    will-change: opacity;
+
+    .ph {
+      position: absolute;
+      inset: 0;
+    }
+
+    &:not(:first-child) {
+      visibility: hidden;
+    }
+
+    img {
+      will-change: transform;
+    }
+  }
+
+  .seq__slides {
+    display: grid;
+    align-content: center;
+    min-height: 0;
+  }
+
+  .seq__slide {
+    grid-area: 1 / 1;
+    display: grid;
+    gap: var(--space-sm);
+    align-content: center;
+    will-change: transform, opacity;
+
+    .seq__title {
+      font-size: type-size("h2");
+    }
+
+    p {
+      max-width: 52ch;
+    }
+  }
+
+  .seq__slide:not(:first-child) {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// ── reduced motion: no pinning, everything stacked and readable ──
+.seq.is-static {
+  height: auto;
+
+  .seq__sticky {
+    position: relative;
+    height: auto;
+    overflow: visible;
+  }
+
+  .seq__hud {
+    display: none;
+  }
+
+  &.seq--hero {
+    .seq__media {
+      position: absolute;
+      inset: 0;
+    }
+
+    .seq__frame:not(:first-child) {
+      display: none;
+    }
+
+    .seq__copy {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2xl);
+      padding-block: calc(var(--nav-h-large) + var(--space-xl)) var(--space-2xl);
+    }
+
+    .seq__slide {
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+    }
+
+    .seq__shade {
+      background: rgba(10, 24, 38, 0.72);
+    }
+  }
+
+  &.seq--words {
+    .seq__bg:not(:first-child) {
+      display: none;
+    }
+
+    .seq__stage {
+      display: block;
+      padding-block: var(--section-pad);
+    }
+
+    .seq__words,
+    .seq__texts {
+      display: grid;
+      gap: var(--space-lg);
+      width: auto;
+      margin-top: var(--space-lg);
+    }
+
+    .seq__word-wrap,
+    .seq__text {
+      grid-area: auto;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    .seq__word {
+      font-size: type-size("display");
+    }
+  }
+
+  &.seq--split {
+    .seq__stage {
+      display: block;
+      padding-block: var(--section-pad);
+    }
+
+    .seq__panels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+      gap: var(--space-sm);
+      margin: var(--space-lg) 0;
+      overflow: visible;
+    }
+
+    .seq__panel {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      visibility: visible !important;
+      clip-path: none !important;
+    }
+
+    .seq__slides {
+      gap: var(--space-xl);
+    }
+
+    .seq__slide {
+      grid-area: auto;
+      opacity: 1 !important;
+      visibility: visible !important;
+      transform: none !important;
+    }
+  }
+}
+
+// ── colour mask: a horizontal wash that sweeps across the pinned stage while a frame is read ──
+.seq__mask {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  will-change: opacity;
+  --mask: #{palette("sun")};
+
+  &[data-k="1"] { --mask: #{palette("aqua")}; }
+  &[data-k="2"] { --mask: #{palette("clay")}; }
+
+  &-fill {
+    position: absolute;
+    inset: 0;
+    background: color-mix(in srgb, var(--mask) 34%, transparent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    will-change: transform;
+  }
+
+  &-edge {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -4px;
+    width: 4px;
+    background: var(--mask);
+    will-change: transform;
+  }
+}
+
+.seq--split .seq__stage {
+  position: relative;
+  z-index: 1;
+}
+
+.seq.is-static .seq__mask {
+  display: none;
+}
+
+// home splash: a single screen; the slides cycle by themselves (fx/herocycle.js), so there is nothing to scroll through
+.seq--hero {
+  height: 100svh;
+}
+
+// slide pills joined by timelines
+.hero-pills {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  min-width: 0;
+
+  &__item { display: flex; align-items: center; flex: none; }
+
+  &__pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    height: 2.5rem;
+    padding: 0 1.15rem;
+    border-radius: radius("pill");
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    background: rgba(10, 24, 38, 0.35);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    @include move((background-color, border-color, color), "base", "out");
+
+    &:hover { border-color: #fff; }
+    &.is-past { border-color: palette("sun"); }
+    &.is-active { background: palette("sun"); border-color: palette("sun"); color: palette("ink"); }
+    &:focus-visible { @include focus-ring; }
+
+    @include down(md) { padding: 0 0.85rem; }
+  }
+
+  &__label { @include down(md) { @include visually-hidden; } }
+
+  &__line {
+    position: relative;
+    display: block;
+    width: clamp(2rem, 6.5vw, 6.5rem);
+    height: 2px;
+    margin-inline: 0.5rem;
+    background: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    border-radius: 2px;
+
+    &.is-loop { width: clamp(1.2rem, 2.5vw, 2.5rem); opacity: 0.7; }
+    i { position: absolute; inset: 0; background: palette("sun"); transform: scaleX(0); transform-origin: left center; will-change: transform; }
+  }
+
+  &__toggle {
+    flex: none;
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.4rem;
+    border-radius: 50%;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    background: rgba(10, 24, 38, 0.35);
+    cursor: pointer;
+    // pause glyph (two bars); becomes a play triangle while paused
+    i { position: absolute; inset: 0; margin: auto; width: 0.7rem; height: 0.8rem; border-left: 3px solid #fff; border-right: 3px solid #fff; }
+    &[aria-pressed="true"] i { width: 0; height: 0; border: 0; border-left: 0.75rem solid #fff; border-top: 0.45rem solid transparent; border-bottom: 0.45rem solid transparent; margin-left: 0.85rem; }
+    &:hover { border-color: #fff; }
+    &:focus-visible { @include focus-ring; }
+  }
+}
+
+// hero masking: the incoming photo is revealed by a sliding panel with a bright leading edge
+.seq--hero {
+  .seq__frame-in {
+    position: absolute;
+    inset: 0;
+    will-change: transform;
+
+    .ph {
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .seq__frame {
+    will-change: transform, opacity;
+  }
+
+  .seq__edge {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 3px;
+    z-index: 3;
+    background: linear-gradient(90deg, transparent, palette("sun") 20%, palette("clay") 80%, transparent);
+    box-shadow: 0 0 2.5rem 0.4rem color-mix(in srgb, palette("sun") 55%, transparent);
+    opacity: 0;
+    will-change: transform, opacity;
+  }
+}
+
+// stages are nudged by fx/settle.js (no z-index / will-change here: stages must never paint over the next section)
+
+// ── stage variant: full-screen tinted photographs masked in over one another ──
+.seq--stage {
+  background: palette("ink");
+
+  .seq__sticky { background: palette("ink"); contain: paint; }
+
+  .seq__panels {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    isolation: isolate;
+    overflow: hidden;
+  }
+
+  .seq__panel {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    overflow: hidden;
+    --tint: #{palette("sun")};
+    &[data-k="1"] { --tint: #{palette("aqua")}; }
+    &[data-k="2"] { --tint: #{palette("clay")}; }
+  }
+
+  .seq__panel-in { position: absolute; inset: 0; }
+  .seq__panel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+  // the colour wash laid over each photograph
+  .seq__tint {
+    position: absolute;
+    inset: 0;
+    background: color-mix(in srgb, var(--tint) 52%, transparent);
+  }
+
+  // solid band of tint that rides the leading (left) edge of the incoming photo
+  .seq__lead {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 28vw;
+    opacity: 0;
+    background: linear-gradient(90deg, var(--tint) 0%, color-mix(in srgb, var(--tint) 70%, transparent) 40%, transparent 100%);
+    pointer-events: none;
+  }
+
+  // keeps the copy readable over any photograph
+  .seq__scrim {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+    background:
+      linear-gradient(0deg, rgba(10, 24, 38, 0.86) 0%, rgba(10, 24, 38, 0.35) 45%, rgba(10, 24, 38, 0.18) 100%),
+      linear-gradient(90deg, rgba(10, 24, 38, 0.45) 0%, transparent 60%);
+  }
+
+  .seq__stagecopy {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    padding-top: calc(var(--nav-h-large, 5rem) + var(--space-md, 1.5rem));
+    padding-bottom: clamp(2rem, 6vh, 4rem);
+    color: #fff;
+    pointer-events: none;
+    margin-inline: auto;
+
+    .seq__lead { position: static; width: auto; opacity: 1; background: none; }
+    .section-head { margin: 0; }
+    .section-title { font-size: type-size("h3"); color: #fff; }
+  }
+
+  // number + title: stacked in one grid cell, directly under the section heading
+  .seq__titles { display: grid; margin-top: clamp(1.2rem, 4vh, 2.6rem); }
+  .seq__head { grid-area: 1 / 1; display: grid; gap: .6rem; justify-items: start; align-content: start; }
+  .seq__head .eyebrow { color: palette("sun"); }
+  .seq__title { margin: 0; color: #fff; font-size: clamp(2.6rem, 6vw, 5.4rem); line-height: 0.92; white-space: nowrap; }
+
+  // body copy + button: vertically centred in what is left of the screen
+  .seq__bodies { display: grid; align-self: center; align-items: center; max-width: 46rem; }
+  .seq__body {
+    grid-area: 1 / 1;
+    display: grid;
+    gap: 1.6rem;
+    justify-items: start;
+    pointer-events: auto;
+
+    p { margin: 0; font-size: clamp(1.3rem, 2.3vw, 2.15rem); line-height: 1.35; font-weight: 500; color: #fff; max-width: 40rem; text-shadow: 0 2px 24px rgba(5, 12, 22, .45); }
+  }
+}
+
+.seq--stage.is-static {
+  height: auto;
+  .seq__sticky { position: relative; height: auto; min-height: 100svh; overflow: visible; contain: none; display: grid; }
+  .seq__panel { position: absolute; }
+  .seq__panel:not(:first-child) { display: none; }
+  .seq__stagecopy { position: relative; display: block; padding-block: 8rem 3rem; }
+  .seq__titles, .seq__bodies { display: block; max-width: none; }
+  .seq__slide { margin-bottom: 1.5rem; }
+  .seq__ticks { display: none; }
+}

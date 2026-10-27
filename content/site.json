@@ -1,0 +1,507 @@
+{
+  "lang": "en-AU",
+  "brand": {
+    "name": "SIDE"
+  },
+  "contact": {
+    "to": "page.support#contact-anchor"
+  },
+  "pages": [
+    {
+      "id": "page.home",
+      "file": "home",
+      "href": "index.html",
+      "label": "Home",
+      "nav": false
+    },
+    {
+      "id": "page.about",
+      "file": "about",
+      "href": "about.html",
+      "label": "About",
+      "nav": true
+    },
+    {
+      "id": "page.community",
+      "file": "community",
+      "href": "community.html",
+      "label": "Community",
+      "nav": true
+    },
+    {
+      "id": "page.education",
+      "file": "education",
+      "href": "education.html",
+      "label": "Education",
+      "nav": true
+    },
+    {
+      "id": "page.enrolment",
+      "file": "enrolment",
+      "href": "enrolment.html",
+      "label": "Enrolment",
+      "nav": true
+    },
+    {
+      "id": "page.payments",
+      "file": "payments",
+      "href": "payments.html",
+      "label": "Payments",
+      "nav": true
+    },
+    {
+      "id": "page.support",
+      "file": "support",
+      "href": "support.html",
+      "label": "Support",
+      "nav": true
+    },
+    {
+      "id": "page.referral",
+      "file": "referral",
+      "href": "referral.html",
+      "label": "Referral Program",
+      "nav": false
+    }
+  ],
+  "nav": [
+    {
+      "page": "page.about",
+      "blurb": "Everything about SIDE.",
+      "media": "m.nav.about",
+      "anchors": [
+        {
+          "id": "nav.about.vision",
+          "label": "Vision & Values",
+          "anchor": "vision-values-anchor"
+        },
+        {
+          "id": "nav.about.campus",
+          "label": "Campus Tour",
+          "anchor": "campus-tour-anchor"
+        },
+        {
+          "id": "nav.about.docs",
+          "label": "School Documents",
+          "anchor": "school-documents-anchor"
+        },
+        {
+          "id": "nav.about.history",
+          "label": "History",
+          "anchor": "history-anchor"
+        },
+        {
+          "id": "nav.about.careers",
+          "label": "Careers",
+          "anchor": "careers-anchor"
+        }
+      ]
+    },
+    {
+      "page": "page.community",
+      "blurb": "All about our people.",
+      "media": "m.comm.hero",
+      "anchors": [
+        {
+          "id": "nav.comm.news",
+          "label": "News",
+          "anchor": "news-anchor"
+        },
+        {
+          "id": "nav.comm.events",
+          "label": "Events & Calendar",
+          "anchor": "events-anchor"
+        },
+        {
+          "id": "nav.comm.newsletter",
+          "label": "Newsletter",
+          "anchor": "newsletter-anchor"
+        },
+        {
+          "id": "nav.comm.alumni",
+          "label": "Alumni Stories",
+          "anchor": "alumni-anchor"
+        },
+        {
+          "id": "nav.comm.council",
+          "label": "School Council",
+          "anchor": "school-council-anchor"
+        }
+      ]
+    },
+    {
+      "page": "page.education",
+      "blurb": "Learn about the different kinds of education offered at SIDE.",
+      "media": "m.edu.hero",
+      "anchors": [
+        {
+          "id": "nav.edu.pathway",
+          "label": "Choosing Your Pathway",
+          "anchor": "pathway-anchor"
+        },
+        {
+          "id": "nav.edu.overview",
+          "label": "How It Works",
+          "anchor": "how-it-works"
+        },
+        {
+          "id": "nav.edu.curriculum",
+          "label": "Curriculum",
+          "anchor": "curriculum-anchor"
+        },
+        {
+          "id": "nav.edu.docs",
+          "label": "Key Documents",
+          "anchor": "key-documents-anchor"
+        },
+        {
+          "id": "nav.edu.regional",
+          "label": "Regional",
+          "anchor": "regional-anchor"
+        },
+        {
+          "id": "nav.edu.eald",
+          "label": "EALD",
+          "anchor": "eald-anchor"
+        }
+      ]
+    },
+    {
+      "page": "page.enrolment",
+      "blurb": "Everything you need to know about enrolling at SIDE.",
+      "media": "m.enrol.hero",
+      "anchors": [
+        {
+          "id": "nav.enrol.home",
+          "label": "Home-based",
+          "anchor": "home-based-anchor"
+        },
+        {
+          "id": "nav.enrol.school",
+          "label": "School-based",
+          "anchor": "school-based-anchor"
+        },
+        {
+          "id": "nav.enrol.blended",
+          "label": "Blended (Dance / Arts / Sports)",
+          "anchor": "blended-anchor"
+        },
+        {
+          "id": "nav.enrol.referrals",
+          "label": "Referral Program",
+          "anchor": "referrals-information"
+        }
+      ]
+    },
+    {
+      "page": "page.payments",
+      "blurb": "Contributions and charges.",
+      "media": "m.pay.hero",
+      "anchors": [
+        {
+          "id": "nav.pay.make",
+          "label": "Make a Payment",
+          "anchor": "make-payment-anchor"
+        },
+        {
+          "id": "nav.pay.home",
+          "label": "Home-based Contributions",
+          "anchor": "home-based-contributions-anchor"
+        },
+        {
+          "id": "nav.pay.school",
+          "label": "School-based Charges",
+          "anchor": "school-based-charges-anchor"
+        },
+        {
+          "id": "nav.pay.booklist",
+          "label": "Booklist",
+          "anchor": "booklist-anchor"
+        },
+        {
+          "id": "nav.pay.uniform",
+          "label": "Uniform",
+          "anchor": "uniform-anchor"
+        },
+        {
+          "id": "nav.pay.aid",
+          "label": "Financial Aid",
+          "anchor": "financial-aid-anchor"
+        }
+      ]
+    },
+    {
+      "page": "page.support",
+      "blurb": "Help when you need it.",
+      "media": "m.sup.hero",
+      "anchors": [
+        {
+          "id": "nav.sup.info",
+          "label": "Support Information",
+          "anchor": "info-anchor"
+        },
+        {
+          "id": "nav.sup.docs",
+          "label": "Key Documents",
+          "anchor": "key-documents-anchor"
+        },
+        {
+          "id": "nav.sup.faqs",
+          "label": "FAQs",
+          "anchor": "faqs-anchor"
+        },
+        {
+          "id": "nav.sup.trouble",
+          "label": "Troubleshooting",
+          "anchor": "troubleshooting-anchor"
+        },
+        {
+          "id": "nav.sup.contact",
+          "label": "Contact Us",
+          "anchor": "contact-anchor"
+        }
+      ]
+    }
+  ],
+  "ui": {
+    "skip": "Skip to main content",
+    "newTab": "(opens in a new tab)",
+    "scroll": "Scroll",
+    "onThisPage": "On this page",
+    "hscrollHint": "Keep scrolling",
+    "backToTop": "Back to top",
+    "brand": {
+      "homeLabel": "SIDE – School of Isolated and Distance Education, home"
+    },
+    "nav": {
+      "main": "Main",
+      "menu": "Menu",
+      "sections": "Page sections",
+      "jumpTo": "Jump to",
+      "openPage": "Open",
+      "mobile": "Mobile",
+      "search": "Search",
+      "login": "Login",
+      "contact": "Contact"
+    },
+    "accordion": {
+      "expandAll": "Expand all",
+      "collapseAll": "Collapse all"
+    },
+    "motion": {
+      "reduce": "Reduce motion",
+      "restore": "Restore motion"
+    },
+    "cursor": {
+      "go": "Go",
+      "view": "View",
+      "drag": "Drag",
+      "read": "Read",
+      "open": "Open",
+      "scroll": "Scroll",
+      "toggle": "Toggle",
+      "tab": "Select",
+      "pick": "Pick",
+      "home": "Home",
+      "menu": "Menu"
+    },
+    "dates": {
+      "closing": {
+        "future": "Closes in {n} days",
+        "past": "Closed {n} days ago"
+      },
+      "opening": {
+        "future": "Opens in {n} days",
+        "past": "Opened {n} days ago"
+      }
+    },
+    "hero": {
+      "slides": "Welcome slides",
+      "show": "Show slide:",
+      "pause": "Pause automatic slides",
+      "play": "Play automatic slides"
+    }
+  },
+  "footer": {
+    "kicker": "Ready when you are",
+    "big": "Learn anywhere.",
+    "cta": {
+      "label": "Start enrolling",
+      "to": "page.enrolment"
+    },
+    "ack": {
+      "title": "Acknowledgement of Country",
+      "text": "We respectfully acknowledge the Whadjuk people of the Noongar Nation as the Traditional custodians of the land on which our school stands, the Wadjuk boodjar. We pay our respects to Elders past, present, and future, and honour the cultural, spiritual and educational practices of Aboriginal and Torres Strait Islander Australians."
+    },
+    "contact": {
+      "title": "Contact",
+      "address": [
+        "164–194 Oxford Street,",
+        "Leederville WA 6007"
+      ],
+      "links": [
+        {
+          "label": "(08) 9311 4000",
+          "href": "tel:+61893114000"
+        },
+        {
+          "label": "info@side.wa.edu.au",
+          "href": "mailto:info@side.wa.edu.au"
+        }
+      ]
+    },
+    "columns": [
+      {
+        "id": "parents",
+        "title": "Parents",
+        "links": [
+          {
+            "label": "Absentees",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "id": "students",
+        "title": "Students",
+        "links": [
+          {
+            "label": "Moodle Primary",
+            "href": "#"
+          },
+          {
+            "label": "Moodle Secondary",
+            "href": "#"
+          },
+          {
+            "label": "Moodle RTO",
+            "href": "#"
+          },
+          {
+            "label": "Student Email",
+            "href": "#"
+          },
+          {
+            "label": "Library Catalogue",
+            "href": "#"
+          }
+        ]
+      },
+      {
+        "id": "social",
+        "title": "Social",
+        "links": [
+          {
+            "label": "Facebook",
+            "href": "#"
+          },
+          {
+            "label": "LinkedIn",
+            "href": "#"
+          },
+          {
+            "label": "Instagram",
+            "href": "#"
+          }
+        ]
+      }
+    ],
+    "legal": "© School of Isolated and Distance Education. All rights reserved.",
+    "wordmark": "SIDE"
+  },
+  "dialogs": {
+    "close": "Close",
+    "search": {
+      "title": "Search the site",
+      "label": "Search",
+      "placeholder": "Try “referral”, “uniform”, “Moodle”…",
+      "hint": "Type to search every page.",
+      "loading": "Loading…",
+      "count": "{n} results",
+      "none": "No results. Try a different word."
+    },
+    "login": {
+      "title": "Student, parent and staff login",
+      "groups": [
+        {
+          "id": "students",
+          "title": "Students",
+          "wide": true,
+          "links": [
+            {
+              "label": "Student Email",
+              "href": "https://outlook.cloud.microsoft/mail//owa/?realm=student.education.wa.edu.au&profile=student"
+            },
+            {
+              "label": "Moodle Primary",
+              "href": "https://link.side.wa.edu.au/link/login/index.php"
+            },
+            {
+              "label": "Connect",
+              "href": "https://connect.det.wa.edu.au/login/student"
+            },
+            {
+              "label": "Moodle Secondary",
+              "href": "https://otl.side.wa.edu.au/moodle2/login/index.php"
+            },
+            {
+              "label": "Library Catalogue",
+              "href": "https://oliver.side.wa.edu.au/oliver/OpacLogin?corporation=SIDE"
+            },
+            {
+              "label": "Moodle RTO 52891",
+              "href": "https://training.side.wa.edu.au/"
+            },
+            {
+              "label": "Absentee Reporting Form",
+              "href": "#"
+            }
+          ]
+        },
+        {
+          "id": "parents",
+          "title": "Parents",
+          "links": [
+            {
+              "label": "Connect",
+              "href": "https://connect.det.wa.edu.au/login/parent"
+            },
+            {
+              "label": "Guide To Parent Connect",
+              "href": "https://erol.side.wa.edu.au//content/file/6065ce1a-715b-4446-8076-7b5175d6e74d/1/Step%20by%20Step%20Guide%20for%20Parents.pdf"
+            },
+            {
+              "label": "Parent Teacher Interviews",
+              "href": "https://bookings.parentteacheronline.com.au/Login.aspx?ReturnUrl=%2f%3fschool%3d4nzyz&school=4nzyz"
+            }
+          ]
+        },
+        {
+          "id": "staff",
+          "title": "Staff",
+          "links": [
+            {
+              "label": "SIDENet",
+              "href": "https://intranet.side.wa.edu.au/intranet/"
+            },
+            {
+              "label": "IKON",
+              "href": "https://ikon.education.wa.edu.au/"
+            }
+          ]
+        }
+      ],
+      "reset": [
+        {
+          "label": "Change Password",
+          "href": "https://apps.det.wa.edu.au/dam/portal/changePassPage.do?"
+        },
+        {
+          "label": "Forgot Password",
+          "href": "https://apps.det.wa.edu.au/dam/portal/resetPassPage.do?"
+        }
+      ],
+      "eyebrow": "Access portals"
+    }
+  }
+}

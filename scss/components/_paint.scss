@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+// ═══ Paint reveal: dark section, title left, red brush strokes paint in the white copy on the right ═══
+.paint {
+  --nav-pad: calc(var(--nav-h-compact) + var(--space-sm));
+  --paint: var(--clay, #bf314b);
+  padding-block: 0;
+  overflow: clip;
+  height: calc(var(--stage-h, 100svh) + 130vh);   // scroll distance: hold, then strokes
+
+  &__sticky {
+    position: sticky;
+    top: max(var(--nav-pad), calc((100svh - var(--stage-h, 100svh)) / 2));   // vertically centred in the window
+    padding-block: var(--space-lg);
+  }
+  &__grid {
+    display: grid;
+    gap: var(--space-xl);
+    align-items: center;
+    @include up(lg) { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(2rem, 5vw, 5rem); }
+  }
+  &__title .section-title { color: #fff; }
+  &__copy {
+    display: grid;
+    gap: var(--space-md);
+    // extra top / bottom padding: a stroke of paint above and below the text
+    padding: clamp(3.4rem, 6vw, 5rem) clamp(2rem, 3.5vw, 3.4rem);
+    background: var(--paint);
+    color: #fff;
+    .prose { max-width: none; display: grid; gap: var(--space-sm); }
+  }
+  &__lead { margin: 0; font-size: clamp(1.25rem, 1.15rem + 0.6vw, 1.7rem); line-height: 1.4; font-weight: 500; }
+
+  // window too short to pin: scroll normally, strokes still paint as the copy passes
+  &.is-free { height: auto; padding-block: calc(var(--section-pad) * 0.8); .paint__sticky { position: static; padding-block: 0; } }
+
+  // narrow screens / reduced motion: no pin, no strokes; the red panel is simply shown
+  &.is-static { height: auto; padding-block: calc(var(--section-pad) * 1.1); .paint__sticky { position: static; padding-block: 0; } }
+}

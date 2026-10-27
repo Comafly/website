@@ -1,0 +1,47 @@
+@use "sass:map";
+@use "../abstracts" as *;
+
+// Publishes every token as a CSS custom property so JS, inline styles and DevTools can use them.
+:root {
+  @each $name, $value in $colors {
+    --color-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $space {
+    --space-#{$name}: #{$value};
+  }
+
+  @each $name, $pair in $type-scale {
+    --fs-#{$name}: #{type-size($name)};
+  }
+
+  @each $name, $value in $durations {
+    --dur-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $easings {
+    --ease-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $radii {
+    --radius-#{$name}: #{$value};
+  }
+
+  --font-display: #{$font-display};
+  --font-body: #{$font-body};
+  --font-accent: #{$font-accent};
+  --font-mono: #{$font-mono};
+  --gutter: #{fluid($gutter-min, $gutter-max)};
+  --section-pad: #{fluid($section-pad-min, $section-pad-max)};
+  --container: #{$container-max};
+  --nav-h-large: #{$nav-h-large};
+  --nav-h-compact: #{$nav-h-compact};
+  --nav-h: var(--nav-h-large);
+  --seq-step: #{$seq-step};
+  --focus: #{palette("sun")};
+  --logo-ink: #{palette("ink")};
+  --ink-glass: rgba(10, 24, 38, 0.88);
+  color-scheme: dark;
+
+  @include tone("ink");
+}

@@ -1,0 +1,130 @@
+@use "../abstracts" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--nav-h-compact) + 1rem);
+  scrollbar-color: #{palette("sun")} #{palette("ink")};
+  scrollbar-width: thin;
+
+  // 1920×1080 and smaller desktops: the same design, every rem-based size scaled down a little
+  @media (max-width: 1920px) {
+    font-size: 92%;
+  }
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  @include type("body");
+  background: var(--bg);
+  color: var(--fg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+summary {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+[hidden]:not([hidden="until-found"]) {
+  display: none !important;
+}
+
+::selection {
+  background: #{palette("sun")};
+  color: #{palette("ink")};
+}
+
+:focus-visible {
+  @include focus-ring;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+[tabindex="-1"]:focus {
+  outline: none;
+}
+
+main {
+  display: block;
+  outline: none;
+}
+
+.is-loading main,
+.is-loading #site-footer {
+  visibility: hidden;
+}
+
+// Visitors who ask for less motion (OS setting) or choose it in the footer get no animation at all.
+:root[data-motion="reduced"] {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
+}

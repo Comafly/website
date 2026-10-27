@@ -1,0 +1,294 @@
+{
+ "id": "page.about",
+ "meta": {
+  "title": "About",
+  "description": "Everything about SIDE: vision and values, history, campus, documents and careers."
+ },
+ "sections": [
+  {
+   "id": "about.hero",
+   "type": "page-hero",
+   "media": "m.about.hero",
+   "title": "About",
+   "lead": "Everything about SIDE.",
+   "chips": "nav"
+  },
+  {
+   "id": "about.values",
+   "type": "sequence",
+   "variant": "words",
+   "anchor": "vision-values-anchor",
+   "title": "Vision & Values",
+   "eyebrow": "What we stand for",
+   "statementLabel": "Our Vision",
+   "statement": "To enhance and expand learning opportunities for Western Australian students, regardless of their circumstances, through high quality, inclusive and culturally responsive educational programs in a blended learning environment.",
+   "frames": [
+    {
+     "title": "Courage",
+     "tone": "ink",
+     "body": "Students are encouraged to take bold steps in their learning, embracing new challenges and showing resilience when faced with change. Through persistence and self-belief, they grow the confidence to share their voices and stories, valuing both their own perspectives and those of others."
+    },
+    {
+     "title": "Connection",
+     "tone": "brand",
+     "body": "Strong relationships form the heart of learning. Students, teachers, and communities stay connected through collaboration, respect, and shared purpose, honouring the importance of belonging that is deeply valued in Aboriginal cultures and across all learning communities."
+    },
+    {
+     "title": "Equity",
+     "tone": "clay",
+     "body": "Every student is given fair access to quality education, regardless of location or circumstance. Teaching practices are inclusive and culturally aware, recognising the diverse identities, languages, and experiences that shape each learner’s journey."
+    },
+    {
+     "title": "Creativity",
+     "tone": "ink",
+     "body": "Innovation and imagination guide learning across all subjects. Students explore new ideas and express themselves through digital and cultural forms, reflecting Australia’s diverse heritage and the creative strength of its communities."
+    },
+    {
+     "title": "Compassion",
+     "tone": "brand",
+     "body": "Empathy and understanding are embedded in every interaction. Students learn to listen with care, act with kindness, and support one another, fostering a culture that values respect, shared wellbeing, and the stories that connect us all."
+    }
+   ]
+  },
+  {
+   "id": "about.campus",
+   "type": "feature",
+   "anchor": "campus-tour-anchor",
+   "tone": "paper",
+   "media": "m.about.campus",
+   "wide": true,
+   "eyebrow": "Leederville",
+   "title": "Campus Tour",
+   "lead": "Take a virtual walk around campus.",
+   "caption": "Our Leederville campus"
+  },
+  {
+   "id": "about.docs",
+   "type": "docs",
+   "anchor": "school-documents-anchor",
+   "tone": "ink",
+   "title": "School Documents",
+   "lead": "Access all of our most important documents.",
+   "groups": [
+    {
+     "title": "Legal and Administrative Agreements",
+     "items": [
+      {
+       "label": "Online Services Agreement",
+       "href": "https://www.side.wa.edu.au/about/publications/policies/599-online-services-agreement.html"
+      },
+      {
+       "label": "Consent Forms",
+       "href": "https://www.side.wa.edu.au/our-community/parent-community/consent-forms.html"
+      },
+      {
+       "label": "Third Party Services - Notification only",
+       "href": "https://www.side.wa.edu.au/about/publications/policies/950-third-party-services-notification.html"
+      },
+      {
+       "label": "Third Party Services - Parental consent required",
+       "href": "https://www.side.wa.edu.au/about/publications/policies/940-third-party-services-low-risk.html"
+      }
+     ]
+    },
+    {
+     "title": "Academic and Learning Policies",
+     "items": [
+      {
+       "label": "Artificial Intelligence Use Policy and Guidelines",
+       "href": "https://www.side.wa.edu.au/about/publications/policies/1571-artificial-intelligence-use-policy-and-guidelines.html"
+      },
+      {
+       "label": "Assessment Policies",
+       "href": "https://www.side.wa.edu.au/secondary-7-12/assessment-reporting/assessment-policies.html"
+      },
+      {
+       "label": "Attendance Policy",
+       "href": "https://www.side.wa.edu.au/about/publications/policies/327-attendance-policy.html"
+      },
+      {
+       "label": "Site Policies",
+       "href": "https://www.side.wa.edu.au/about/publications/policies/120-site-policies.html"
+      }
+     ]
+    },
+    {
+     "title": "Conduct and Campus Guidelines",
+     "items": [
+      {
+       "label": "Guidelines and Policies for Students on Campus",
+       "href": "https://www.side.wa.edu.au/about/publications/policies/746-guidelines-and-policies-for-students-on-campus.html"
+      },
+      {
+       "label": "Enquiry, Concern and Complaints Policy",
+       "href": "https://www.side.wa.edu.au/about/publications/policies/328-enquiry-concern-and-complaints-policy.html"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "about.history",
+   "type": "hscroll",
+   "anchor": "history-anchor",
+   "tone": "ink",
+   "cardStyle": "era",
+   "title": "History",
+   "lead": "Explore the rich and varied past of a school over 100 years old.",
+   "listLabel": "School history by decade",
+   "items": [
+    {
+     "label": "1910s",
+     "anchor": "history-1918",
+     "entries": [
+      {
+       "title": "Early 1918",
+       "text": "C. Andrews attended a Melbourne conference discussing education for outback children in Western Australia. On return to WA, Andrews recommended establishing a Correspondence School to serve students living far from local schools."
+      },
+      {
+       "title": "September 1918",
+       "text": "The Correspondence School opened in a house on St George’s Terrace with two appointed teachers."
+      },
+      {
+       "title": "First Enrolments",
+       "text": "Initial enrolments quickly grew to 73 students aged five to sixteen. Demand exceeded expectations, prompting expansion of materials and marking cycles."
+      }
+     ]
+    },
+    {
+     "label": "1920s",
+     "anchor": "history-1920",
+     "entries": [
+      {
+       "title": "Relocation Near Government Printer",
+       "text": "Administrative offices moved near the Government Printer in Murray Street."
+      },
+      {
+       "title": "Duplicating Lessons",
+       "text": "Typed masters were duplicated to speed lesson dispatch. Use of duplicators improved consistency and reduced turnaround times."
+      },
+      {
+       "title": "Teacher Networks",
+       "text": "Correspondence teachers formed subject networks to standardise marking."
+      }
+     ]
+    },
+    {
+     "label": "1930s",
+     "anchor": "history-1930",
+     "entries": [
+      {
+       "title": "Depression-Era Relief Lessons",
+       "text": "Simplified lesson packs reduced postage weight and printing costs. Standardised worksheets replaced some hand-typed materials to maintain continuity during budget contractions."
+      }
+     ]
+    },
+    {
+     "label": "1940s",
+     "anchor": "history-1945",
+     "entries": [
+      {
+       "title": "Post-War Reorganisation",
+       "text": "Returned service teachers filled vacancies across remote districts."
+      }
+     ]
+    },
+    {
+     "label": "1950s",
+     "anchor": "history-1954",
+     "entries": [
+      {
+       "title": "Radio Tutorials Begin",
+       "text": "Scheduled radio sessions supplemented mailed coursework. Studios broadcast weekly tutorials to reduce isolation and clarify complex topics."
+      }
+     ]
+    },
+    {
+     "label": "1960s",
+     "anchor": "history-1967",
+     "entries": [
+      {
+       "title": "Photocopiers Adopted",
+       "text": "Stencil duplicators were replaced by early photocopiers."
+      }
+     ]
+    },
+    {
+     "label": "1970s",
+     "anchor": "history-1975",
+     "entries": [
+      {
+       "title": "Audio Cassette Packs",
+       "text": "Subject packs included cassettes for language and science demonstrations. Playback instructions were printed on card inserts to standardise usage."
+      }
+     ]
+    },
+    {
+     "label": "1980s",
+     "anchor": "history-1988",
+     "entries": [
+      {
+       "title": "Computer-Based Typing",
+       "text": "Word processors replaced typewriters in materials production."
+      }
+     ]
+    },
+    {
+     "label": "1990s",
+     "anchor": "history-1996",
+     "entries": [
+      {
+       "title": "Early Web Pages",
+       "text": "Course outlines and forms were published on a public website. Static HTML pages reduced phone enquiries and provided downloadable enrolment forms."
+      }
+     ]
+    },
+    {
+     "label": "2000s",
+     "anchor": "history-2004",
+     "entries": [
+      {
+       "title": "Learning Management System",
+       "text": "An LMS piloted online quizzes and digital submissions."
+      }
+     ]
+    },
+    {
+     "label": "2010s",
+     "anchor": "history-2012",
+     "entries": [
+      {
+       "title": "Video Conferencing Rollout",
+       "text": "Live classes were scheduled across multiple time zones. Attendance tracking and recordings integrated with the LMS for revision."
+      }
+     ]
+    },
+    {
+     "label": "2020s",
+     "anchor": "history-2020",
+     "entries": [
+      {
+       "title": "Remote Learning Scale-Up",
+       "text": "Additional servers and support channels handled a surge in online enrolments. Guides for families and device setup checklists were distributed digitally."
+      },
+      {
+       "title": "2025 Design System Refresh",
+       "text": "Unified styles for colour, typography and components were deployed across sites."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "about.careers",
+   "type": "feature",
+   "anchor": "careers-anchor",
+   "tone": "sun",
+   "reverse": true,
+   "media": "m.about.careers",
+   "eyebrow": "Join us",
+   "title": "Careers",
+   "lead": "Join our team and help kids all over the world."
+  }
+ ]
+}

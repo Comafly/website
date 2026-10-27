@@ -1,0 +1,51 @@
+@use "sass:map";
+@use "sass:math";
+@use "sass:list";
+@use "tokens" as *;
+
+@function palette($name) {
+  @return map.get($colors, $name);
+}
+
+@function space($key) {
+  @return map.get($space, $key);
+}
+
+@function radius($key) {
+  @return map.get($radii, $key);
+}
+
+@function dur($key) {
+  @return map.get($durations, $key);
+}
+
+@function ease($key) {
+  @return map.get($easings, $key);
+}
+
+@function layer($key) {
+  @return map.get($z, $key);
+}
+
+// Fluid value that scales linearly between two viewport widths.
+@function fluid($min, $max, $vmin: $fluid-min-vw, $vmax: $fluid-max-vw) {
+  $slope: math.div($max - $min, $vmax - $vmin);
+  $intercept: $min - $slope * $vmin;
+  @return clamp(#{$min}, #{$intercept} + #{$slope * 100}vw, #{$max});
+}
+
+@function type-size($name) {
+  $pair: map.get($type-scale, $name);
+  @return fluid(list.nth($pair, 1), list.nth($pair, 2));
+}
+
+@function font-family-of($key) {
+  @if $key == "display" {
+    @return $font-display;
+  } @else if $key == "accent" {
+    @return $font-accent;
+  } @else if $key == "mono" {
+    @return $font-mono;
+  }
+  @return $font-body;
+}

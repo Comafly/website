@@ -1,0 +1,226 @@
+@use "../abstracts" as *;
+
+// Buttons. Hover = an instant colour change (no fill animation, no movement, no pointer-follow).
+.btn {
+  --btn-bg: #{palette("clay")};
+  --btn-fg: #{palette("white")};
+  --btn-hover-bg: var(--fg);
+  --btn-hover-fg: var(--bg);
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9em;
+  padding: 1.05em 1.5em 1.05em 1.7em;
+  border: 2px solid var(--btn-bg);
+  border-radius: radius("pill");
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 650;
+  font-stretch: 92%;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  text-decoration: none;
+  overflow: hidden;
+  transition: none;
+
+  &__fill {
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+    background: var(--btn-hover-bg);
+    display: none;                                    // the old expanding-circle fill; hover now swaps colours instantly
+  }
+
+  &__label {
+    display: grid;
+    overflow: hidden;
+    height: 1.1em;
+    line-height: 1.1;
+  }
+
+  &__text {
+    grid-area: 1 / 1;
+    white-space: nowrap;
+
+    &--clone { display: none; }
+  }
+
+  &__icon {
+    display: grid;
+    place-items: center;
+    width: 1.9em;
+    height: 1.9em;
+    margin-right: -0.55em;
+    border-radius: 50%;
+    background: color-mix(in srgb, currentColor 14%, transparent);
+
+    .icon {
+      width: 1.05em;
+      height: 1.05em;
+    }
+  }
+
+  @include hover-capable {
+    &:hover,
+    &:focus-visible {
+      color: var(--btn-hover-fg);
+      border-color: var(--btn-hover-bg);
+      background: var(--btn-hover-bg);
+    }
+  }
+
+  &--lg {
+    font-size: 1.15rem;
+    padding: 1.2em 1.7em 1.2em 2em;
+  }
+
+  &--outline {
+    --btn-bg: transparent;
+    --btn-fg: var(--fg);
+    --btn-hover-bg: var(--accent);
+    --btn-hover-fg: #{palette("ink")};
+    border-color: color-mix(in srgb, var(--fg) 55%, transparent);
+  }
+
+  &--ghost {
+    --btn-bg: color-mix(in srgb, var(--fg) 10%, transparent);
+    --btn-fg: var(--fg);
+    --btn-hover-bg: var(--fg);
+    --btn-hover-fg: var(--bg);
+    border-color: transparent;
+  }
+
+  // text link with sweeping underline
+  &--link {
+    --btn-bg: transparent;
+    --btn-fg: var(--fg);
+    padding: 0.4em 0;
+    border: 0;
+    border-radius: 0;
+    overflow: visible;
+    gap: 0.6em;
+    background: none;
+
+    .btn__fill {
+      display: block;
+      inset: auto 0 0 0;
+      height: 2px;
+      background: var(--accent);
+      clip-path: inset(0 100% 0 0);
+    }
+
+    .btn__label::after {
+      content: "";
+    }
+
+    .btn__icon {
+      width: 1.5em;
+      height: 1.5em;
+      margin: 0;
+    }
+
+    @include hover-capable {
+      &:hover {
+        color: var(--accent);
+        background: none;
+        border-color: transparent;
+
+        .btn__fill {
+          clip-path: inset(0 0 0 0);
+        }
+      }
+    }
+  }
+}
+
+// The section's tone decides which button colours read best.
+.tone-paper .btn:not(.btn--outline):not(.btn--ghost):not(.btn--link),
+.tone-sky .btn:not(.btn--outline):not(.btn--ghost):not(.btn--link) {
+  --btn-hover-bg: #{palette("ink")};
+  --btn-hover-fg: #{palette("white")};
+}
+
+.tone-sun .btn:not(.btn--outline):not(.btn--ghost):not(.btn--link) {
+  --btn-bg: #{palette("ink")};
+  --btn-fg: #{palette("white")};
+  --btn-hover-bg: #{palette("white")};
+  --btn-hover-fg: #{palette("ink")};
+}
+
+.tone-clay .btn:not(.btn--outline):not(.btn--ghost):not(.btn--link) {
+  --btn-bg: #{palette("sun")};
+  --btn-fg: #{palette("ink")};
+  --btn-hover-bg: #{palette("white")};
+}
+
+.tone-paper .btn--outline,
+.tone-sky .btn--outline,
+.tone-sun .btn--outline {
+  --btn-hover-bg: #{palette("ink")};
+  --btn-hover-fg: #{palette("white")};
+}
+
+// Small pill + chip + icon buttons (header, hero anchors)
+.pill,
+.chip {
+  position: relative;
+  isolation: isolate;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  padding: 0.7em 1.15em;
+  border: 1.5px solid color-mix(in srgb, currentColor 45%, transparent);
+  border-radius: radius("pill");
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  background: transparent;
+  transition: none;
+
+  @include hover-capable {
+    &:hover,
+    &:focus-visible {
+      color: palette("ink");
+      border-color: palette("sun");
+      background: palette("sun");
+    }
+  }
+}
+
+.chip {
+  padding: 0.85em 1.35em;
+  font-size: 0.75rem;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55em;
+  padding: 0.6em 0.8em;
+  border: 0;
+  background: none;
+  color: inherit;
+  border-radius: radius("pill");
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: none;
+
+  &:hover {
+    background: palette("sun");
+    color: palette("ink");
+  }
+
+  .icon {
+    width: 1.35em;
+    height: 1.35em;
+  }
+}

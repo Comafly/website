@@ -1,0 +1,121 @@
+@use "../abstracts" as *;
+
+// ═══ Curriculum: year-group headers, a narrow learning-area list, a details panel ═══
+.cur {
+  padding-block: calc(var(--section-pad) * 1.1);
+
+  &__inner { display: grid; gap: clamp(2rem, 4vw, 3.5rem); }
+  .section-head { margin: 0; display: grid; gap: var(--space-sm); .lead { max-width: 52ch; } }
+
+  // ── the headers ──
+  &__levels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem clamp(1.5rem, 4vw, 4rem);
+    align-items: baseline;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  &__level {
+    position: relative;
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.9rem;
+    padding: 0 0 0.3rem;
+    border: 0;
+    background: none;
+    color: transparent;
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.55);
+    cursor: pointer;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-stretch: 75%;
+    font-size: clamp(2.4rem, 5.2vw, 5.2rem);
+    line-height: 0.95;
+    text-transform: uppercase;
+    transition: color 0.45s cubic-bezier(0.65, 0, 0.35, 1), -webkit-text-stroke-color 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -0.55rem;
+      height: 4px;
+      background: #d2ad69;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    &[aria-selected="true"] { color: #fff; -webkit-text-stroke-color: #fff; &::after { transform: scaleX(1); } }
+    &:hover:not([aria-selected="true"]) { -webkit-text-stroke-color: #d2ad69; }
+    &:focus-visible { outline: 3px solid #d2ad69; outline-offset: 6px; border-radius: 4px; }
+  }
+
+  &__level-years {
+    font-family: var(--font-mono);
+    font-weight: 500;
+    font-size: clamp(0.8rem, 1.1vw, 1rem);
+    letter-spacing: 0.14em;
+    color: #d2ad69;
+    -webkit-text-stroke: 0;
+  }
+
+  // ── list + details ──
+  &__layout {
+    display: grid;
+    grid-template-columns: minmax(13rem, 17rem) minmax(0, 1fr);
+    gap: clamp(1.5rem, 4vw, 4rem);
+    align-items: start;
+    @include down(lg) { grid-template-columns: 1fr; }
+  }
+
+  &__areas {
+    display: grid;
+    gap: 0.3rem;
+    @include down(lg) { grid-auto-flow: column; grid-auto-columns: max-content; overflow-x: auto; padding-bottom: 0.5rem; scrollbar-width: thin; }
+  }
+
+  &__area {
+    display: grid;
+    grid-template-columns: 1.8rem 1fr auto;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.62rem 0.8rem;
+    border: 0;
+    border-radius: 0.5rem;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.78);
+    text-align: left;
+    font: inherit;
+    font-weight: 600;
+    font-size: 0.98rem;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+
+    .icon { width: 1rem; height: 1rem; opacity: 0; transform: translateX(-0.4rem); transition: opacity 0.3s, transform 0.3s; }
+    &:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+    &[aria-selected="true"] { background: #d2ad69; color: #0a1826; .icon { opacity: 1; transform: none; } }
+    &:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+    @include down(lg) { grid-template-columns: auto auto; white-space: nowrap; .icon { display: none; } }
+  }
+  &__area-num { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.08em; opacity: 0.7; @include down(lg) { display: none; } }
+
+  &__details {
+    min-height: clamp(18rem, 36vw, 26rem);
+    padding: clamp(1.5rem, 3.4vw, 3.2rem);
+    border-radius: 0 clamp(2.5rem, 5vw, 4.5rem) 0 0;
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-top: 4px solid #d2ad69;
+  }
+
+  &__detail { display: grid; gap: var(--space-sm); align-content: start; &[hidden] { display: none; } }
+  &__detail-kicker { margin: 0; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: #d2ad69; }
+  &__detail-title { margin: 0; font-family: var(--font-display); font-weight: 800; font-stretch: 75%; font-size: clamp(2.6rem, 5.4vw, 5.2rem); line-height: 0.92; text-transform: uppercase; }
+  &__detail-text { display: grid; gap: 1rem; max-width: 60ch; p { margin: 0; font-size: 1.1rem; line-height: 1.65; color: rgba(255, 255, 255, 0.86); } }
+
+  &__panel[hidden] { display: none; }
+}

@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+// ═══ Touch & small-screen safety net (loaded last) ═══
+
+// Every interactive control gets a ≥44px hit area on touch screens (WCAG 2.5.5 / Apple HIG).
+@media (pointer: coarse) {
+  .btn, .chip, .pill, .icon-btn, .menu-toggle, .link-btn, .cal__open, .cal__seg, .hero-pills__pill,
+  .card__open, .tabs__tab, .acc__trigger, .hero-pills__toggle, .cal__download, .cur__level, .chip-radio__face {
+    min-height: 2.75rem;
+  }
+  .pill, .icon-btn, .menu-toggle, .hero-pills__toggle { min-width: 2.75rem; justify-content: center; }
+  .link-btn { padding-block: 0.7em; }
+  .footer__link { padding-block: 0.7rem; }
+  .cal__download { display: inline-flex; align-items: center; }
+  .cal__open { display: inline-flex; align-items: center; text-align: left; padding-block: 0.6rem; }
+  .text-link { display: inline-block; padding-block: 0.65rem; margin-block: -0.65rem; }
+  // dot / number pagers: small visual, large hit area
+  button[data-go] { position: relative; min-width: 2.75rem; min-height: 2.75rem; display: inline-flex; align-items: center; justify-content: center; }
+}
+
+// Long button labels wrap instead of overflowing the screen.
+@include down(sm) {
+  .btn { max-width: 100%; line-height: 1.2; }
+  .btn__label { height: auto; overflow: visible; }
+  .btn__text { white-space: normal; }
+  .downloads > li, .downloads > * { max-width: 100%; }
+}
+
+// Ultra-wide monitors: keep the page composed rather than stretched.
+@media (min-width: 120em) {
+  html { font-size: clamp(16px, calc(16px + (100vw - 1920px) * 0.0045), 20px); }
+}
+
+// Long words / URLs must wrap rather than push the page wider than the screen.
+.callout { max-width: 100%; }
+.callout__body { min-width: 0; }
+.prose, .callout, .lead, .card, .rate, .downloads { overflow-wrap: break-word; }
+.acc__inner > *, .tabs__panel > *, .prose > * { min-width: 0; }
+.text-link, .callout a { overflow-wrap: anywhere; }

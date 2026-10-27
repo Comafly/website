@@ -1,0 +1,261 @@
+@use "../abstracts" as *;
+
+// ═══ How it works ═══
+.howit {
+  --sun: #d2ad69;
+  --aqua: #7fb2cc;
+  --rose: #e6c8cf;
+  --nav-pad: calc(var(--nav-h-compact) + var(--space-sm));
+  padding-block: calc(var(--section-pad) * 1.1) calc(var(--section-pad) * 1.1);
+  overflow: clip;
+
+  &__inner { display: grid; }
+  &__intro { display: grid; gap: var(--space-md); .section-head { display: grid; gap: var(--space-sm); margin: 0; } .section-title { margin: 0; } }
+
+  &__ways-head { display: grid; gap: 0.6rem; padding-top: clamp(5rem, 10vw, 8rem); }
+  &__ways-title { margin: 0; font-family: var(--font-display); font-weight: 750; font-stretch: 80%; font-size: clamp(2rem, 4.4vw, 4.2rem); line-height: 1; text-transform: uppercase; }
+}
+
+// ── Pinned stages ──
+.hstage {
+  // the stage is only as tall as its content (fx/hstage.js writes --stage-h); the extra height is the scroll distance
+  height: calc(var(--stage-h, 100svh) + 2 * 125vh);
+
+  &--ways { height: calc(var(--stage-h, 100svh) + 90vh); }
+  // the heading is part of the pinned stage, so it stays in view above the cards
+  &__inner { display: grid; gap: clamp(2rem, 5.5vh, 3.5rem); }
+
+  &__sticky {
+    position: sticky;
+    // pinned in the vertical middle of the window (never under the header)
+    top: max(var(--nav-pad), calc((100svh - var(--stage-h, 100svh)) / 2));
+    overflow: clip;
+    display: grid;
+    align-items: start;
+    padding-block: 1rem;
+  }
+}
+
+// ── Tools: cards that stack ──
+.hstack {
+  --w: 64%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: clamp(20rem, calc(100svh - 26rem), 32rem);
+}
+
+.tool {
+  --c: var(--sun);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(var(--i) * 16%);
+  width: var(--w);
+  z-index: calc(var(--i) + 1);
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: clamp(1rem, 2vw, 2rem);
+  align-items: center;
+  padding: clamp(1.2rem, 2vw, 2rem);
+  border-radius: 0 clamp(2.5rem, 5vw, 4.5rem) 0 0;
+  background: linear-gradient(160deg, #1d2d3d, #132130);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top: 4px solid var(--c);
+  box-shadow: -1.5rem 0 3rem -1rem rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+
+  &--webex { --c: var(--aqua); opacity: var(--s1, 1); transform: translateX(calc((1 - var(--s1, 1)) * 16rem)); }
+  &--person { --c: var(--rose); opacity: var(--s2, 1); transform: translateX(calc((1 - var(--s2, 1)) * 16rem)); }
+
+  // the card underneath dims as the next one lands on it
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    background: #050c16;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.hstage--tools .tool--moodle::after { opacity: calc(var(--s1, 0) * 0.5); }
+.hstage--tools .tool--webex::after { opacity: calc(var(--s2, 0) * 0.5); }
+
+.tool {
+  &__copy { display: grid; gap: 0.7rem; align-content: center; min-width: 0; }
+  &__kicker { margin: 0; font-family: var(--font-mono); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c); }
+  &__name { margin: 0; font-family: var(--font-display); font-weight: 800; font-stretch: 75%; font-size: clamp(2.6rem, 4.6vw, 4.6rem); line-height: 0.9; text-transform: uppercase; }
+  &__text { margin: 0; font-size: 1.05rem; color: rgba(255, 255, 255, 0.82); }
+
+  &__points {
+    list-style: none;
+    margin: 0.4rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+    li { display: flex; align-items: center; gap: 0.7rem; font-weight: 600; }
+    .icon { flex: none; width: 1.7rem; height: 1.7rem; padding: 0.3rem; border-radius: 50%; background: var(--c); color: #0a1826; }
+  }
+}
+
+// ── Mock-ups ──
+.mock {
+  --c: var(--sun);
+  position: relative;
+  height: clamp(13rem, 20vw, 17rem);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  background: #fff;
+  color: #0a1826;
+  box-shadow: 0 1.5rem 3rem -1.2rem rgba(0, 0, 0, 0.7);
+
+  &__bar { display: flex; align-items: center; gap: 0.8rem; height: 2.2rem; padding: 0 0.9rem; background: #e8edf1; }
+  &__dots { display: flex; gap: 0.3rem; i { width: 0.55rem; height: 0.55rem; border-radius: 50%; background: #b8c3cc; } }
+  &__url { flex: 1; height: 0.9rem; max-width: 12rem; border-radius: 999px; background: #fff; }
+
+  // Moodle: lesson checklist + progress
+  &--moodle &__body { display: grid; gap: 0.7rem; padding: 1.1rem 1.2rem; }
+  &__row {
+    display: grid;
+    grid-template-columns: 1.5rem 1fr 3.5rem;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.55rem 0.7rem;
+    border-radius: 0.5rem;
+    background: #f3f6f8;
+  }
+  &__tick { display: grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 50%; border: 2px solid #b8c3cc; .icon { width: 0.9rem; height: 0.9rem; opacity: 0; } }
+  &__row.is-done &__tick { background: #d2ad69; border-color: #d2ad69; .icon { opacity: 1; } }
+  &__line { height: 0.6rem; border-radius: 999px; background: #cdd6dd; &.is-short { width: 100%; background: #e0e6eb; } }
+  &__progress { height: 0.55rem; margin-top: 0.2rem; border-radius: 999px; background: #e0e6eb; overflow: hidden; i { display: block; width: 72%; height: 100%; background: #bf314b; border-radius: inherit; } }
+
+  // Webex: video tiles + controls
+  &--webex { background: #14212e; color: #fff; display: grid; grid-template-rows: auto 1fr auto; }
+  &--webex &__bar { background: #0c1722; }
+  &__live { margin-left: auto; padding: 0.15rem 0.6rem; border-radius: 999px; background: #bf314b; font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; }
+  &__tiles { display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(2, 1fr); gap: 0.5rem; padding: 0.7rem; }
+  &__tile {
+    display: grid;
+    place-items: center;
+    border-radius: 0.5rem;
+    background: linear-gradient(160deg, #2b4156, #1b2d3e);
+    b { display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: #7fb2cc; color: #0a1826; font-family: var(--font-display); font-weight: 800; }
+    &:nth-child(2n) b { background: #d2ad69; }
+    &:nth-child(3n) b { background: #e6c8cf; }
+    &.is-speaking { box-shadow: inset 0 0 0 3px #7fb2cc; }
+  }
+  &__controls { display: flex; justify-content: center; gap: 0.6rem; padding: 0.5rem; background: #0c1722; i { width: 1.6rem; height: 1.6rem; border-radius: 50%; background: #34495c; &.is-end { background: #bf314b; width: 2.6rem; border-radius: 999px; } } }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .tool .mock__row { animation: mock-in 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; animation-delay: calc(var(--i) * 0.12s + 0.3s); }
+  .tool .mock__tile.is-speaking { animation: mock-speak 2.4s ease-in-out infinite; }
+}
+@keyframes mock-in { from { opacity: 0; transform: translateX(-0.8rem); } }
+@keyframes mock-speak { 50% { box-shadow: inset 0 0 0 3px #7fb2cc, 0 0 0 4px rgba(127, 178, 204, 0.35); } }
+
+
+// person mock-up
+.mock--person {
+  height: 100%;
+  max-height: 17rem;
+  background: linear-gradient(160deg, #e6c8cf, #cfa3ae);
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 1.1rem;
+
+  .mock__faces { display: flex; b { display: grid; place-items: center; width: 4.4rem; height: 4.4rem; margin-left: -0.9rem; border-radius: 50%; border: 3px solid #e6c8cf; background: #14527c; color: #fff; font-family: var(--font-display); font-weight: 800; font-size: 1.5rem; &:first-child { margin-left: 0; } &:nth-child(2) { background: #bf314b; } &:nth-child(3) { background: #0a1826; } } }
+  .mock__pin { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 0.9rem; border-radius: 999px; background: #0a1826; color: #fff; font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; .icon { width: 1rem; height: 1rem; } }
+}
+
+// ── Two ways: one stage; text slides left into the next while the next photograph arrives ──
+.wayset {
+  --gap: clamp(2rem, 5vw, 5rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--gap);
+  align-items: center;
+
+  > * { grid-row: 1; }
+  > .way__media--a { grid-column: 1; }
+  > .wayset__texts { grid-column: 2; }
+  > .way__media--b { grid-column: 2; }
+
+  &__texts {
+    display: grid;
+    align-items: center;
+    transform: translateX(calc(var(--s, 0) * (-100% - var(--gap))));
+    z-index: 3;
+    > * { grid-area: 1 / 1; }
+  }
+}
+
+.hstage--ways {
+  .way__copy--a { opacity: clamp(0, calc(1 - (var(--s, 0) - 0.08) * 3.4), 1); }
+  .way__copy--b { opacity: clamp(0, calc((var(--s, 0) - 0.42) * 3.4), 1); }
+  .way__media--a { opacity: clamp(0, calc(1 - var(--s, 0) * 1.8), 1); transform: translateX(calc(var(--s, 0) * -9%)); }
+  .way__media--b { opacity: clamp(0, calc((var(--s, 0) - 0.25) * 2), 1); transform: translateX(calc((1 - var(--s, 0)) * 22%)); }
+}
+
+.way {
+  &__media {
+    position: relative;
+    margin: 0;
+    aspect-ratio: 4 / 3;
+    max-height: calc(100svh - 2 * var(--nav-pad) - 2rem);
+    width: 100%;
+    border-radius: clamp(3rem, 8vw, 7rem) 0 0 0;
+    overflow: hidden;
+    .ph { position: absolute; inset: 0; }
+    &--b { border-radius: 0 clamp(3rem, 8vw, 7rem) 0 0; }
+  }
+
+  &__tag {
+    position: absolute;
+    left: 1.2rem;
+    bottom: 1.2rem;
+    z-index: 4;
+    padding: 0.5em 1em;
+    border-radius: 999px;
+    background: #d2ad69;
+    color: #0a1826;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__copy { display: grid; gap: var(--space-sm); align-content: center; }
+  &__num { margin: 0; font-family: var(--font-display); font-weight: 800; font-stretch: 75%; font-size: clamp(5rem, 11vw, 10rem); line-height: 0.8; color: transparent; -webkit-text-stroke: 2px #d2ad69; }
+  &__title { margin: 0; font-family: var(--font-display); font-weight: 750; font-stretch: 80%; font-size: clamp(2rem, 3.6vw, 3.4rem); line-height: 1; text-transform: uppercase; }
+  &__text { margin: 0; max-width: 46ch; font-size: 1.1rem; line-height: 1.6; color: rgba(255, 255, 255, 0.84); }
+}
+
+// ── Not pinned (narrow screens / reduced motion): simply stacked ──
+.hstage.is-static,
+:root[data-motion="reduced"] .hstage {
+  height: auto;
+  .hstage__sticky { position: relative; top: auto; height: auto; overflow: visible; padding-block: var(--space-md) var(--space-lg); }
+
+  .hstack { height: auto; display: grid; gap: var(--space-md); }
+  .tool { position: relative; left: auto; width: auto; transform: none !important; opacity: 1 !important; box-shadow: none; grid-template-columns: 1fr; &::after { display: none; } }
+  .mock { height: 12rem; }
+  .mock--person { height: 12rem; }
+
+  .wayset { grid-template-columns: 1fr; gap: var(--space-lg); }
+  .wayset > * { grid-row: auto; grid-column: 1; opacity: 1 !important; transform: none !important; }
+  .wayset__texts { display: contents; transform: none !important; > * { grid-area: auto; grid-column: 1; grid-row: auto; transform: none !important; } }
+  .way__media--a { order: 1; }
+  .way__copy--a { order: 2; }
+  .way__media--b { order: 3; }
+  .way__copy--b { order: 4; opacity: 1 !important; }
+  .way__copy { opacity: 1 !important; }
+}
+
+// stacked layout: tighter gaps (the generous spacing above is for the pinned desktop scenes)
+.hstage.is-static ~ .howit__ways-head,
+.howit:has(.hstage.is-static) .howit__ways-head { padding-top: var(--space-lg); }
+.howit:has(.hstage.is-static) { padding-bottom: calc(var(--section-pad) * 0.6); }

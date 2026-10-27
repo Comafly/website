@@ -1,0 +1,452 @@
+{
+ "id": "page.home",
+ "meta": {
+  "title": "Learning Anywhere",
+  "description": "SIDE is a K-12 online public school in Western Australia, supporting students wherever they are.",
+  "flow": true
+ },
+ "sections": [
+  {
+   "id": "home.hero",
+   "type": "hero-sequence",
+   "label": "Welcome to SIDE",
+   "frames": [
+    {
+     "eyebrow": "Hello, and welcome!",
+     "title": "Kaya Wanju",
+     "titleLang": "nys",
+     "media": "m.home.hero1"
+    },
+    {
+     "eyebrow": "Our partner schools",
+     "title": "Learning Anywhere",
+     "media": "m.home.hero2",
+     "body": "Our partner schools support students whose learning journeys don’t follow a single pathway. Across metropolitan, regional, and remote WA, these schools provide continuity for students managing travel, training commitments, health needs, or changing circumstances — ensuring access to education that adapts while remaining connected to local communities.",
+     "action": {
+      "label": "How it Works",
+      "to": "page.education#overview-anchor"
+     }
+    },
+    {
+     "eyebrow": "Programs",
+     "title": "Creative Pathways",
+     "media": "m.home.hero3",
+     "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+     "action": {
+      "label": "Explore Programs",
+      "to": "page.education#pathway-anchor"
+     }
+    }
+   ]
+  },
+  {
+   "id": "home.stats",
+   "type": "stats",
+   "anchor": "stat-section",
+   "tone": "brand",
+   "title": "SIDE by the numbers",
+   "items": [
+    {
+     "value": 3976,
+     "suffix": "+",
+     "group": true,
+     "label": "Total Students",
+     "caption": "Across the world"
+    },
+    {
+     "value": 508,
+     "suffix": "+",
+     "label": "Aboriginal Students",
+     "caption": "From every region."
+    },
+    {
+     "value": 287,
+     "label": "Partner Schools",
+     "caption": "Throughout Western Australia"
+    },
+    {
+     "value": 233,
+     "label": "Total Staff",
+     "caption": "Teachers, Admin, and Support"
+    },
+    {
+     "value": 372725,
+     "group": true,
+     "label": "Travelled by Teachers",
+     "caption": "Across the state in 2025"
+    }
+   ]
+  },
+  {
+   "id": "home.welcome",
+   "type": "feature",
+   "anchor": "welcome",
+   "tone": "paper",
+   "media": "m.about.leader",
+   "shape": "arch",
+   "cursor": "view",
+   "eyebrow": "Kaya, ngany djoorabiny noonook djinang!",
+   "title": "Hello, it’s good to see you!",
+   "body": "Founded in 1918 as the Correspondence School, SIDE has built a proud tradition of student success across all years. Our dedicated staff deliver high-quality, tailored learning experiences to students regardless of their circumstances or location.\n\nIn K-6, we partner closely with parents to support foundational learning, while in Years 7-12 we foster growing independence and collaborate with student supervisors to guide each learner’s journey.\n\nWe maintain strong relationships with parents, carers, schools, student supervisors and the wider community — welcoming visits to our Leederville campus and prioritizing open, positive communication.\n\nSIDE offers the same broad educational opportunities as traditional schools, including specialized support for students with disabilities, learning difficulties, or gifted and talented needs.\n\n**Welcome to the School of Isolated and Distance Education!**"
+  },
+  {
+   "id": "home.offer",
+   "type": "statement",
+   "tone": "ink",
+   "eyebrow": "What We Offer",
+   "title": "What We Offer",
+   "text": "Everyone deserves access to quality education. Whether living in a remote location, balancing travel commitments, or managing health challenges, SIDE enables people to continue learning no matter what their unique situation might be.",
+   "size": "h1"
+  },
+  {
+   "id": "home.ways",
+   "type": "sequence",
+   "variant": "stage",
+   "tone": "ink",
+   "title": "Three ways to learn",
+   "eyebrow": "What We Offer",
+   "frames": [
+    {
+     "eyebrow": "01",
+     "title": "Home-based",
+     "media": "m.enrol.home",
+     "body": "Students can complete their studies from home through scheduled online classes, independent learning tasks, and ongoing teacher guidance.",
+     "actions": [
+      {
+       "label": "Learn More",
+       "to": "page.enrolment#home-based-anchor"
+      }
+     ]
+    },
+    {
+     "eyebrow": "02",
+     "title": "School-based",
+     "media": "m.enrol.school",
+     "body": "We partner with schools to deliver subjects that may not be available locally. Students remain connected to their enrolling school while accessing lessons taught by SIDE.",
+     "actions": [
+      {
+       "label": "Learn More",
+       "to": "page.enrolment#school-based-anchor"
+      }
+     ]
+    },
+    {
+     "eyebrow": "03",
+     "title": "Blended",
+     "media": "m.enrol.blended",
+     "body": "Secondary students can combine school-based attendance with online lessons. This option supports students engaged in high intensity athletic or artistic pursuits.",
+     "actions": [
+      {
+       "label": "Learn More",
+       "to": "page.enrolment#blended-anchor"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "home.hero-story",
+   "type": "banner",
+   "anchor": "hometown-hero",
+   "media": "m.home.hero",
+   "eyebrow": "Hometown HERO",
+   "title": "SIDE Graduate Alex Saffy takes the bronze in the 2024 Paralympic Games.",
+   "actions": [
+    {
+     "label": "Elite Performance Program",
+     "to": "page.enrolment#art-sport-information",
+     "variant": "solid"
+    }
+   ],
+   "body": "Dubbed by fans and friends as the ‘Bunbury Bullet’, SIDE graduate Alex Saffy secured the bronze medal in the Men’s 100m butterfly S10 at the 2024 Paralympic Games in Paris, delivering a performance that also established a new Oceania record.\n\nCompeting against an international field, his race reflected years of structured training, technical refinement, and competitive consistency at the highest level of para-swimming.\n\nAs part of SIDE’s Elite Performance Program, Alex was able to prioritise his demanding training schedule while continuing his academic studies in parallel. The program’s flexible delivery allowed him to balance national and international competition commitments with coursework, ultimately enabling him to complete and achieve his WACE certification alongside his sporting career."
+  },
+  {
+   "id": "home.dance",
+   "type": "spotlight",
+   "anchor": "centre-stage",
+   "tone": "ink",
+   "media": "m.home.dance",
+   "eyebrow": "Centre STAGE",
+   "title": "Dancers following their dreams.",
+   "body": "The SCSA-endorsed Community Arts Program at SIDE supports aspiring dancers in developing their artistic practice while continuing to engage in a structured and recognised secondary education pathway. Students are able to commit to regular training, rehearsals, and performance opportunities without compromising their academic responsibilities.\n\nThrough a balance of creative exploration and disciplined technique, the program prepares students for the practical demands of the performing arts industry. Participants build foundational skills in collaboration, self-management, and performance readiness, equipping them to progress toward further training or professional pathways in dance and related creative fields.",
+   "actions": [
+    {
+     "label": "Dance Program",
+     "to": "page.enrolment#dance-information"
+    }
+   ]
+  },
+  {
+   "id": "home.news",
+   "type": "stories",
+   "anchor": "news",
+   "tone": "paper",
+   "eyebrow": "News",
+   "title": "Student stories, state-wide events, and school updates.",
+   "lead": "Learn all the latest about what is happening at SIDE.",
+   "ui": {
+    "label": "Student stories",
+    "prev": "Previous stories",
+    "next": "Next stories",
+    "read": "Read story",
+    "position": "Story {n} of {total}"
+   },
+   "items": [
+    {
+     "id": "s1",
+     "media": "m.home.hero",
+     "eyebrow": "Hometown HERO",
+     "title": "Alex Saffy takes the bronze in the 2024 Paralympic Games",
+     "byline": "by Author · Date",
+     "excerpt": "SIDE graduate Alex Saffy, the ‘Bunbury Bullet’, secured bronze in the Men’s 100m butterfly S10 in Paris.",
+     "article": [
+      "Dubbed by fans and friends as the ‘Bunbury Bullet’, SIDE graduate Alex Saffy secured the bronze medal in the Men’s 100m butterfly S10 at the 2024 Paralympic Games in Paris, delivering a performance that also established a new Oceania record.",
+      "Competing against an international field, his race reflected years of structured training, technical refinement, and competitive consistency at the highest level of para-swimming.",
+      "As part of SIDE’s Elite Performance Program, Alex was able to prioritise his demanding training schedule while continuing his academic studies in parallel. The program’s flexible delivery allowed him to balance national and international competition commitments with coursework, ultimately enabling him to complete and achieve his WACE certification alongside his sporting career."
+     ]
+    },
+    {
+     "id": "s2",
+     "media": "m.home.dance",
+     "eyebrow": "Centre STAGE",
+     "title": "Dancers following their dreams",
+     "byline": "by Author · Date",
+     "excerpt": "The Community Arts Program supports aspiring dancers to train and perform while completing secondary school.",
+     "article": [
+      "The SCSA-endorsed Community Arts Program at SIDE supports aspiring dancers in developing their artistic practice while continuing to engage in a structured and recognised secondary education pathway. Students are able to commit to regular training, rehearsals, and performance opportunities without compromising their academic responsibilities.",
+      "Through a balance of creative exploration and disciplined technique, the program prepares students for the practical demands of the performing arts industry. Participants build foundational skills in collaboration, self-management, and performance readiness, equipping them to progress toward further training or professional pathways in dance and related creative fields."
+     ]
+    },
+    {
+     "id": "s3",
+     "media": "m.comm.alumni1",
+     "eyebrow": "Alumni",
+     "title": "Story headline",
+     "byline": "by Author · Date",
+     "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptati…",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "id": "s4",
+     "media": "m.comm.news",
+     "eyebrow": "News",
+     "title": "Story headline",
+     "byline": "by Author · Date",
+     "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptati…",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "id": "s5",
+     "media": "m.comm.alumni2",
+     "eyebrow": "Alumni",
+     "title": "Story headline",
+     "byline": "by Author · Date",
+     "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptati…",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    },
+    {
+     "id": "s6",
+     "media": "m.comm.events",
+     "eyebrow": "Events",
+     "title": "Story headline",
+     "byline": "by Author · Date",
+     "excerpt": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptati…",
+     "article": [
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis minus voluptas, quam quia velit. Ut magnam voluptatibus nobis ducimus sunt, assumenda ex, illum veniam molestias temporibus non soluta similique sequi natus fuga quibusdam odio?",
+      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+     ]
+    }
+   ],
+   "actions": [
+    {
+     "label": "View all articles",
+     "to": "page.community#news-anchor"
+    }
+   ]
+  },
+  {
+   "id": "home.partners",
+   "type": "map",
+   "anchor": "partners",
+   "tone": "ink",
+   "eyebrow": "Our Partners",
+   "title": "We’ve joined with over 287 schools across WA",
+   "counterLabel": "partner schools",
+   "alt": "A tilted map of Western Australia with markers showing where SIDE’s partner schools are, concentrated around Perth, the South West and Wheatbelt, with others spread across the Mid West, Goldfields, Pilbara and Kimberley.",
+   "listItem": "{region}: {count} partner schools",
+   "body": "From the Wheatbelt to The Kimberley, each partnership represents an active connection — coordinated delivery, shared planning, and local adaptation that cares about the culture of the region.\n\nTogether, these schools form a distributed network that supports learning across metropolitan, regional, and remote communities that provide a diverse range of unique strengths:",
+   "actions": [
+    {
+     "label": "Explore",
+     "to": "page.enrolment#school-based-anchor"
+    }
+   ],
+   "clusters": [
+    {
+     "lon": 115.9,
+     "lat": -31.9,
+     "count": 62,
+     "spread": 0.28,
+     "label": "Perth",
+     "dx": 0.0,
+     "dy": 0.0
+    },
+    {
+     "lon": 116.3,
+     "lat": -32.0,
+     "count": 12,
+     "spread": 0.6
+    },
+    {
+     "lon": 115.75,
+     "lat": -32.55,
+     "count": 6,
+     "spread": 0.15
+    },
+    {
+     "lon": 115.7,
+     "lat": -33.6,
+     "count": 26,
+     "spread": 0.55,
+     "label": "South West",
+     "dx": -1.4,
+     "dy": 0
+    },
+    {
+     "lon": 117.6,
+     "lat": -34.0,
+     "count": 22,
+     "spread": 0.8,
+     "label": "Great Southern",
+     "dx": 0.6,
+     "dy": -0.9
+    },
+    {
+     "lon": 117.9,
+     "lat": -34.9,
+     "count": 5,
+     "spread": 0.1
+    },
+    {
+     "lon": 117.2,
+     "lat": -31.5,
+     "count": 48,
+     "spread": 1.1,
+     "label": "Wheatbelt",
+     "dx": 1.6,
+     "dy": 0.4
+    },
+    {
+     "lon": 121.9,
+     "lat": -33.5,
+     "count": 7,
+     "spread": 0.5
+    },
+    {
+     "lon": 121.6,
+     "lat": -30.5,
+     "count": 14,
+     "spread": 1.2,
+     "label": "Goldfields",
+     "dx": 0.8,
+     "dy": 0.8
+    },
+    {
+     "lon": 115.8,
+     "lat": -28.8,
+     "count": 20,
+     "spread": 1.2,
+     "label": "Mid West",
+     "dx": -1.2,
+     "dy": 0
+    },
+    {
+     "lon": 114.7,
+     "lat": -29.0,
+     "count": 6,
+     "spread": 0.3
+    },
+    {
+     "lon": 114.5,
+     "lat": -24.8,
+     "count": 8,
+     "spread": 1.5,
+     "label": "Gascoyne",
+     "dx": -0.8,
+     "dy": 0
+    },
+    {
+     "lon": 117.5,
+     "lat": -26.5,
+     "count": 6,
+     "spread": 1.8
+    },
+    {
+     "lon": 118.4,
+     "lat": -21.8,
+     "count": 16,
+     "spread": 1.8,
+     "label": "Pilbara",
+     "dx": 0,
+     "dy": 0.6
+    },
+    {
+     "lon": 125.0,
+     "lat": -17.6,
+     "count": 14,
+     "spread": 1.8,
+     "label": "Kimberley",
+     "dx": 0,
+     "dy": 0.4
+    },
+    {
+     "lon": 128.7,
+     "lat": -15.8,
+     "count": 4,
+     "spread": 0.4
+    },
+    {
+     "lon": 122.2,
+     "lat": -17.9,
+     "count": 4,
+     "spread": 0.2
+    },
+    {
+     "lon": 126.0,
+     "lat": -26.5,
+     "count": 4,
+     "spread": 2.5
+    },
+    {
+     "lon": 127.5,
+     "lat": -21.0,
+     "count": 3,
+     "spread": 1.5
+    }
+   ],
+   "blocks": [
+    {
+     "type": "list",
+     "items": [
+      "Schools across WA are able to extend learning beyond the limits of a single campus",
+      "Distance and location don’t prevent students from accessing structured learning",
+      "Schooling can move with students across home, travel, and local communities"
+     ]
+    }
+   ]
+  }
+ ]
+}

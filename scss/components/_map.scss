@@ -1,0 +1,79 @@
+@use "../abstracts" as *;
+
+$map-sea: radial-gradient(ellipse 70% 80% at 62% 45%, #12354a 0%, #0b1f30 55%, #060f1a 100%);
+
+// ── Pseudo-3D map of WA: pinned full-screen canvas scene ──
+.map {
+  position: relative;
+  padding: 0;
+  height: 320svh;
+  background: $map-sea;
+  overflow: clip;
+
+  &__sticky {
+    position: sticky;
+    top: 0;
+    height: 100svh;
+    overflow: clip;
+    contain: paint;
+    clip-path: inset(0);
+    color: #fff;
+  }
+
+  &__canvas {
+    position: absolute;
+    inset: 0;
+    display: block;
+  }
+
+  // keeps the copy legible over the map
+  &__shade {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(6, 15, 26, .92) 0%, rgba(6, 15, 26, .6) 34%, transparent 62%);
+    @media (max-width: 899px) {
+      background: linear-gradient(180deg, rgba(6, 15, 26, .1) 35%, rgba(6, 15, 26, .92) 78%);
+    }
+  }
+
+  &__copy {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .9rem;
+    max-width: 38rem;
+    margin-inline: 0;
+    padding-inline: var(--gutter, 1.5rem);
+    @media (min-width: 900px) { margin-left: clamp(0px, 4vw, 4rem); }
+    @media (max-width: 899px) { justify-content: flex-end; padding-bottom: 3rem; max-width: none; }
+  }
+
+  &__title { margin: 0; font-size: clamp(1.9rem, 2.9vw, 2.7rem); }
+  &__blocks { font-size: .92rem; opacity: .9; }
+  @media (max-width: 899px) { &__text p:nth-child(n+2), &__blocks { display: none; } }
+  &__text p { margin: 0 0 .5rem; max-width: 30rem; opacity: .85; font-size: .92rem; line-height: 1.5; }
+  &__blocks li { font-size: .85rem; }
+  &__copy { padding-top: 5.5rem; padding-bottom: 2rem; }
+
+  &__count {
+    display: flex;
+    align-items: baseline;
+    gap: .75rem;
+    margin: .3rem 0;
+  }
+  &__num {
+    font-family: var(--font-display, inherit);
+    font-size: clamp(2.4rem, 4vw, 3.4rem);
+    line-height: .9;
+    font-variant-numeric: tabular-nums;
+    color: #d2ad69;
+  }
+  &__unit { font-size: .9rem; letter-spacing: .08em; text-transform: uppercase; opacity: .75; }
+}
+
+// the page-wide flowing lines sit between the section background and the map, so the sea is painted on the pseudo-layer
+body.has-flow #main > .map::before { background: $map-sea; }
